@@ -1,9 +1,31 @@
 .container__header{
   background-color: white;
   width: 100%;
-  height: 500px;
+  height: 600px;
+  margin-bottom: 10px;
+}
+.containerCapacitacion{
+background-color: bisque;
+height: 600px;
+margin-bottom: 10px;
+}
+.containerMetodologia{
+  background-color: aqua;
+  height: 600px;
+  margin-bottom: 10px;
+}
+.containerPaso{
+  background-color: chocolate;
+  height: 600px;
+  margin-bottom: 10px;
+}
+.containerHerramienta{
+  background-color: blueviolet;
+  height: 600px;
+  margin-bottom: 10px;
 }
 
+/* CODIGO SUPERIOR ESTILOS feed.html Freyder*/
 .cuerpo {
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -19,7 +41,6 @@
     #0f0c29
   ); 
 }
-
 
 .estilo1 {
   color: #ffffff;
