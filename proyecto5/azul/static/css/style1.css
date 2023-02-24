@@ -1,31 +1,114 @@
-.container__header{
+/* CODIGO ESTILOS feed.html Freyder*/
+/*PRESENTACION DE LA PAGINA*/
+
+/*VARIABLES DE COLORES A USAR EN TODA LA PAGINA*/
+:root{
+  --color_text-primary: #AB29CA;
+  --color_text-secundary: #101E2C;
+  --color_text-tertiary: #485663;
+  --main_color-primary: #9A00BF;
+  --main_color-secundary: #F4D4FB;
+  --background-color: #FAFBFE;
+  --lowText_font_size: 16px;
+  --text_size_title: 40px;
+  --text_title_card: 24px;
+  --text_title_cardv2: 20px;
+  --text_paragraph: 16px;
+  --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+/*inicio PRESENTACION DE LA PAGINA*/
+
+.container__cover{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color:white;
+  margin-bottom: 1px;
+  height:600px;
+  margin:10px 20px 20px;
+}
+
+.cover{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
   background-color: white;
+}
+
+.text__cover{
   width: 100%;
-  height: 600px;
-  margin-bottom: 10px;
+  padding-right: 150px;
+}
+
+.text__cover h1{
+  font-size: 40px;
+  color: var(--color_text-secundary);
+}
+
+.text__cover p{
+  font-size: var(--text_paragraph);
+  margin-top: 40px;
+  color: var(--color_text-tertiary);
+}
+
+.btn__text{
+  display: block;
+  width: 150px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+  background: var(--main_color-primary);
+  color: white;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.btn__text:hover{
+  background: transparent;
+  border: 2px solid var(--main_color-primary);
+  color: var(--color_text-primary);
+}
+
+.image__cover{
+  width: 100%;
+}
+
+.image__cover img{
+  width: 550px;
+  height: 450px;
 }
 .containerCapacitacion{
 background-color: bisque;
-height: 600px;
-margin-bottom: 10px;
+height: 400px;
+margin-bottom: 1px;
+margin:10px 20px 20px;
 }
 .containerMetodologia{
   background-color: aqua;
-  height: 600px;
-  margin-bottom: 10px;
+  height: 400px;
+  margin-bottom: 1px;
+  margin:10px 20px 20px;
 }
 .containerPaso{
   background-color: chocolate;
-  height: 600px;
-  margin-bottom: 10px;
+  height: 400px;
+  margin-bottom: 1px;
+  margin:10px 20px 20px;
 }
 .containerHerramienta{
   background-color: blueviolet;
-  height: 600px;
-  margin-bottom: 10px;
+  height: 400px;
+  margin-bottom: 1px;
+  margin:10px 20px 20px;
 }
 
-/* CODIGO SUPERIOR ESTILOS feed.html Freyder*/
+/*FINAL CODIGO ESTILOS feed.html Freyder*/
+
 .cuerpo {
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(
