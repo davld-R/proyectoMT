@@ -102,7 +102,7 @@ urlpatterns = [
     path('feed/encryption8/encryption3/',
          views.encryption3, name='encryption3'),
 
-    path('feed/consultcases/methodology/encryption/encryption1/encryption2/encryption3/tools/',
+    path('feed/encryption8/encryption3/tools/',
          views.tools, name='tools'),
 
     path('feed/consultcases/methodology/encryption/encryption1/encryption2/encryption3/encryption6/',
