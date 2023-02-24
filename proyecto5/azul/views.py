@@ -13,8 +13,6 @@ from django.db.models import Q
 # Paso 6 de M
 # ********************************************************************************************
 
-# GoldenEye
-
 # Vista de los PDF
 @login_required
 def method(request):
