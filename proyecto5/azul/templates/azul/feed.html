@@ -48,17 +48,22 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'method' %}">Metodología</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="{% url 'train' %}">Capacitación</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'step1' %}">Paso a paso M</a>
+                <a class="nav-link" href="{% url 'step1' %}"
+                  >Paso a paso Metododologia</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'encryption8' %}"
                   >Heramientas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'method' %}"
+                  >Documentacion Metodología</a
                 >
               </li>
               <li class="nav-item">
@@ -93,15 +98,27 @@
       </div>
       <div class="containerCapacitacion">
         <h1 class="estilo1">Capacitacion</h1>
+        <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+          >IR A CAPACITACION</a
+        >
       </div>
       <div class="containerMetodologia">
-        <h1 class="estilo1">Metodologia PASO A PASO</h1>
-      </div>
-      <div class="containerPaso">
-        <h1 class="estilo1">EVALUACIONES</h1>
+        <h1 class="estilo1">PASO A PASO Metodologia</h1>
+        <a href="{% url 'step1' %}" class="btn__text-cover btn__text"
+          >IR A METODOLOGIA PASO A PASO</a
+        >
       </div>
       <div class="containerHerramienta">
         <h1 class="estilo1">Herramientas</h1>
+        <a href="{% url 'encryption8' %}" class="btn__text-cover btn__text"
+          >IR A HERRAMIENTAS</a
+        >
+      </div>
+      <div class="containerPaso">
+        <h1 class="estilo1">EVALUACIONES</h1>
+        <a href="{% url 'feed' %}" class="btn__text-cover btn__text"
+          >IR A EVALUACONES</a
+        >
       </div>
     </main>
 
