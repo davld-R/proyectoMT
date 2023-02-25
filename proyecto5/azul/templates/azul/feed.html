@@ -75,14 +75,14 @@
     <main>
       <!--INICIO-->
       <!--Portada de inicio-->
+
       <div class="container__cover">
         <div class="cover">
           <section class="text__cover">
-            <h1>METODOLOGIA RANSOMWARE</h1>
+            <h1>METODOLOGIA para RANSOMWARE</h1>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepto teur sint occae
-              cat cupidatat non proident.
+              Página web dirigida a empresas con el fin de capacitar y dar
+              solucion a infecciónes ransomare
             </p>
             <a href="#" class="btn__text-cover btn__text">Empezar</a>
           </section>
@@ -91,28 +91,96 @@
           </section>
         </div>
       </div>
-      <div class="containerCapacitacion">
-        <h1 class="estilo1">Capacitacion</h1>
-        <a href="{% url 'train' %}" class="btn__text-cover btn__text"
-          >IR A CAPACITACION</a
-        >
+
+      <!--construccion Capacitacion banner-->
+
+      <div class="container__trust container__card-primary">
+        <div class="trust card__primary">
+          <div class="text__trust text__card-primary">
+            <p>CAPACITACIÓN DIRIGIDA A EMPRESAS</p>
+            <h1>Capacítate en temas como</h1>
+          </div>
+          <div class="container__trust container__box-card-primary">
+            <div class="card__trust box__card-primary">
+              <img
+                src="/media/feed/busqueda.webp"
+                alt=""
+                width="200"
+                height="200"
+              />
+              <h2>PHISHING</h2>
+              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+                >Phishing</a
+              >
+            </div>
+            <div class="card__trust box__card-primary">
+              <img
+                src="/media/feed/redes-sociales.webp"
+                alt=""
+                width="200"
+                height="200"
+              />
+              <h2>FRAUDE</h2>
+              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+                >FRAUDE</a
+              >
+            </div>
+            <div class="card__trust box__card-primary">
+              <img
+                src="/media/feed/blindaje.webp "
+                alt=""
+                width="200"
+                height="200"
+              />
+              <h2>RANSOMWARE</h2>
+              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+                >RANSOMWARE</a
+              >
+            </div>
+            <div class="card__trust box__card-primary">
+              <img
+                src="/media/feed/busqueda.webp"
+                alt=""
+                width="200"
+                height="200"
+              />
+              <h2>DUMPSTERDIVING</h2>
+              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+                >DUMPSTER DIVING</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="containerMetodologia">
-        <h1 class="estilo1">PASO A PASO Metodologia</h1>
-        <a href="{% url 'step1' %}" class="btn__text-cover btn__text"
-          >IR A METODOLOGIA PASO A PASO</a
-        >
+
+      <!--construccion Metodologia banner-->
+
+      <div class="container__trust container__card-primary">
+        <div class="trust card__primary">
+          <div class="text__trust text__card-primary">
+            <p>METODOLOGÍA PASO A PASO</p>
+            <h1>Método para hacer frente a un ataque ransomware</h1>
+          </div>
+          <div class="container__trust container__box-card-primary">
+            <div class="card__trust box__card-primary">
+              <h1>EN CONSTRUCCIÓN...</h1>
+            </div>
+            <div class="card__trust box__card-primary">
+              <video class="video1" width="500" height="400" controls>
+                <source src="video.mp4" type="video/mp4" />
+              </video>
+            </div>
+            
+          </div>
+        </div>
       </div>
+
+      <!--construccion Herramienta banner-->
+
       <div class="containerHerramienta">
         <h1 class="estilo1">Herramientas</h1>
         <a href="{% url 'encryption8' %}" class="btn__text-cover btn__text"
           >IR A HERRAMIENTAS</a
-        >
-      </div>
-      <div class="containerPaso">
-        <h1 class="estilo1">EVALUACIONES</h1>
-        <a href="{% url 'feed' %}" class="btn__text-cover btn__text"
-          >IR A EVALUACONES</a
         >
       </div>
     </main>

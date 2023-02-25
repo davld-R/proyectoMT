@@ -2,7 +2,7 @@
 /*PRESENTACION DE LA PAGINA*/
 
 /*VARIABLES DE COLORES A USAR EN TODA LA PAGINA*/
-:root{
+:root {
   --color_text-primary: #AB29CA;
   --color_text-secundary: #101E2C;
   --color_text-tertiary: #485663;
@@ -14,20 +14,21 @@
   --text_title_card: 24px;
   --text_title_cardv2: 20px;
   --text_paragraph: 16px;
-  --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+  --box_shadow-primary: 0px 6px 50px -20px rgba(0, 0, 0, 0.2);
 }
+
 /*inicio PRESENTACION DE LA PAGINA*/
 
-.container__cover{
+.container__cover {
   padding-top: 20px;
-  padding-bottom: 50px;
-  background-color:white;
+  padding-bottom: 20px;
+  background-color: white;
   margin-bottom: 1px;
-  height:600px;
-  margin:10px 20px 20px;
+  height: 680px;
+  margin: 0px 40px 1px;
 }
 
-.cover{
+.cover {
   max-width: 1200px;
   margin: auto;
   margin-top: 50px;
@@ -37,27 +38,27 @@
   background-color: white;
 }
 
-.text__cover{
+.text__cover {
   width: 100%;
   padding-right: 150px;
 }
 
-.text__cover h1{
+.text__cover h1 {
   font-size: 40px;
   color: var(--color_text-secundary);
 }
 
-.text__cover p{
+.text__cover p {
   font-size: var(--text_paragraph);
   margin-top: 40px;
   color: var(--color_text-tertiary);
 }
 
-.btn__text{
+.btn__text {
+  margin-top: 20px;
   display: block;
-  width: 150px;
-  margin-top: 40px;
-  padding: 10px 20px;
+  width: 200px;
+  padding: 20px 20px;
   text-align: center;
   font-weight: 500;
   background: var(--main_color-primary);
@@ -66,78 +67,134 @@
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 300ms;
+  text-decoration: none;
 }
 
-.btn__text:hover{
+.btn__text:hover {
   background: transparent;
   border: 2px solid var(--main_color-primary);
   color: var(--color_text-primary);
 }
 
-.image__cover{
+.image__cover {
   width: 100%;
 }
 
-.image__cover img{
+.image__cover img {
   width: 550px;
   height: 450px;
 }
-.containerCapacitacion{
-background-color: white;
-height: 400px;
-margin-bottom: 1px;
-margin:10px 20px 20px;
-}
-.containerMetodologia{
-  background-color: aqua;
-  height: 400px;
+
+/*ESTILOS CAPACITACION*/
+
+.container__card-primary {
+  padding-top: 100px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
   margin-bottom: 1px;
-  margin:10px 20px 20px;
 }
-.containerPaso{
-  background-color: chocolate;
-  height: 400px;
-  margin-bottom: 1px;
-  margin:10px 20px 20px;
+
+.card__primary {
+  max-width: 1500px;
+  background-color: white;
 }
-.containerHerramienta{
+
+.text__card-primary {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.text__card-primary p {
+  color: var(--color_text-primary);
+  letter-spacing: 4px;
+  font-size: var(--text_paragraph);
+  font-weight: 500;
+}
+
+.text__card-primary h1 {
+  color: var(--color_text-tertiary);
+  letter-spacing: 5px;
+  font-size: var(--text_size_title);
+  font-weight: 600;
+}
+
+.container__box-card-primary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.box__card-primary {
+  max-width: 300px;
+  margin-bottom: 60px;
+  padding: 50px 50px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  margin: 14px;
+}
+
+.box__card-primary:hover {
+  border: 1px solid transparent;
+  box-shadow: var(--box_shadow-primary);
+  transition: all 300ms;
+}
+
+.box__card-primary h2 {
+  font-size: var(--text_title_card);
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+/*ESTILOS METODOLOGIA*/
+
+.video1 {
+  margin-left: 10%;
+}
+/*ESTILOS HERRAMIENTA */
+.containerHerramienta {
   background-color: blueviolet;
   height: 400px;
   margin-bottom: 1px;
-  margin:10px 20px 20px;
+  margin: 10px 20px 20px;
 }
 
 /*FINAL CODIGO ESTILOS feed.html Freyder*/
 
 .cuerpo {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); 
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #24243e,
+      #302b63,
+      #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #24243e,
+      #302b63,
+      #0f0c29);
 }
 
 .estilo1 {
+  color: black;
+}
+
+#bg_white {
   color: #ffffff;
 }
-#bg_white{
-  color: #ffffff;
-}
+
 .estilo2 {
   width: 200px;
   height: 200px;
 }
-.estilo3{
+
+.estilo3 {
   color: rgb(60, 0, 255);
 }
-.estilo4{
+
+.estilo4 {
   background-color: #ffffff;
 }
