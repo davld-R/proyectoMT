@@ -15,7 +15,7 @@
       type="text/css"
       href="{% static 'css/style2.css' %}"
     />
-    <!-- Link del Bootstrap -->
+    <!--*** Link del Bootstrap ***-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,7 +25,7 @@
     <title>Metodología</title>
   </head>
   <body>
-    <!-- Este Código es la barra de navegación -->
+    <!--! Este Código es la barra de navegación -->
     <header class="main-head">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 pb-3">
         {% if request.user.is_authenticated %}
@@ -76,14 +76,32 @@
       </nav>
     </header>
 
-    <!-- Programación del Body -->
-
-    <h1 class="">
-      En Este apartado iran los 3 PDF de nuestra metodología. Si no es necesario
-      se elimina esta vista
-    </h1>
-
-    <!-- Link del Boostrap -->
+    <!-- TODO: Programación del Body -->
+    <h1 class="display-1 m-5">Este apartado solo lo puse para acordame que va aquí. La información de abajo es inventada.</h1>
+    <div class="container">
+      <h2>
+        DESARROLLO DE UNA METODOLOGÍA COMO RESPUESTA A INCIDENTES DE INFECCIÓN
+        POR RANSOMWARE
+      </h2>
+      <p class="fs-4 mt-4">
+        Esta metodología sirve para tener un conjunto estructurado y sistemático
+        de pasos y prácticas a seguir cuando se detecta un ataque ransomware,
+        con el objetivo de minimizar el impacto y restaurar los servicios y
+        sistemas afectados lo más rápido posible.
+      </p>
+      <p class="fs-4 mt-2">
+        Al tener una metodología clara y definida, se pueden tomar decisiones
+        informadas y coordinar acciones de forma más eficiente y efectiva, lo
+        que puede reducir los tiempos de respuesta y aumentar la posibilidad de
+        éxito en la mitigación del ataque. Además, tener una metodología
+        documentada puede ayudar a mantener una trazabilidad y un registro de lo
+        sucedido, lo que puede ser útil en futuros análisis y mejoras del
+        sistema de seguridad.
+      </p>
+      <p class="mt-2">Este documento lo podra descargar del siguiente link</p>
+      <a href="">https:/www.linkfalso.com</a>
+    </div>
+    <!--*** Link del Boostrap ***-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
