@@ -46,9 +46,7 @@
       </nav>
     </header>
     <!-- Si se llama un clase si se quiere enviar mensajes -->
-    {% if messages %} {% for message in messages %}
-    <div class="notification {{ message.tags}}">{{ message}}</div>
-    {% endfor %} {% endif %} {% block content %} {% endblock content %}
+   {% block content %} {% endblock content %}
     <!-- Footer -->
     
     <!-- Script de la carpeta js -->
