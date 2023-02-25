@@ -1,4 +1,1 @@
-function toggleHidden(selector) {
-    element = document.querySelector(selector);
-    element.hidden = element.hidden ? false : true;
-  }
+// TODO: Van los estilos del index.html
