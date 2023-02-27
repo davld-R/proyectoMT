@@ -21,6 +21,7 @@
   </head>
   <body class="cuerpo">
     <!--! Este Código es la barra de navegación -->
+
     <header class="main-head">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 pb-3">
         {% if request.user.is_authenticated %}
@@ -58,7 +59,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'encryption8' %}"
-                  >Heramientas</a
+                  >Herramientas</a
                 >
               </li>
               <li class="nav-item">
@@ -72,6 +73,7 @@
     </header>
 
     <!--TODO: Programación del Body -->
+
     <main>
       <!--INICIO-->
       <!--Portada de inicio-->
@@ -105,48 +107,48 @@
               <img
                 src="/media/feed/busqueda.webp"
                 alt=""
-                width="200"
-                height="200"
+                width="100"
+                height="100"
               />
               <h2>PHISHING</h2>
               <a href="{% url 'train' %}" class="btn__text-cover btn__text"
-                >Phishing</a
+                >Consultar</a
               >
             </div>
             <div class="card__trust box__card-primary">
               <img
                 src="/media/feed/redes-sociales.webp"
                 alt=""
-                width="200"
-                height="200"
+                width="100"
+                height="100"
               />
               <h2>FRAUDE</h2>
               <a href="{% url 'train' %}" class="btn__text-cover btn__text"
-                >FRAUDE</a
+                >Consultar</a
               >
             </div>
             <div class="card__trust box__card-primary">
               <img
                 src="/media/feed/blindaje.webp "
                 alt=""
-                width="200"
-                height="200"
+                width="100"
+                height="100"
               />
               <h2>RANSOMWARE</h2>
               <a href="{% url 'train' %}" class="btn__text-cover btn__text"
-                >RANSOMWARE</a
+                >Consultar</a
               >
             </div>
             <div class="card__trust box__card-primary">
               <img
-                src="/media/feed/busqueda.webp"
+                src="/media/feed/bote-de-basura (1).webp"
                 alt=""
-                width="200"
-                height="200"
+                width="100"
+                height="100"
               />
-              <h2>DUMPSTERDIVING</h2>
+              <h2>DUMPSTER</h2>
               <a href="{% url 'train' %}" class="btn__text-cover btn__text"
-                >DUMPSTER DIVING</a
+                >Consultar</a
               >
             </div>
           </div>
@@ -159,17 +161,20 @@
         <div class="trust card__primary">
           <div class="text__trust text__card-primary">
             <p>METODOLOGÍA PASO A PASO</p>
-            <h1>Método para hacer frente a un ataque ransomware</h1>
           </div>
           <div class="container__trust container__box-card-primary">
-            <div class="card__trust box__card-primary">
-              <h1>EN CONSTRUCCIÓN...</h1>
+            <div class="cont-paso">
+              <h1>HOLA PANTALLA</h1>
             </div>
-            <div class="card__trust box__card-primary">
-              <video class="video1" width="500" height="400" controls>
-                <source src="video.mp4" type="video/mp4" />
-              </video>
-            </div>
+            <iframe class="video1"
+              width="400"
+              height="300"
+              src="https://www.youtube.com/embed/Ei1y51K8jQk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>

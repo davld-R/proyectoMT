@@ -51,16 +51,17 @@
 .text__cover p {
   font-size: var(--text_paragraph);
   margin-top: 40px;
+  justify-content: center;
   color: var(--color_text-tertiary);
 }
 
 .btn__text {
   margin-top: 20px;
   display: block;
-  width: 200px;
-  padding: 20px 20px;
+  width: 150px;
+  padding: 10px 10px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   background: var(--main_color-primary);
   color: white;
   border-radius: 8px;
@@ -124,17 +125,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
-  padding-bottom: 50px;
+  margin-top: 30px;
+  padding-bottom: 40px;
 }
 
 .box__card-primary {
-  max-width: 300px;
+  max-width: 250px;
   margin-bottom: 60px;
   padding: 50px 50px;
   border: 1px solid #e6e6e6;
   border-radius: 20px;
-  margin: 14px;
+  margin: 10px;
 }
 
 .box__card-primary:hover {
@@ -146,14 +147,22 @@
 .box__card-primary h2 {
   font-size: var(--text_title_card);
   margin-top: 20px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /*ESTILOS METODOLOGIA*/
 
+.cont-paso {
+  background-color: #302b63;
+}
+
 .video1 {
   margin-left: 10%;
+  border-radius: 10px;
+  border: #AB29CA 1px solid;
+  box-shadow: var(--box_shadow-primary);
 }
+
 /*ESTILOS HERRAMIENTA */
 .containerHerramienta {
   background-color: blueviolet;
