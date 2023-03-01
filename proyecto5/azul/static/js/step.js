@@ -4,7 +4,6 @@ const image3 = document.getElementById("imagen3");
 const image4 = document.getElementById("imagen4");
 
 setTimeout(() => {
-  image1.style.height = "";
   image1.style.display = "none";
   image2.style.display = "block";
 }, 3000);
@@ -15,8 +14,11 @@ setTimeout(() => {
 }, 5000);
 
 let mostrarImagenClic = () => {
+  image3.style.display = "relative";
+  image4.style.position = "absolute";
+  image4.style.top = "50px";
+  image4.style.left = "50px";
   image4.style.display = "block";
-  image3.style.display = "none";
   return image4, image3;
 };
  
