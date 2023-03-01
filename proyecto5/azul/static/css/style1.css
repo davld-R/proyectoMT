@@ -152,16 +152,26 @@
 
 /*ESTILOS METODOLOGIA*/
 
-.cont-paso {
-  background-color: #302b63;
+.container__about {
+  padding: 100px 0px;
+  background: var(--background-color);
+  margin-top: 1px;
 }
 
-.video1 {
-  margin-left: 10%;
-  border-radius: 10px;
-  border: #AB29CA 1px solid;
-  box-shadow: var(--box_shadow-primary);
+.about {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.image__about {
+  
+}
+
+.about {}
 
 /*ESTILOS HERRAMIENTA */
 .containerHerramienta {
@@ -169,6 +179,7 @@
   height: 400px;
   margin-bottom: 1px;
   margin: 10px 20px 20px;
+  padding: 100px 0px;
 }
 
 /*FINAL CODIGO ESTILOS feed.html Freyder*/
