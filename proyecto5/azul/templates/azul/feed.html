@@ -21,7 +21,6 @@
   </head>
   <body class="cuerpo">
     <!--! Este Código es la barra de navegación -->
-
     <header class="main-head">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 pb-3">
         {% if request.user.is_authenticated %}
@@ -49,13 +48,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'method' %}">Metodología</a>
+                <a class="nav-link" href="{% url 'method' %}">Documentación</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'train' %}">Capacitación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'step1' %}">Paso a paso M</a>
+                <a class="nav-link" href="{% url 'step1' %}">Metodología</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'encryption8' %}"
@@ -165,7 +164,12 @@
             <a href="#" class="btn__text-about btn__text">Saber Más</a>
           </div>
           <div class="image__about">
-            <img src="/media/feed/metodologia.gif" alt="" width="400px" height="300px"/>
+            <img
+              src="/media/feed/metodologia.gif"
+              alt=""
+              width="400px"
+              height="300px"
+            />
           </div>
         </div>
       </div>
