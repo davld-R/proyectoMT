@@ -77,19 +77,21 @@
       <!--INICIO-->
       <!--Portada de inicio-->
 
-      <div class="container__cover">
-        <div class="cover">
-          <section class="text__cover">
-            <h1>METODOLOGIA para RANSOMWARE</h1>
+      <div class="container__aboutT div__offset">
+        <div class="aboutT">
+          <div class="text__aboutT">
+            <h1>METODOLOGÍA PARA HACER FRENTE A UN ATAQUE RANSOMWARE</h1>
             <p>
               Página web dirigida a empresas con el fin de capacitar y dar
               solucion a infecciónes ransomare
             </p>
-            <a href="#" class="btn__text-cover btn__text">Empezar</a>
-          </section>
-          <section class="image__cover">
-            <img src="/media/feed/ma.png" alt="" />
-          </section>
+            <a href="{% url 'method' %}" class="btn__text-about btn__text"
+              >Ir</a
+            >
+          </div>
+          <div class="image__aboutT">
+            <img src="/media/feed/ma.png" alt="" width="300px" height="200px" />
+          </div>
         </div>
       </div>
 
@@ -159,22 +161,78 @@
       <div class="container__about div__offset">
         <div class="about">
           <div class="text__about">
-            <h1>CONOCE NUESTRA METODOLOGÍA</h1>
-            <p>texto para nuestros usuarios</p>
-            <a href="#" class="btn__text-about btn__text">Saber Más</a>
+            <h1>Conoce El Paso A Paso de Nuestra Metodología</h1>
+            <p>Descubre de forma fácil el como resolver un ataque ransomware</p>
+            <a href="{% url 'step1' %}" class="btn__text-about btn__text">Ir</a>
           </div>
           <div class="image__about">
             <img
+             
               src="/media/feed/metodologia.gif"
+             
               alt=""
-              width="400px"
-              height="300px"
+             
+              width="300px"
+             
+              height="200px"
+            
             />
           </div>
         </div>
       </div>
 
       <!--construccion Herramienta banner-->
+
+      <div class="containerHerramienta">
+        <h1 class="estilo1">Herramientas</h1>
+        <details>
+          <summary>Más información</summary>
+          <h2>Nombre del sujeto</h2>
+          <video class="video1" width="500" height="400" controls>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </details>
+        <dialog id="ms">
+          <p>¡SOY UNA VENTANA</p>
+          <video class="video1" width="500" height="400" controls>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+          <button id="close" onclick="document.getElementById('ms').close()">
+            Ok!
+          </button>
+        </dialog>
+        <dialog id="ms">
+          <h2>¡Vuelve a la sombra!</h2>
+
+          <p>¡NO.. PUEDES... PASAR!</p>
+          <video class="video1" width="500" height="400" controls>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+          <button id="close" onclick="document.getElementById('ms').close()">
+            Ok!
+          </button>
+        </dialog>
+        <button id="show" onclick="document.getElementById('ms').showModal()">
+          Mostrar
+        </button>
+        <button id="show" onclick="document.getElementById('ms').show()">
+          Mostrar
+        </button>
+        <div id="info" hidden>Información</div>
+        <button onClick="toggleHidden('#info')">
+          Mostrar/ocultar información
+        </button>
+        <script>
+          function toggleHidden(selector) {
+            element = document.querySelector(selector);
+            element.hidden = element.hidden ? false : true;
+          }
+        </script>
+
+        <a href="{% url 'encryption8' %}" class="btn__text-cover btn__text"
+          >IR A HERRAMIENTAS</a
+        >
+      </div>
 
       <div class="containerHerramienta">
         <h1 class="estilo1">Herramientas</h1>
