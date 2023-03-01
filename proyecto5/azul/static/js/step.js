@@ -11,25 +11,29 @@ setTimeout(() => {
 setTimeout(() => {
   image2.style.display = "none";
   image3.style.display = "block";
+  cambiaClase();
 }, 5000);
 
 let mostrarImagenClic = () => {
   image3.style.display = "relative";
+
   image4.style.position = "absolute";
   image4.style.top = "50px";
   image4.style.left = "50px";
   image4.style.display = "block";
   return image4, image3;
 };
- 
+
+// Esta funcion sirve para cambiar una etiqueta
+// function cambiaClase() {
+//   image3.classList.add("text-center");
+// }
+
 // function mostrarImagenClic() {
 //   image4.style.display = "block";
 //   image3.style.display = "none";
-  
+
 // }
-
-
-
 
 // function cambiarImagen() {
 //   let imagen = event.target; //obtiene la imagen que se hizo clic
