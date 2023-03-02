@@ -16,10 +16,9 @@ setTimeout(() => {
 
 let mostrarImagenClic = () => {
   image3.style.display = "relative";
-
   image4.style.position = "absolute";
   image4.style.top = "50px";
-  image4.style.left = "50px";
+  image4.style.left = "50%";
   image4.style.display = "block";
   return image4, image3;
 };
