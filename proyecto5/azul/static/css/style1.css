@@ -172,7 +172,7 @@
   box-shadow: var(--box_shadow-primary);
 }
 
-.container__box-card-primary :hover{
+.container__box-card-primary :hover {
   border: 1px solid transparent;
   box-shadow: var(--box_shadow-primary);
   transition: all 300ms;
@@ -204,7 +204,7 @@
 }
 
 .about {
-  max-width: 1200px;
+  max-width: 1100px;
   height: 400px;
   margin: auto;
   padding: 0px 20px;
@@ -222,7 +222,7 @@
 
 .text__about h1 {
   color: var(--color_text-primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .text__about p {
@@ -243,17 +243,91 @@
   width: 100%;
 }
 
-
-
 /*ESTILOS HERRAMIENTA */
+
 .containerHerramienta {
-  background-color: blueviolet;
-  height: 400px;
-  margin-bottom: 1px;
-  margin: 10px 20px 20px;
-  padding: 100px 0px;
+  background-color: azure;
+  height: 500px;
+  margin: 1px 40px;
 }
 
+.tituloh h1 {
+  background-color: white;
+  color: var(--color_text-primary);
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px;
+}
+
+.containerH {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerH .card {
+  width: 150px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px gray;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.containerH .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px yellow;
+}
+
+.containerH .card img {
+  width: 150px;
+  height: 150px;
+}
+
+.containerH .card h4{
+  font-size: 15px;
+  color: var(--color_text-primary);
+  margin: 5px;
+}
+
+.containerH .card a{
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color_text-secundary);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.containerH .card a:hover{
+  color: var(--color_text-primary);
+}
+
+.tituloFooter a{
+  width: 100%;
+  background-color: var(--color_text-primary);
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  transition: 500ms;
+}
+
+.tituloFooter a:hover{
+  color: black;
+  background-color: white;
+  transition: all 700ms;
+}
 /*FINAL CODIGO ESTILOS feed.html Freyder*/
 
 .cuerpo {
