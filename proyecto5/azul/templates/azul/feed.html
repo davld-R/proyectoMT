@@ -87,7 +87,7 @@
               solucion a infecciónes ransomare
             </p>
             <a href="{% url 'method' %}" class="btn__text-about btn__text"
-              >Ir</a
+              >Conoce Nuestra Metodología</a
             >
           </div>
           <div class="image__aboutT">
@@ -187,103 +187,109 @@
           <div class="card">
             <img src="/media/feed/RR.webp" alt="" />
             <h4>Herramienta contra RIUK</h4>
-            <a href="{% url 'encryption8'  %}">Leer Más</a>
+            <a href="{% url 'encryption8'  %}">Leer Más-></a>
           </div>
 
           <div class="card">
             <img src="/media/feed/WR.webp" alt="" />
             <h4>Herramienta Contra WANNACRY</h4>
-            <a href="{% url 'encryption8'  %}">Ir a Herramientas</a>
+            <a href="{% url 'encryption8'  %}">Leer más-></a>
           </div>
 
           <div class="card">
-            <img src="" alt="" />
-            <h4>HERRAMIENTA CONTRA LOCKY</h4>
-            <p>Esta herramienta ayuda a elimiar locky de su sistema</p>
-            <a href="{% url 'encryption8'  %}"></a>
+            <img src="/media/feed/bad.webp" alt="" />
+            <h4>Herramienta Contra BAD RABBIT</h4>
+            <a href="{% url 'encryption8'  %}">Leer más-></a>
           </div>
 
           <div class="card">
-            <img src="" alt="" />
-            <h4>HERRAMIENTA CONTRA LOCKY</h4>
-            <p>Esta herramienta ayuda a elimiar locky de su sistema</p>
-            <a href=""></a>
+            <img src="/media/feed/jig1.webp" alt="" />
+            <h4>Herramienta Contra JIGSAW</h4>
+            <a href="{% url 'encryption8'  %}">Leer más-></a>
           </div>
 
           <div class="card">
-            <img src="" alt="" />
-            <h4>HERRAMIENTA CONTRA LOCKY</h4>
-            <p>Esta herramienta ayuda a elimiar locky de su sistema</p>
-            <a href=""></a>
+            <img src="/media/feed/petya.webp" alt="" />
+            <h4>Herramienta Contra PETYA</h4>
+            <a href="{% url 'encryption8'  %}">Leer más-></a>
           </div>
 
           <div class="card">
-            <img src="" alt="" />
-            <h4>HERRAMIENTA CONTRA LOCKY</h4>
-            <p>Esta herramienta ayuda a elimiar locky de su sistema</p>
-            <a href="https://www.youtube.com/watch?v=iGUMqs1t7sI"></a>
+            <img src="/media/feed/shade.webp" alt="" />
+            <h4>Herramienta Contra SHADE</h4>
+            <a href="{% url 'encryption8'  %}">Leer más-></a>
           </div>
 
-          <div class="tituloFooter">
+          <div class="btnH">
             <a href="{% url 'encryption8' %}" class="btn__text-cover btn__text"
-            >Mas Herramientas --> </a
-          >
+              >Mas Herramientas --></a
+            >
           </div>
-          
         </div>
-       
       </div>
 
-      <div class="">
-        <h1 class="estilo1">Herramientas</h1>
-        <details>
-          <summary>Más información</summary>
-          <h2>Nombre del sujeto</h2>
-          <video class="video1" width="500" height="400" controls>
-            <source src="video.mp4" type="video/mp4" />
-          </video>
-        </details>
-        <dialog id="ms">
-          <p>¡SOY UNA VENTANA</p>
-          <video class="video1" width="500" height="400" controls>
-            <source src="video.mp4" type="video/mp4" />
-          </video>
-          <button id="close" onclick="document.getElementById('ms').close()">
-            Ok!
-          </button>
-        </dialog>
-        <dialog id="ms">
-          <h2>¡Vuelve a la sombra!</h2>
+      <!--SECCION DE VIDEOS O NO SE QUE-->
 
-          <p>¡NO.. PUEDES... PASAR!</p>
-          <video class="video1" width="500" height="400" controls>
-            <source src="video.mp4" type="video/mp4" />
-          </video>
-          <button id="close" onclick="document.getElementById('ms').close()">
-            Ok!
-          </button>
-        </dialog>
-        <button id="show" onclick="document.getElementById('ms').showModal()">
-          Mostrar
-        </button>
-        <button id="show" onclick="document.getElementById('ms').show()">
-          Mostrar
-        </button>
-        <div id="info" hidden>Información</div>
-        <button onClick="toggleHidden('#info')">
-          Mostrar/ocultar información
-        </button>
-        <script>
-          function toggleHidden(selector) {
-            element = document.querySelector(selector);
-            element.hidden = element.hidden ? false : true;
-          }
-        </script>
+      <div class="info">
+        <div class="tituloI">
+          <h1>Información multimedia</h1>
+        </div>
 
-        <a href="{% url 'encryption8' %}" class="btn__text-cover btn__text"
-          >IR A HERRAMIENTAS</a
-        >
+        <div class="video1">
+          <dialog id="ms">
+            <video class="prueba1" width="100%" height="500px" controls>
+              <source src="video.mp4" type="video/mp4" />
+            </video>
+            <button id="close" onclick="document.getElementById('ms').close()">
+              Cerrar!
+            </button>
+          </dialog>
+          <p>TEXTO PARA MOSTRAR DESCRIPCION DEL VIDEO</p>
+          <button id="show" onclick="document.getElementById('ms').showModal()">
+            Mostrar
+          </button>
+        </div>
+
+        <div class="video2">
+          <dialog id="ms">
+            <video class="video1" width="700" height="500" controls>
+              <source src="video.mp4" type="video/mp4" />
+            </video>
+            <button id="close" onclick="document.getElementById('ms').close()">
+              Cerrar!
+            </button>
+          </dialog>
+          <p>TEXTO PARA MOSTRAR DESCRIPCION DEL VIDEO</p>
+          <button id="show" onclick="document.getElementById('ms').showModal()">
+            Mostrar
+          </button>
+        </div>
+
+        <div class="video3">
+          <dialog id="ms">
+            <video class="video1" width="700" height="500" controls>
+              <source src="video.mp4" type="video/mp4" />
+            </video>
+            <button id="close" onclick="document.getElementById('ms').close()">
+              Cerrar!
+            </button>
+          </dialog>
+          <p>TEXTO PARA MOSTRAR DESCRIPCION DEL VIDEO</p>
+          <button id="show" onclick="document.getElementById('ms').showModal()">
+            Mostrar
+          </button>
+        </div>
       </div>
+
+      <!--SECCION FOOTER-->
+
+      <footer class="footer">
+        <section>
+          <h1>AQUI VA EL FOOTER</h1>
+          <a href="#aboutT">volver al inicio</a>
+          <a href="">redes sociales</a>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
