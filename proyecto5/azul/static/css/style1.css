@@ -37,8 +37,8 @@
   align-items: center;
   justify-content: center;
   background: var(background-color);
-  box-shadow: var(--box_shadow-primary);
-  border: 1px;
+  box-shadow: 5px 10px 10px gray;
+  border: 5px;
   border-radius: 10px;
 }
 
@@ -47,20 +47,36 @@
   height: 300px;
   margin-right: 5%;
   margin-left: 5%;
+
 }
 
 .text__aboutT h1 {
   color: var(--color_text-primary);
+  padding: 10px;
   font-weight: 700;
-  box-shadow: var(--box_shadow-primary);
-  border: 1px solid transparent;
+  box-shadow: 5px 10px 10px gray;
+  border: 5px solid transparent;
   border-radius: 10px;
 }
 
 .text__aboutT p {
   font-size: var(--text_paragraph);
-  margin-top: 40px;
+  margin-top: 50px;
   color: var(--color_text-tertiary);
+}
+
+.text__aboutT a {
+  width: 100%;
+  background-color: var(--color_text-primary);
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  transition: 500ms;
 }
 
 .image__aboutT {
@@ -128,22 +144,24 @@
 /*ESTILOS CAPACITACION*/
 
 .container__card-primary {
-  padding-top: 100px;
+  padding-top: 50px;
   margin: auto;
   text-align: center;
-  padding: 0px 40px;
+  padding: 1px 40px;
   margin-bottom: 1px;
+  border-radius: 2px;
 }
 
 .card__primary {
-  max-width: 1500px;
   background-color: white;
+  max-width: 1500px;
+  height: 500px;
 }
 
 .text__card-primary {
   max-width: 800px;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 4px;
 }
 
 .text__card-primary p {
@@ -167,20 +185,19 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: var(--box_shadow-primary);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 5px 10px 10px gray;
 }
 
-.container__box-card-primary :hover{
+.container__box-card-primary :hover {
   border: 1px solid transparent;
-  box-shadow: var(--box_shadow-primary);
-  transition: all 300ms;
+  box-shadow: 5px 10px 10px gray;
+  transition: all 500ms;
 }
 
 .box__card-primary {
   max-width: 250px;
-  margin-bottom: 60px;
   padding: 20px 50px;
   border: 1px solid #e6e6e6;
   border-radius: 20px;
@@ -204,14 +221,14 @@
 }
 
 .about {
-  max-width: 1200px;
+  max-width: 1100px;
   height: 400px;
   margin: auto;
-  padding: 0px 20px;
+  padding: 0px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--box_shadow-primary);
+  box-shadow: 5px 10px 10px gray;
 }
 
 .text__about {
@@ -222,13 +239,27 @@
 
 .text__about h1 {
   color: var(--color_text-primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .text__about p {
   font-size: var(--text_paragraph);
   margin-top: 40px;
   color: var(--color_text-tertiary);
+}
+
+.text__about a {
+  width: 100%;
+  background-color: var(--color_text-primary);
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  transition: 500ms;
 }
 
 .image__about {
@@ -243,16 +274,206 @@
   width: 100%;
 }
 
-
-
 /*ESTILOS HERRAMIENTA */
+
 .containerHerramienta {
-  background-color: blueviolet;
-  height: 400px;
-  margin-bottom: 1px;
-  margin: 10px 20px 20px;
-  padding: 100px 0px;
+  background-color: rgb(246, 249, 249);
+  height: 500px;
+  margin: 1px 40px;
 }
+
+.tituloh h1 {
+  background-color: white;
+  color: var(--color_text-primary);
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+}
+
+.containerH {
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 30px;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 5px 10px 10px gray;
+}
+
+.containerH .card {
+  width: 150px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px gray;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.containerH .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px var(--color_text-primary);
+}
+
+.containerH .card img {
+  width: 150px;
+  height: 150px;
+}
+
+.containerH .card h4 {
+  font-size: 15px;
+  color: var(--color_text-primary);
+  margin: 5px;
+}
+
+.containerH .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color_text-primary);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.containerH .card a:hover {
+  color: var(--background-color);
+}
+
+.btnH a {
+  width: 100%;
+  background-color: var(--color_text-primary);
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  transition: 500ms;
+}
+
+.btnH a:hover {
+  color: black;
+  background-color: white;
+  transition: all 700ms;
+}
+
+.footer section {
+  background-color: aqua;
+  height: 250px;
+}
+
+/*SECCION DE VIDEOS O NO SE QUE*/
+
+.info {
+  background-color: aquamarine;
+  height: 600px;
+  padding: 0 20px;
+  margin: 0 40px;
+}
+
+.tituloI h1 {
+  background-color: white;
+  color: var(--color_text-primary);
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+}
+
+#ms {
+  background-color: black;
+  width: 650px;
+  height: 590px;
+  border-radius: 20px;
+}
+
+#ms button {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 125px;
+  display: block;
+  margin: 2px 2px;
+  margin-left: 45%;
+  background-color: var(--color_text-primary);
+  color: white;
+}
+
+#show {
+  background-color: var(--color_text-primary);
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  transition: 500ms;
+}
+
+#vidtext1 {
+  display: block; 
+}
+
+#show:hover {
+  color: black;
+  background-color: white;
+  transition: all 700ms;
+}
+
+/*VENTANAS DE VIDEOS*/
+
+.video1 {
+  background-color: #F4D4FB;
+}
+
+.video1 p{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  padding: 50px;
+  background-color: bisque;
+  display: inline-block;
+  width: 80%;
+}
+
+.video2 {
+  background-color: #485663;
+}
+
+.video2 p{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  padding: 50px;
+  background-color: bisque;
+  display: inline-block;
+  width: 80%;
+}
+
+.video3 {
+  background-color: #307cc3;
+}
+
+.video3 p{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  padding: 50px;
+  background-color: bisque;
+  display: inline-block;
+  width: 80%;
+}
+
 
 /*FINAL CODIGO ESTILOS feed.html Freyder*/
 
