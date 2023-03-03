@@ -295,9 +295,9 @@
 .containerH {
   border-radius: 5px;
   background-color: white;
-  margin: 0 30px;
+  margin: 0 40px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1150px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -364,15 +364,12 @@
   transition: all 700ms;
 }
 
-.footer section {
-  background-color: aqua;
-  height: 250px;
-}
+
 
 /*SECCION DE VIDEOS O NO SE QUE*/
 
 .info {
-  background-color: aquamarine;
+  background-color: white;
   height: 600px;
   padding: 0 20px;
   margin: 0 40px;
@@ -399,10 +396,10 @@
   font-size: 20px;
   font-weight: 500;
   border-radius: 10px;
-  width: 125px;
+  width: 155px;
   display: block;
   margin: 2px 2px;
-  margin-left: 45%;
+  margin-left: 35%;
   background-color: var(--color_text-primary);
   color: white;
 }
@@ -414,6 +411,7 @@
   font-weight: 500;
   text-align: center;
   padding: 25px;
+  margin: 0 auto;
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
@@ -421,7 +419,7 @@
 }
 
 #vidtext1 {
-  display: block; 
+  display: block;
 }
 
 #show:hover {
@@ -433,45 +431,85 @@
 /*VENTANAS DE VIDEOS*/
 
 .video1 {
-  background-color: #F4D4FB;
+  background-color: white;
 }
 
-.video1 p{
+.video1 p {
+  font-size: 25px;
   position: relative;
-  margin-top: 20px;
-  text-align: center;
-  padding: 50px;
-  background-color: bisque;
+  margin-right: 40px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
   display: inline-block;
   width: 80%;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  border-radius: 10px;
 }
 
 .video2 {
-  background-color: #485663;
+  background-color: white;
 }
 
-.video2 p{
+.video2 p {
+  font-size: 25px;
   position: relative;
-  margin-top: 20px;
-  text-align: center;
-  padding: 50px;
-  background-color: bisque;
+  margin-right: 40px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
   display: inline-block;
   width: 80%;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  border-radius: 10px;
 }
 
 .video3 {
-  background-color: #307cc3;
+  background-color: white;
 }
 
-.video3 p{
+.video3 p {
+  font-size: 25px;
   position: relative;
-  margin-top: 20px;
-  text-align: center;
-  padding: 50px;
-  background-color: bisque;
+  margin-right: 40px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
   display: inline-block;
   width: 80%;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+  border-radius: 10px;
+}
+
+/*ESTILOS DEL FOOTER*/
+
+footer {
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+}
+
+section a {
+  float: right;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 50px 50px;
+}
+
+footer a:hover {
+  font-size: 20px;
+  color: var(--color_text-primary);
+  transition: 400ms;
+  cursor: pointer;
+}
+
+footer p{
+  padding: 60px;
+  text-align: center;
 }
 
 
