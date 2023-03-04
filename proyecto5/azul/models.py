@@ -26,7 +26,7 @@ class Case(models.Model):
         User, on_delete=models.CASCADE, related_name='cases', verbose_name='Usuarios')
     name = models.CharField(max_length=100, blank=False,
                             verbose_name='Empresa')
-    nitempresa = models.IntegerField(max_length=100, verbose_name='Nit Empresa')
+    nitempresa = models.CharField(max_length=100, verbose_name='Nit Empresa')
     rams = models.CharField(max_length=100, blank=True,
                             verbose_name='N. RANSOMWARE')
     detail = models.CharField(max_length=500, verbose_name='Detalle del caso')
