@@ -2,54 +2,40 @@ const image1 = document.getElementById("imagen1");
 const image2 = document.getElementById("imagen2");
 const image3 = document.getElementById("imagen3");
 const image4 = document.getElementById("imagen4");
-let vandera = true;
-
-function desvanecer() {
-  setTimeout(() => {
-    image4.style.display = "none";
-  }, 3000);
-}
-
-function n1() {
-  image3.style.display = "relative";
-  image4.style.position = "absolute";
-  image4.style.top = "100px";
-  image4.style.left = "37%";
-  image4.style.display = "block";
-}
-
-function n2() {
-  image3.style.display = "relative";
-  image4.style.position = "absolute";
-  image4.style.top = "100px";
-  image4.style.left = "37%";
-  image4.style.display = "none";
-}
+let isActive = true;
 
 setTimeout(() => {
   image1.style.display = "none";
   image2.style.display = "block";
-}, 3000);
+}, 1000);
 // 3000
 
 setTimeout(() => {
   image2.style.display = "none";
   image3.style.display = "block";
   cambiaClase();
-}, 5000);
+}, 1000);
 // 5000
 
-let mostrarImagenClic = () => {
-  if (vandera == true){
-    n1();
-    vandera = false;
-  } else if (vandera == false){
-    n2();
-    vandera = true;
+const showImage = () => {
+  image3.style.display = "relative";
+  image4.style.position = "absolute";
+  image4.style.top = "100px";
+  image4.style.left = "37%";
+  if (isActive == true) {
+    image4.style.display = "block";
+    isActive = false;
+  } else if (isActive == false) {
+    image4.style.display = "none";
+    isActive = true;
   }
-  
 };
 
+function desvanecer() {
+  setTimeout(() => {
+    image4.style.display = "none";
+  }, 3000);
+}
 
 // let mostrarImagenClic = () => {
 //   image3.style.display = "relative";
