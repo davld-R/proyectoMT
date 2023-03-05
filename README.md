@@ -1,11 +1,9 @@
-# proyectoMT
+# This is an installation guide for the use of this project.
 
-## This is an installation guide for the use of this project.
+## Guide to this project for Linux
 
-### Guide to this project for Linux
-
-<p>Install python:</p>
-  sudo apt install -y python3-pip
+** Install python:
+*  sudo apt install -y python3-pip
 
 Install Django:
   pip3 install django
@@ -54,7 +52,7 @@ To enter the database with the user created:
   psql proyecto david;
 
 
-### Guide to this project for Windows
+## Guide to this project for Windows
 
 Download python:
   https://www.python.org/downloads/
