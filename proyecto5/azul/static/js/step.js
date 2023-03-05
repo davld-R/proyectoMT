@@ -1,34 +1,39 @@
+const image0 = document.getElementById("imagen0");
 const image1 = document.getElementById("imagen1");
 const image2 = document.getElementById("imagen2");
 const image3 = document.getElementById("imagen3");
 const image4 = document.getElementById("imagen4");
 let isActive = true;
 
-setTimeout(() => {
-  image1.style.display = "none";
-  image2.style.display = "block";
-}, 1000);
-// 3000
+const power = () => {
+  image0.style.display = "none";
+  image1.style.display = "block";
+  setTimeout(() => {
+    image1.style.display = "none";
+    image2.style.display = "block";
+  }, 3000);
+  // 3000
 
-setTimeout(() => {
-  image2.style.display = "none";
-  image3.style.display = "block";
-  cambiaClase();
-}, 1000);
-// 5000
+  setTimeout(() => {
+    image2.style.display = "none";
+    image3.style.display = "block";
+    cambiaClase();
+  }, 5000);
+  // 5000
 
-const showImage = () => {
-  image3.style.display = "relative";
-  image4.style.position = "absolute";
-  image4.style.top = "100px";
-  image4.style.left = "37%";
-  if (isActive == true) {
-    image4.style.display = "block";
-    isActive = false;
-  } else if (isActive == false) {
-    image4.style.display = "none";
-    isActive = true;
-  }
+  const showImage = () => {
+    image3.style.display = "relative";
+    image4.style.position = "absolute";
+    image4.style.top = "100px";
+    image4.style.left = "37%";
+    if (isActive == true) {
+      image4.style.display = "block";
+      isActive = false;
+    } else if (isActive == false) {
+      image4.style.display = "none";
+      isActive = true;
+    }
+  };
 };
 
 function desvanecer() {
