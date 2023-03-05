@@ -20,10 +20,11 @@
 **Download PostgreSQL from the following link:**<br> 
 `https://www.postgresql.org/download/linux/ubuntu/`
 
-- ```sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' ```
-- ```wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - ```
-- ```sudo apt-get update``` 
-- ```sudo apt-get -y install postgresql ```
+**steps to be taken**<br>
+- ```sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' ```<br>
+- ```wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - ```<br>
+- ```sudo apt-get update``` <br>
+- ```sudo apt-get -y install postgresql ```<br>
 
 User creation in postgresql:
 https://medium.com/crehana/creaci%C3%B3n-de-usuario-en-postgresql-10-4-y-ubuntu-18-04-9e80fe077f7e
