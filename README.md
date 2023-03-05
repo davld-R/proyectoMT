@@ -2,20 +2,20 @@
 
 ## Guide to this project for Linux
 
-'Install python:'
+Install python:<br>
 ``` ~sudo apt install -y python3-pip ```
 
 Install Django:
-  pip3 install django
+``` ~pip3 install django ```
 
 Install PostgreSQL with Python:
-  pip install psycopg2-binary
+``` ~pip install psycopg2-binary ```
 
 Install Interface Admin Django:
-  pip3 install django-interface-admin
+``` ~pip3 install django-interface-admin ```
 
 Install Pillow:
-  pip3 install pillow  
+``` ~pip3 install pillow ``` 
 
 Download PostgreSQL from the following link: 
 https://www.postgresql.org/download/linux/ubuntu/
