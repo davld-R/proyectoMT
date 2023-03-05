@@ -3,7 +3,8 @@
 ## Guide to this project for Linux
 
 **Install python:**<br>
-``` ~sudo apt install -y python3-pip ``` <button id="copy-button">Copiar</button>
+``` ~sudo apt install -y python3-pip ``` <br>
+<button id="copy-button">Copiar</button>
 
 **Install Django:**<br>
 ``` ~pip3 install django ```
