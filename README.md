@@ -2,8 +2,8 @@
 
 ## Guide to this project for Linux
 
-** Install python:
-*  sudo apt install -y python3-pip
+'Install python:'
+``` ~sudo apt install -y python3-pip ```
 
 Install Django:
   pip3 install django
