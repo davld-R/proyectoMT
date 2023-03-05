@@ -1,8 +1,8 @@
 # proyectoMT
 
-# This is an installation guide for the use of this project.
+## This is an installation guide for the use of this project.
 
-<h1 style="font-size: 32px;" style="color: red;">Guide to this project for Linux</h1>
+### Guide to this project for Linux
 
 <p>Install python:</p>
   sudo apt install -y python3-pip
@@ -54,7 +54,7 @@ To enter the database with the user created:
   psql proyecto david;
 
 
-<h1 style="font-size: 32px;" style="color: blue;">Guide to this project for Windows</h1>
+### Guide to this project for Windows
 
 Download python:
   https://www.python.org/downloads/
