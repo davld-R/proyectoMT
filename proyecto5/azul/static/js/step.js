@@ -20,20 +20,20 @@ const power = () => {
     cambiaClase();
   }, 5000);
   // 5000
+};
 
-  const showImage = () => {
-    image3.style.display = "relative";
-    image4.style.position = "absolute";
-    image4.style.top = "100px";
-    image4.style.left = "37%";
-    if (isActive == true) {
-      image4.style.display = "block";
-      isActive = false;
-    } else if (isActive == false) {
-      image4.style.display = "none";
-      isActive = true;
-    }
-  };
+const showImage = () => {
+  image3.style.display = "relative";
+  image4.style.position = "absolute";
+  image4.style.top = "100px";
+  image4.style.left = "37%";
+  if (isActive == true) {
+    image4.style.display = "block";
+    isActive = false;
+  } else if (isActive == false) {
+    image4.style.display = "none";
+    isActive = true;
+  }
 };
 
 function desvanecer() {
