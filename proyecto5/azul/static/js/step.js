@@ -13,21 +13,21 @@ const power = () => {
   setTimeout(() => {
     image1.style.display = "none";
     image2.style.display = "block";
-  }, 1000);
+  }, 3000);
   // 3000
 
   setTimeout(() => {
     image2.style.display = "none";
     image3.style.display = "block";
     cambiaClase();
-  }, 1000);
+  }, 5000);
   // 5000
 };
 
 const showImage = () => {
   image3.style.display = "relative";
   image4.style.position = "absolute";
-  image4.style.top = "200px";
+  image4.style.top = "35%";
   image4.style.left = "37%";
   if (isActive == true) {
     image4.style.display = "block";
@@ -41,8 +41,8 @@ const showImage = () => {
 const showImage2 = () => {
   image3.style.display = "relative";
   image5.style.position = "absolute";
-  image5.style.top = "46%";
-  image5.style.left = "15.3%";
+  image5.style.top = "35%";
+  image5.style.left = "37%";
   if (isActive2 == true) {
     image5.style.display = "block";
     isActive2 = false;
@@ -50,6 +50,39 @@ const showImage2 = () => {
     image5.style.display = "none";
     isActive2 = true;
   }
+};
+
+const ejecutar = () => {
+  alert("Hola desde ejecutar");
+};
+
+const cancelar = () => {
+  alert("Hola desde cancelar");
+};
+
+const apagar = () => {
+  image3.style.display = "none";
+  image5.style.display = "none";
+  image0.style.display = "block"
+};
+
+const reset = () => {
+  image3.style.display = "none";
+  image5.style.display = "none";
+  image0.style.display = "none";
+  image1.style.display = "block";
+  setTimeout(() => {
+    image1.style.display = "none";
+    image2.style.display = "block";
+  }, 3000);
+  // 3000
+
+  setTimeout(() => {
+    image2.style.display = "none";
+    image3.style.display = "block";
+    cambiaClase();
+  }, 5000);
+  // 5000
 };
 
 function desvanecer() {

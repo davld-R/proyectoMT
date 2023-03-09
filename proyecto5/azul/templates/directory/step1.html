@@ -81,7 +81,7 @@
     <!--
       !:  Programación del Body de la parte iterativa
     -->
-    <div class="container">
+    <div class="container mb-5">
       <h1>Texto cualquiera para instruir</h1>
       <h1>en la metodología</h1>
       <div class="d-flex justify-content-center align-items-center">
@@ -131,15 +131,22 @@
           class="img-fluid img5"
           id="imagen4"
           onclick=""
+          usemap="#miMapa2"
         />
-        <img src="/media/img/7.png" class="img-fluid img6" id="imagen5" />
-        <!-- <map name="miMapa2">
-          <area
-          shape="rect"
-          coords="318,171,391,207"
-          onclick="showImage2()"
-          />
-        </map> -->
+        <map name="miMapa2">
+          <area shape="rect" coords="316,170,393,207" onclick="ejecutar()" />
+          <area shape="rect" coords="407,172,485,208" onclick="cancelar()" />
+        </map>
+        <img
+          src="/media/img/7.png"
+          class="img-fluid img6"
+          id="imagen5"
+          usemap="#miMapa3"
+        />
+        <map name="miMapa3">
+          <area shape="rect" coords="27,95,242,287" onclick="apagar()" />
+          <area shape="rect" coords="291,115,471,262" onclick="reset()" />
+        </map>
 
         <!-- <video controls autoplay id="myVideo" class="img6" onclick="toggleVideo()">
           <source src="/media/img/4.mp4" type="video/mp4" />
