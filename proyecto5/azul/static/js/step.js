@@ -57,7 +57,7 @@ const ejecutar = () => {
 };
 
 const cancelar = () => {
-  alert("Hola desde cancelar");
+  image4.style.display = "none";
 };
 
 const apagar = () => {
@@ -70,19 +70,7 @@ const reset = () => {
   image3.style.display = "none";
   image5.style.display = "none";
   image0.style.display = "none";
-  image1.style.display = "block";
-  setTimeout(() => {
-    image1.style.display = "none";
-    image2.style.display = "block";
-  }, 3000);
-  // 3000
-
-  setTimeout(() => {
-    image2.style.display = "none";
-    image3.style.display = "block";
-    cambiaClase();
-  }, 5000);
-  // 5000
+  power();
 };
 
 function desvanecer() {
