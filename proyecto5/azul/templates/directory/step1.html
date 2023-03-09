@@ -48,10 +48,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="{% url 'feed' %}"
+                <a class="nav-link" aria-current="page" href="{% url 'feed' %}"
                   >Inicio
                 </a>
               </li>
@@ -62,7 +59,9 @@
                 <a class="nav-link" href="{% url 'train' %}">Capacitación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="{% url 'step1' %}">Metodología</a>
+                <a class="nav-link active" href="{% url 'step1' %}"
+                  >Metodología</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'encryption8' %}"
@@ -84,6 +83,7 @@
     -->
     <div class="container">
       <h1>Texto cualquiera para instruir</h1>
+      <h1>en la metodología</h1>
       <div class="d-flex justify-content-center align-items-center">
         <img
           src="/media/img/0.png"
@@ -132,11 +132,7 @@
           id="imagen4"
           onclick=""
         />
-        <img
-          src="/media/img/7.png"
-          class="img-fluid img6"
-          id="imagen5"
-        />
+        <img src="/media/img/7.png" class="img-fluid img6" id="imagen5" />
         <!-- <map name="miMapa2">
           <area
           shape="rect"
@@ -158,7 +154,7 @@
     !-- En esta parte va el paso a paso pero documentado 
     ***
     -->
-
+    <br />
     <div class="titulo__pasos">
       <h1>Metodologia Paso a Paso</h1>
     </div>
@@ -178,7 +174,10 @@
               Cerrar!
             </button>
           </dialog>
-          <button id="mostrar__pasos" onclick="document.getElementById('ms').showModal()">
+          <button
+            id="mostrar__pasos"
+            onclick="document.getElementById('ms').showModal()"
+          >
             Mostrar
           </button>
         </div>
