@@ -3,7 +3,9 @@ const image1 = document.getElementById("imagen1");
 const image2 = document.getElementById("imagen2");
 const image3 = document.getElementById("imagen3");
 const image4 = document.getElementById("imagen4");
+const image5 = document.getElementById("imagen5");
 let isActive = true;
+let isActive2 = true;
 
 const power = () => {
   image0.style.display = "none";
@@ -11,14 +13,14 @@ const power = () => {
   setTimeout(() => {
     image1.style.display = "none";
     image2.style.display = "block";
-  }, 3000);
+  }, 1000);
   // 3000
 
   setTimeout(() => {
     image2.style.display = "none";
     image3.style.display = "block";
     cambiaClase();
-  }, 5000);
+  }, 1000);
   // 5000
 };
 
@@ -33,6 +35,20 @@ const showImage = () => {
   } else if (isActive == false) {
     image4.style.display = "none";
     isActive = true;
+  }
+};
+
+const showImage2 = () => {
+  image3.style.display = "relative";
+  image5.style.position = "absolute";
+  image5.style.top = "46%";
+  image5.style.left = "15.3%";
+  if (isActive2 == true) {
+    image5.style.display = "block";
+    isActive2 = false;
+  } else if (isActive2 == false) {
+    image5.style.display = "none";
+    isActive2 = true;
   }
 };
 

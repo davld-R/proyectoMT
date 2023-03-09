@@ -83,13 +83,18 @@
       !:  Programación del Body de la parte iterativa
     -->
     <div class="container">
+      <h1>Texto cualquiera para instruir</h1>
       <div class="d-flex justify-content-center align-items-center">
         <img
           src="/media/img/0.png"
           class="img-fluid"
           id="imagen0"
-          onclick="power()"
+          usemap="#miMapa0"
+          onclick=""
         />
+        <map name="miMapa0">
+          <area shape="rect" coords="508,241,785,476" onclick="power()" />
+        </map>
         <img
           src="/media/img/1.png"
           alt=""
@@ -117,6 +122,7 @@
         />
         <map name="miMapa">
           <area shape="rect" coords="1117,341,1253,479" onclick="showImage()" />
+          <area shape="rect" coords="65,720,0,661" onclick="showImage2()" />
         </map>
         <img
           src="/media/img/6.png"
@@ -125,6 +131,11 @@
           class="img-fluid img5"
           id="imagen4"
           onclick=""
+        />
+        <img
+          src="/media/img/7.png"
+          class="img-fluid img6"
+          id="imagen5"
         />
         <!-- <map name="miMapa2">
           <area
