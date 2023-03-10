@@ -4,6 +4,7 @@ const image2 = document.getElementById("imagen2");
 const image3 = document.getElementById("imagen3");
 const image4 = document.getElementById("imagen4");
 const image5 = document.getElementById("imagen5");
+const image6 = document.getElementById("imagen6");
 let isActive = true;
 let isActive2 = true;
 
@@ -53,7 +54,19 @@ const showImage2 = () => {
 };
 
 const ejecutar = () => {
-  alert("Hola desde ejecutar");
+  image3.style.display = "relative";
+  image4.style.display = "none";
+  image6.src = "/media/img/6.gif";
+  image6.style.display = "block";
+  image6.style.position = "absolute";
+  image6.style.top = "25%";
+  image6.style.left = "20%";
+  function desvanecer() {
+    setTimeout(() => {
+      image6.style.display = "none";
+    }, 6000);
+  }
+  desvanecer();
 };
 
 const cancelar = () => {
