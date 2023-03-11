@@ -5,6 +5,8 @@ const image3 = document.getElementById("imagen3");
 const image4 = document.getElementById("imagen4");
 const image5 = document.getElementById("imagen5");
 const image6 = document.getElementById("imagen6");
+const image7 = document.getElementById("imagen7");
+const image8 = document.getElementById("imagen8");
 let isActive = true;
 let isActive2 = true;
 
@@ -61,12 +63,29 @@ const ejecutar = () => {
   image6.style.position = "absolute";
   image6.style.top = "25%";
   image6.style.left = "20%";
+
   function desvanecer() {
     setTimeout(() => {
       image6.style.display = "none";
+      image3.style.display = "none";
+      image7.style.display = "block";
     }, 6000);
+    // 6000
   }
+
+  function desvanecer2() {
+    setTimeout(() => {
+      image7.style.display = "relative";
+      image8.style.display = "block";
+      image8.style.position = "absolute";
+      image8.style.top = "22%";
+      image8.style.left = "30%";
+    }, 7000);
+    // 7000
+  }
+  
   desvanecer();
+  desvanecer2();
 };
 
 const cancelar = () => {
@@ -76,7 +95,7 @@ const cancelar = () => {
 const apagar = () => {
   image3.style.display = "none";
   image5.style.display = "none";
-  image0.style.display = "block"
+  image0.style.display = "block";
 };
 
 const reset = () => {
@@ -86,11 +105,7 @@ const reset = () => {
   power();
 };
 
-function desvanecer() {
-  setTimeout(() => {
-    image4.style.display = "none";
-  }, 3000);
-}
+
 
 // let mostrarImagenClic = () => {
 //   image3.style.display = "relative";
