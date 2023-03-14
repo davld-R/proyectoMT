@@ -16,14 +16,14 @@ const power = () => {
   setTimeout(() => {
     image1.style.display = "none";
     image2.style.display = "block";
-  }, 1000);
+  }, 3000);
   // 3000
 
   setTimeout(() => {
     image2.style.display = "none";
     image3.style.display = "block";
     cambiaClase();
-  }, 1000);
+  }, 5000);
   // 5000
 };
 
