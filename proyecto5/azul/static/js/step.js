@@ -16,22 +16,20 @@ const power = () => {
   setTimeout(() => {
     image1.style.display = "none";
     image2.style.display = "block";
-  }, 3000);
+  }, 1000);
   // 3000
 
   setTimeout(() => {
     image2.style.display = "none";
     image3.style.display = "block";
     cambiaClase();
-  }, 5000);
+  }, 1000);
   // 5000
 };
 
 const showImage = () => {
-  image3.style.display = "relative";
-  image4.style.position = "absolute";
-  image4.style.top = "35%";
-  image4.style.left = "37%";
+  //image3.style.display = "relative";
+ // image4.style.position = "absolute";
   if (isActive == true) {
     image4.style.display = "block";
     isActive = false;
@@ -42,10 +40,8 @@ const showImage = () => {
 };
 
 const showImage2 = () => {
-  image3.style.display = "relative";
-  image5.style.position = "absolute";
-  image5.style.top = "35%";
-  image5.style.left = "37%";
+  //image3.style.display = "relative";
+  //image5.style.position = "absolute";
   if (isActive2 == true) {
     image5.style.display = "block";
     isActive2 = false;
@@ -56,13 +52,13 @@ const showImage2 = () => {
 };
 
 const ejecutar = () => {
-  image3.style.display = "relative";
+  //image3.style.display = "relative";
   image4.style.display = "none";
   image6.src = "/media/img/6.gif";
   image6.style.display = "block";
-  image6.style.position = "absolute";
-  image6.style.top = "25%";
-  image6.style.left = "20%";
+  //image6.style.position = "absolute";
+  // image6.style.top = "25%";
+  // image6.style.left = "20%";
 
   function desvanecer() {
     setTimeout(() => {
@@ -75,11 +71,11 @@ const ejecutar = () => {
 
   function desvanecer2() {
     setTimeout(() => {
-      image7.style.display = "relative";
+      //image7.style.display = "relative";
       image8.style.display = "block";
-      image8.style.position = "absolute";
-      image8.style.top = "22%";
-      image8.style.left = "30%";
+      //image8.style.position = "absolute";
+      //image8.style.top = "22%";
+      //image8.style.left = "30%";
     }, 7000);
     // 7000
   }

@@ -7,14 +7,44 @@
   color: white;
 }
 .img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7,
-.img8 {
+.img2 {
   display: none;
+}
+.img3{
+  display: none;
+  position: relative;
+}
+.img4{
+  position: absolute;
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.img5{
+  position: absolute;
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.img6{
+  position: absolute;
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.img7{
+  display: none;
+  position: relative;
+}
+.img8{
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 53%;
+  left: 50%;
 }
 .page {
   color: #5f2e5a;
