@@ -295,7 +295,7 @@
 .containerH {
   border-radius: 5px;
   background-color: white;
-  margin: 0 40px;
+  margin: 0 150px;
   width: 100%;
   max-width: 1150px;
   height: 400px;
@@ -583,7 +583,7 @@ footer p {
 #video__pasos {
   background-color: black;
   width: 760px;
-  height: 686px;
+  height: 690px;
   border-radius: 20px;
 }
 
