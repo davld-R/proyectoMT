@@ -295,9 +295,9 @@
 .containerH {
   border-radius: 5px;
   background-color: white;
-  margin: 0 150px;
+  margin: 0 70px;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1600px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
