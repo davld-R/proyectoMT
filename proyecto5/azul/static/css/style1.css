@@ -295,8 +295,14 @@
 .containerH {
   border-radius: 5px;
   background-color: white;
+<<<<<<< HEAD
   margin: 0 50px;
   max-width: 1640px;
+=======
+  margin: 0 150px;
+  width: 100%;
+  max-width: 1150px;
+>>>>>>> 99e286da9c05c750296fff83851664be29b590bb
   height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -582,7 +588,11 @@ footer p {
 #video__pasos {
   background-color: black;
   width: 760px;
+<<<<<<< HEAD
   height: 685px;
+=======
+  height: 690px;
+>>>>>>> 99e286da9c05c750296fff83851664be29b590bb
   border-radius: 20px;
 }
 
