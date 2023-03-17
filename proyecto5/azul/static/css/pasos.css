@@ -1,0 +1,108 @@
+/*CSS PARA PASOS METODOLOGIA*/
+
+.container__pasos {
+    height: 100%;
+    background-color: bisque;
+    margin: 100px;
+}
+
+.pasos__card {
+    height: 100%;
+    margin: 50px;
+    background-color: aliceblue;
+}
+
+#div__paso1 {
+    height: 500px;
+    width: 100%;
+    background-color: red;
+    display: none;
+}
+
+#div__paso2 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+    display: none;
+}
+
+#div__paso3 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(39, 101, 201);
+    display: none;
+}
+
+#div__paso4 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(217, 45, 165);
+    display: none;
+}
+
+#div__paso5 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+    display: none;
+}
+
+#div__paso6 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: green;
+    display: none;
+}
+
+#div__paso7 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: darkkhaki;
+    display: none;
+}
+
+#div__paso8 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: blueviolet;
+    display: none;
+}
+
+#div__paso9 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: greenyellow;
+    display: none;
+}
+
+#div__paso10 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(19, 143, 180);
+    display: none;
+}
+
+#div__paso11 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(219, 164, 37);
+    display: none;
+}
+
+#div__paso12 {
+    font-size: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(31, 59, 141);
+    display: none;
+}
