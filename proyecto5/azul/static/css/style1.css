@@ -154,7 +154,7 @@
 
 .card__primary {
   background-color: white;
-  max-width: 1500px;
+  max-width: 2000px;
   height: 500px;
 }
 
@@ -295,9 +295,8 @@
 .containerH {
   border-radius: 5px;
   background-color: white;
-  margin: 0 40px;
-  width: 100%;
-  max-width: 1150px;
+  margin: 0 50px;
+  max-width: 1640px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -306,7 +305,7 @@
 }
 
 .containerH .card {
-  width: 150px;
+  width: 250px;
   height: 250px;
   border-radius: 5px;
   box-shadow: 0 2px 2px gray;
@@ -349,9 +348,9 @@
   background-color: var(--color_text-primary);
   letter-spacing: 10px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
-  padding: 25px;
+  padding: 15px;
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
@@ -583,7 +582,7 @@ footer p {
 #video__pasos {
   background-color: black;
   width: 760px;
-  height: 686px;
+  height: 685px;
   border-radius: 20px;
 }
 
