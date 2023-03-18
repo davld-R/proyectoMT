@@ -21,7 +21,7 @@
 
 #div__paso2 {
     font-size: 40px;
-    height: 500px;
+    height: 100%;
     width: 100%;
     background-color: gray;
     display: none;
@@ -105,4 +105,54 @@
     width: 100%;
     background-color: rgb(31, 59, 141);
     display: none;
+}
+
+
+/*ESTILOS DE LA BOTONERA PASO A PASO*/
+
+.titulo__pasosM h1{
+    font-size: 100px;
+    text-align: center;
+    color: #AB29CA;
+}
+.titulo__pasosM p{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#botonera{
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(78, 75, 80);
+}
+
+#botonera button{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 2px;
+    transition: 1600ms;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(78, 75, 80);
+}
+
+#botonera:hover button {
+    border-radius: 10px;
+    background-color: #9A00BF;
+    color: white;
+    transition: 1600ms;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+    transform: translateY(5px);
+}
+
+/*PASOS */
+
+.iframe iframe{
+    border-radius: 20px;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);;
+   margin-left: 500px;
+   margin-bottom: 200px;
 }
