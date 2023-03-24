@@ -85,7 +85,6 @@
 //   power();
 // };
 
-
 const main1 = document.getElementById("main1");
 const main2 = document.getElementById("main2");
 const main3 = document.getElementById("main3");
@@ -93,8 +92,17 @@ const main4 = document.getElementById("main4");
 const img9 = document.getElementById("img-9");
 const papelera = document.getElementById("papelera");
 const img10 = document.getElementById("img-10");
+const img11 = document.getElementById("img-11");
+const c1Img11 = document.getElementById("cont2-img-11");
+const c2Img11 = document.getElementById("cont3-img-11");
+const escudo = document.getElementById("escudo");
+const texto = document.getElementById("texto");
+const contenedorEscudo2 = document.getElementById("contenedor-escudo2");
+const contenedortexto = document.getElementById("contenedor-texto");
 let bandera = true;
 let bandera2 = true;
+let bandera3 = true;
+let bandera4 = true;
 
 const showImage1 = () => {
   main1.style.display = "none";
@@ -145,9 +153,6 @@ papelera.onmouseout = function () {
   papelera.classList.remove("papelera-cambiado");
   papelera.classList.add("papelera");
 };
-const img11 = document.getElementById("img-11");
-const c1Img11 = document.getElementById("cont2-img-11");
-const c2Img11 = document.getElementById("cont3-img-11");
 
 const showImage5 = () => {
   if (bandera2 == true) {
@@ -169,6 +174,51 @@ const showImage6 = () => {
 // Reinicia Máquina
 const showImage7 = () => {
   alert("Reiniciar")
+}
+escudo.onmouseover = function () {
+  escudo.classList.remove("escudo");
+  escudo.classList.add("escudo-cambiado");
+};
+escudo.onmouseout = function () {
+  escudo.classList.remove("escudo-cambiado");
+  escudo.classList.add("escudo");
+};
+texto.onmouseover = function () {
+  texto.classList.remove("texto");
+  texto.classList.add("texto-cambiado");
+};
+texto.onmouseout = function () {
+  texto.classList.remove("texto-cambiado");
+  texto.classList.add("texto");
+};
+// Mostra el escudo del cesmag
+const showImage8 = () => {
+  if (bandera3 == true) {
+    contenedorEscudo2.style.display = "block";
+    bandera3 = false;
+  } else if (bandera3 == false) {
+    contenedorEscudo2.style.display = "none";
+    bandera3 = true;
+  }
+}
+// oculta el escudo
+const showImage9 = () => {
+  contenedorEscudo2.style.display = "none";
+  bandera3 = true;
+}
+// Mostra el text del escritorio
+const showImage10 = () => {
+  if (bandera4 == true) {
+    contenedortexto.style.display = "block";
+    bandera4 = false;
+  } else if (bandera4 == false) {
+    contenedortexto.style.display = "none";
+    bandera4 = true;
+  }
+}
+const showImage11 = () => {
+  contenedortexto.style.display = "none";
+    bandera4 = true;
 }
 
 

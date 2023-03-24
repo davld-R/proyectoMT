@@ -107,26 +107,132 @@
 }
 .papelera {
   position: absolute;
-  margin: 24px;
+  top: 2%;
+  margin-left: 35px;
 }
 .papelera-cambiado {
   position: absolute;
-  margin: 24px;
+  top: 2%;
+  margin-left: 35px;
   opacity: 0.5;
-  pointer-events: none;
+  border-radius: 8px;
+}
+.papeleraTXT {
+  position: absolute;
+  top: 18%;
+  color: white;
+  margin-left: 18px;
+  font-style: italic;
+  font-size: 15px;
+}
+.escudo {
+  position: absolute;
+  top: 24%;
+  margin-left: 35px;
+  width: 104;
+  height: 108px;
+}
+.escudo-cambiado {
+  position: absolute;
+  top: 24%;
+  margin-left: 35px;
+  width: 104;
+  height: 108px;
+  opacity: 0.5;
+}
+.escudoTXT {
+  position: absolute;
+  top: 42%;
+  color: white;
+  margin-left: 36px;
+  font-style: italic;
+  font-size: 15px;
+}
+.contenedor-escudo2 {
+  display: none;
+  width: 360px;
+  height: 350px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 9999;
+}
+.escudo2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boton-escudo{
+  position: absolute;
+  right: 0;
+  border-radius: 2px;
+  color: white;
+  background: black;
+}
+.texto {
+  position: absolute;
+  top: 46%;
+  margin-left: 35px;
+  height: 108px;
+}
+.texto-cambiado {
+  position: absolute;
+  top: 46%;
+  margin-left: 35px;
+  height: 108px;
+  opacity: 0.5;
+}
+.txtTXT {
+  position: absolute;
+  top: 63%;
+  color: white;
+  margin-left: 62px;
+  font-style: italic;
+  font-size: 15px;
+}
+.contenedor-texto {
+  display: none;
+  width: 360px;
+  height: 350px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 9999;
+}
+.texto2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boton-texto{
+  position: absolute;
+  right: 0;
+  border-radius: 2px;
+  color: white;
+  background: black;
 }
 .img-9 {
   position: absolute;
-  top: 20%;
-  margin-top: 16px;
+  top: 40%;
+  margin-right: 20px;
+  right: 0;
   margin-left: 22px;
   width: 104;
   height: 108px;
 }
 .img-9-cambiado {
   position: absolute;
-  top: 20%;
-  margin-top: 16px;
+  top: 40%;
+  margin-right: 20px;
+  right: 0;
   margin-left: 22px;
   width: 104;
   height: 108px;
@@ -169,7 +275,6 @@
   right: 0;
   top: 20%;
   margin-right: 60px;
-  /* 10 */
   color: aliceblue;
 }
 #main2 {
@@ -182,33 +287,65 @@
   display: none;
 }
 
-.menuInicio{
+.menuInicio {
   position: absolute;
   width: 40px;
   height: 45px;
 }
-#img-11{
+#img-11 {
   display: none;
   width: 320px;
   height: 116;
 }
-.contenedor-img-11{
+.contenedor-img-11 {
   position: absolute;
-  top: 61.8%; 
+  top: 61.8%;
 }
-.cont2-img-11{
+.cont2-img-11 {
   width: 100px;
   height: 110px;
   position: absolute;
   top: 32%;
   left: 10%;
 }
-.cont3-img-11{
+.cont3-img-11 {
   width: 100px;
   height: 110px;
   position: absolute;
   top: 32%;
   left: 58%;
+}
+.barra-escudo{
+  position: absolute;
+  top: 11.5%;
+  width: 60px;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 60px;
+}
+.barra-escudo2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+}
+.barra-texto{
+  position: absolute;
+  top: 11.5%;
+  width: 60px;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 120px;
+}
+.barra-texto2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  transform: translate(-50%, -50%);
 }
 
 
