@@ -225,8 +225,9 @@
   margin-right: 20px;
   right: 0;
   margin-left: 22px;
-  width: 104;
-  height: 108px;
+  width: 100px;
+  height: 94px;
+  border-radius: 10px;
 }
 .img-9-cambiado {
   position: absolute;
@@ -234,17 +235,10 @@
   margin-right: 20px;
   right: 0;
   margin-left: 22px;
-  width: 104;
-  height: 108px;
-  border-radius: 8px;
-  background-color: rgb(0, 0, 0);
-}
-.img-10 {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+  width: 100px;
+  height: 94px;
+  opacity: 0.5;
+  border-radius: 10px;
 }
 .barra {
   width: 100%;
@@ -252,29 +246,66 @@
   background-color: black;
   position: relative;
   top: 93%;
-  border-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .img-6 {
-  margin-left: 5px;
-  margin-top: 3px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 24px;
+  height: 27px;
+}
+.contenedor-img-6{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 44px;
+  height: 45px;
+  border-bottom-left-radius: 7px;
+}
+.contenedor-img-6C{
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  width: 44px;
+  height: 45px;
+  border-bottom-left-radius: 7px;
 }
 .img-7 {
   position: absolute;
   right: 0;
-  top: 10%;
-  margin-right: 8px;
+  top: 27%;
+  width: 26px;
+  height: 23px;
+  margin-right: 9px;
+}
+.notificaciones{
+  display: none;
+  position: absolute;
+  width: 190px;
+  height: 580px;
+  background-color: rgb(0, 0, 0);
+  right: 0;
+  border-top-right-radius: 7px;
+}
+.notificacionesTXT{
+  position: absolute;
+  top: 50%;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 15px;
 }
 .img-8 {
   position: absolute;
   right: 0;
-  top: 35%;
-  margin-right: 244px;
+  top: 37.5%;
+  margin-right: 236px;
 }
 .fecha {
   position: absolute;
   right: 0;
   top: 20%;
-  margin-right: 60px;
+  margin-right: 50px;
   color: aliceblue;
 }
 #main2 {
@@ -286,7 +317,6 @@
 #main4 {
   display: none;
 }
-
 .menuInicio {
   position: absolute;
   width: 40px;
@@ -294,12 +324,13 @@
 }
 #img-11 {
   display: none;
-  width: 320px;
-  height: 116;
+  width: 280px;
+  height: 160px;
+  border-top-right-radius: 7px;
 }
 .contenedor-img-11 {
   position: absolute;
-  top: 61.8%;
+  top: 67.26%;
 }
 .cont2-img-11 {
   width: 100px;
@@ -315,12 +346,56 @@
   top: 32%;
   left: 58%;
 }
-.barra-escudo{
+.img-10 {
   position: absolute;
-  top: 11.5%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.contenedor-img-10{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contenedor2-img-10{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 68px;
+  width: 72px;
+  height: 40px;
+}
+.contenedor3-img-10{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 158px;
+  width: 75px;
+  height: 40px;
+}
+.salir-img-10{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 222px;
+  transform: translate(-10%, -575%);
+}
+.barra-escudo{
+  display: none;
+  position: absolute;
+  top: 6%;
   width: 60px;
-  height: 35px;
+  height: 38px;
   background-color: rgb(0, 0, 0);
+  margin-left: 60px;
+}
+.barra-escudo-cambiado{
+  display: none;
+  position: absolute;
+  top: 6%;
+  width: 60px;
+  height: 38px;
+  background-color: rgb(51, 51, 51);
   margin-left: 60px;
 }
 .barra-escudo2{
@@ -332,11 +407,21 @@
   transform: translate(-50%, -50%);
 }
 .barra-texto{
+  display: none;
   position: absolute;
-  top: 11.5%;
+  top: 6%;
   width: 60px;
-  height: 35px;
+  height: 38px;
   background-color: rgb(0, 0, 0);
+  margin-left: 120px;
+}
+.barra-texto-cambiado{
+  display: none;
+  position: absolute;
+  top: 6%;
+  width: 60px;
+  height: 38px;
+  background-color: rgb(51, 51, 51);
   margin-left: 120px;
 }
 .barra-texto2{
@@ -347,6 +432,7 @@
   height: 35px;
   transform: translate(-50%, -50%);
 }
+
 
 
 .coloB {

@@ -99,10 +99,20 @@ const escudo = document.getElementById("escudo");
 const texto = document.getElementById("texto");
 const contenedorEscudo2 = document.getElementById("contenedor-escudo2");
 const contenedortexto = document.getElementById("contenedor-texto");
+const barraEscudo = document.getElementById("barra-escudo");
+const barraTexto = document.getElementById("barra-texto");
+const contenedorImg6 = document.getElementById("contenedor-img-6");
+const notificaciones = document.getElementById("notificaciones");
+const contenedor2Img10 = document.getElementById("contenedor2-img-10");
+const contenedor3Img10 = document.getElementById("contenedor3-img-10");
+const salirImg10 = document.getElementById("salir-img-10");
 let bandera = true;
 let bandera2 = true;
 let bandera3 = true;
 let bandera4 = true;
+let bandera5 = false;
+let bandera6 = false;
+let bandera7 = true;
 
 const showImage1 = () => {
   main1.style.display = "none";
@@ -116,16 +126,6 @@ const showImage3 = () => {
   main3.style.display = "none";
   main4.style.display = "block";
 };
-const showImage4 = () => {
-  if (bandera == true) {
-    img10.style.display = "block";
-    bandera = false;
-  } else if (bandera == false) {
-    img10.style.display = "none";
-    bandera = true;
-  }
-};
-
 function actualizarHora() {
   const fechaActual = new Date();
   document.getElementById("fecha").innerHTML = fechaActual.toLocaleString();
@@ -169,12 +169,18 @@ const showImage5 = () => {
 };
 // Apaga Máquina
 const showImage6 = () => {
-  alert("Apagar")
-}
+  main1.style.display = "flex";
+  main4.style.display = "none";
+  img11.style.display = "none";
+  bandera2 = true;
+};
 // Reinicia Máquina
 const showImage7 = () => {
-  alert("Reiniciar")
-}
+  main2.style.display = "flex";
+  main4.style.display = "none";
+  img11.style.display = "none";
+  bandera2 = true;
+};
 escudo.onmouseover = function () {
   escudo.classList.remove("escudo");
   escudo.classList.add("escudo-cambiado");
@@ -196,30 +202,133 @@ const showImage8 = () => {
   if (bandera3 == true) {
     contenedorEscudo2.style.display = "block";
     bandera3 = false;
+    if (bandera5 == false) {
+      bandera5 = true;
+      barraCambioE();
+    }
   } else if (bandera3 == false) {
     contenedorEscudo2.style.display = "none";
     bandera3 = true;
   }
-}
+};
 // oculta el escudo
 const showImage9 = () => {
   contenedorEscudo2.style.display = "none";
+  barraEscudo.style.display = "none";
   bandera3 = true;
-}
+  bandera5 = false;
+};
+// quita el estudo barra
+const barraCambioE = () => {
+  if (bandera6 == true) {
+    barraEscudo.style.marginLeft = "120px";
+    barraEscudo.style.display = "block";
+    if (parseInt(barraTexto.style.marginLeft) === 120) {
+      barraEscudo.style.marginLeft = "60px";
+      barraEscudo.style.display = "block";
+    }
+  } else if (bandera6 == false) {
+    barraEscudo.style.marginLeft = "60px";
+    barraEscudo.style.display = "block";
+  }
+};
 // Mostra el text del escritorio
 const showImage10 = () => {
   if (bandera4 == true) {
     contenedortexto.style.display = "block";
     bandera4 = false;
+    if (bandera6 == false) {
+      bandera6 = true;
+      barraCambioT();
+    }
   } else if (bandera4 == false) {
     contenedortexto.style.display = "none";
     bandera4 = true;
   }
-}
+};
+// ocultar el text
 const showImage11 = () => {
   contenedortexto.style.display = "none";
-    bandera4 = true;
-}
+  barraTexto.style.display = "none";
+  bandera4 = true;
+  bandera6 = false;
+};
+// quita texto de la barra
+const barraCambioT = () => {
+  if (bandera5 == true) {
+    barraTexto.style.marginLeft = "120px";
+    barraTexto.style.display = "block";
+    if (parseInt(barraEscudo.style.marginLeft) === 120) {
+      barraTexto.style.marginLeft = "60px";
+      barraTexto.style.display = "block";
+    }
+  } else if (bandera5 == false) {
+    barraTexto.style.marginLeft = "60px";
+    barraTexto.style.display = "block";
+  }
+};
+barraEscudo.onmouseover = function () {
+  barraEscudo.classList.remove("barra-escudo");
+  barraEscudo.classList.add("barra-escudo-cambiado");
+};
+barraEscudo.onmouseout = function () {
+  barraEscudo.classList.remove("barra-escudo-cambiado");
+  barraEscudo.classList.add("barra-escudo");
+};
+barraTexto.onmouseover = function () {
+  barraTexto.classList.remove("barra-texto");
+  barraTexto.classList.add("barra-texto-cambiado");
+};
+barraTexto.onmouseout = function () {
+  barraTexto.classList.remove("barra-texto-cambiado");
+  barraTexto.classList.add("barra-texto");
+};
+contenedorImg6.onmouseover = function () {
+  contenedorImg6.classList.remove("contenedor-img-6");
+  contenedorImg6.classList.add("contenedor-img-6C");
+};
+contenedorImg6.onmouseout = function () {
+  contenedorImg6.classList.remove("contenedor-img-6C");
+  contenedorImg6.classList.add("contenedor-img-6");
+};
+// Mostrar notificaciones
+const showImage12 = () => {
+  if (bandera7 == true) {
+    notificaciones.style.display = "block";
+    bandera7 = false;
+  } else if (bandera7 == false) {
+    notificaciones.style.display = "none";
+    bandera7 = true;
+  }
+};
+// Mostar el ejecutable
+const showImage4 = () => {
+  if (bandera == true) {
+    img10.style.display = "block";
+    contenedor2Img10.classList.add("contenedor2-img-10");
+    contenedor3Img10.classList.add("contenedor3-img-10");
+    salirImg10.classList.add("salir-img-10");
+    bandera = false;
+  } else if (bandera == false) {
+    img10.style.display = "none";
+    contenedor2Img10.classList.remove("contenedor2-img-10");
+    contenedor3Img10.classList.remove("contenedor3-img-10");
+    salirImg10.classList.remove("salir-img-10");
+    bandera = true;
+  }
+};
+const showImage13 = () => {
+  alert("ejecutar");
+};
+const showImage14 = () => {
+  img10.style.display = "none";
+  bandera = true;
+};
+const showImage15 = () => {
+  img10.style.display = "none";
+  bandera = true;
+};
+
 
 
 // let mostrarImagenClic = () => {
