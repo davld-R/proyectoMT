@@ -296,7 +296,6 @@
   border-radius: 5px;
   background-color: white;
   margin: 0 70px;
-  width: 100%;
   max-width: 1600px;
   height: 400px;
   display: flex;
@@ -306,7 +305,7 @@
 }
 
 .containerH .card {
-  width: 250px;
+  width: 150px;
   height: 250px;
   border-radius: 5px;
   box-shadow: 0 2px 2px gray;
