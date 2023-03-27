@@ -1,94 +1,16 @@
-// const image0 = document.getElementById("imagen0");
-// const image1 = document.getElementById("imagen1");
-// const image2 = document.getElementById("imagen2");
-// const image3 = document.getElementById("imagen3");
-// const image4 = document.getElementById("imagen4");
-// const image5 = document.getElementById("imagen5");
-// const image6 = document.getElementById("imagen6");
-// const image7 = document.getElementById("imagen7");
-// const image8 = document.getElementById("imagen8");
-// let isActive = true;
-// let isActive2 = true;
-// console.log("hola");
-// const power = () => {
-//   image0.style.display = "none";
-//   image1.style.display = "block";
-//   setTimeout(() => {
-//     image1.style.display = "none";
-//     image2.style.display = "block";
-//   }, 3000);
-
-//   setTimeout(() => {
-//     image2.style.display = "none";
-//     image3.style.display = "block";
-//     cambiaClase();
-//   }, 5000);
-// };
-
-// const showImagez = () => {
-//   if (isActive == true) {
-//     image4.style.display = "block";
-//     isActive = false;
-//   } else if (isActive == false) {
-//     image4.style.display = "none";
-//     isActive = true;
-//   }
-// };
-
-// const showImage2z = () => {
-//   if (isActive2 == true) {
-//     image5.style.display = "block";
-//     isActive2 = false;
-//   } else if (isActive2 == false) {
-//     image5.style.display = "none";
-//     isActive2 = true;
-//   }
-// };
-
-// const ejecutar = () => {
-//   image4.style.display = "none";
-//   image6.src = "/media/img/6.gif";
-//   image6.style.display = "block";
-
-//   function desvanecer() {
-//     setTimeout(() => {
-//       image6.style.display = "none";
-//       image3.style.display = "none";
-//       image7.style.display = "block";
-//     }, 6000);
-//   }
-
-//   function desvanecer2() {
-//     setTimeout(() => {
-//       image8.style.display = "block";
-//     }, 7000);
-//   }
-
-//   desvanecer();
-//   desvanecer2();
-// };
-
-// const cancelar = () => {
-//   image4.style.display = "none";
-// };
-
-// const apagar = () => {
-//   image3.style.display = "none";
-//   image5.style.display = "none";
-//   image0.style.display = "block";
-// };
-
-// const reset = () => {
-//   image3.style.display = "none";
-//   image5.style.display = "none";
-//   image0.style.display = "none";
-//   power();
-// };
+window.addEventListener("resize", function (event) {
+  if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
+    document.body.style.zoom = "100%";
+  } else if (window.innerWidth <= 1920 && window.innerHeight <= 1080) {
+    document.body.style.zoom = "150%";
+  }
+});
 
 const main1 = document.getElementById("main1");
 const main2 = document.getElementById("main2");
 const main3 = document.getElementById("main3");
 const main4 = document.getElementById("main4");
+const main5 = document.getElementById("main5");
 const img9 = document.getElementById("img-9");
 const papelera = document.getElementById("papelera");
 const img10 = document.getElementById("img-10");
@@ -103,6 +25,7 @@ const barraEscudo = document.getElementById("barra-escudo");
 const barraTexto = document.getElementById("barra-texto");
 const contenedorImg6 = document.getElementById("contenedor-img-6");
 const notificaciones = document.getElementById("notificaciones");
+const notificaciones2 = document.getElementById("notificaciones2");
 const contenedor2Img10 = document.getElementById("contenedor2-img-10");
 const contenedor3Img10 = document.getElementById("contenedor3-img-10");
 const salirImg10 = document.getElementById("salir-img-10");
@@ -113,10 +36,21 @@ let bandera4 = true;
 let bandera5 = false;
 let bandera6 = false;
 let bandera7 = true;
+let bandera8 = true;
+let bandera9 = true;
 
 const showImage1 = () => {
   main1.style.display = "none";
   main2.style.display = "block";
+  setTimeout(() => {
+        main2.style.display = "none";
+        main3.style.display = "block";
+      }, 4000);
+  
+      setTimeout(() => {
+        main3.style.display = "none";
+        main4.style.display = "block";
+      }, 7000);
 };
 const showImage2 = () => {
   main2.style.display = "none";
@@ -133,6 +67,14 @@ function actualizarHora() {
 
 actualizarHora();
 setInterval(actualizarHora, 1000);
+
+function actualizarHora2() {
+  const fechaActual2 = new Date();
+  document.getElementById("fecha2").innerHTML = fechaActual2.toLocaleString();
+}
+
+actualizarHora2();
+setInterval(actualizarHora2, 1000);
 
 img9.onmouseover = function () {
   img9.classList.remove("img-9");
@@ -153,7 +95,7 @@ papelera.onmouseout = function () {
   papelera.classList.remove("papelera-cambiado");
   papelera.classList.add("papelera");
 };
-
+// Mostrar el menu de inicio de main4
 const showImage5 = () => {
   if (bandera2 == true) {
     img11.style.display = "block";
@@ -167,14 +109,17 @@ const showImage5 = () => {
     bandera2 = true;
   }
 };
-// Apaga Máquina
+// Apaga Máquina main 4
 const showImage6 = () => {
   main1.style.display = "flex";
   main4.style.display = "none";
   img11.style.display = "none";
   bandera2 = true;
 };
-// Reinicia Máquina
+const showImage17 = () => {
+  alert("No apague la máquina");
+};
+// Reinicia Máquina main 5
 const showImage7 = () => {
   main2.style.display = "flex";
   main4.style.display = "none";
@@ -301,6 +246,15 @@ const showImage12 = () => {
     bandera7 = true;
   }
 };
+const showImage16 = () => {
+  if (bandera8 == true) {
+    notificaciones2.style.display = "block";
+    bandera8 = false;
+  } else if (bandera8 == false) {
+    notificaciones2.style.display = "none";
+    bandera8 = true;
+  }
+};
 // Mostar el ejecutable
 const showImage4 = () => {
   if (bandera == true) {
@@ -318,7 +272,8 @@ const showImage4 = () => {
   }
 };
 const showImage13 = () => {
-  alert("ejecutar");
+  main4.style.display = "none";
+  main5.style.display = "block";
 };
 const showImage14 = () => {
   img10.style.display = "none";
@@ -329,78 +284,19 @@ const showImage15 = () => {
   bandera = true;
 };
 
+let countdown = 60 * 60 * 1000; // 60 minutes
+let timerId = setInterval(function () {
+  countdown -= 1000;
+  let min = Math.floor(countdown / (60 * 1000));
+  let sec = Math.floor((countdown - min * 60 * 1000) / 1000);
+  document.getElementById("timer").innerHTML = min + ":" + sec + "";
+  if (countdown <= 0) {
+    clearInterval(timerId);
+    alert("Time is up!");
+  }
+}, 1000);
 
+let escribir = document.getElementById("letraSaw");
 
-// let mostrarImagenClic = () => {
-//   image3.style.display = "relative";
-//   image4.style.position = "absolute";
-//   image4.style.top = "50px";
-//   image4.style.left = "50%";
-//   image4.style.display = "block";
-//   desvanecer();
-//   return image4, image3;
-// };
-
-// Esta funcion sirve para cambiar una etiqueta
-// function cambiaClase() {
-//   image3.classList.add("text-center");
-// }
-
-// function mostrarImagenClic() {
-//   image4.style.display = "block";
-//   image3.style.display = "none";
-
-// }
-
-// function cambiarImagen() {
-//   let imagen = event.target; //obtiene la imagen que se hizo clic
-//   let imagenActual = imagen.src; //obtiene la fuente de la imagen actual
-//   let imagenSiguiente = ""; //inicializa la variable para la fuente de la siguiente imagen
-
-//   if (imagenActual.includes("imagen1")) {
-//     imagenSiguiente = "imagen2.jpg";
-//   } else if (imagenActual.includes("imagen2")) {
-//     imagenSiguiente = "imagen3.jpg";
-//   } else if (imagenActual.includes("imagen3")) {
-//     imagenSiguiente = "imagen1.jpg";
-//   }
-
-//   imagen.src = imagenSiguiente; //cambia la fuente de la imagen por la de la siguiente imagen
-// }
-
-// img1.addEventListener("click", function () {
-//   img1.style.height = "";
-//   img2.style.display = "block";
-// });
-// img2.addEventListener("click", function () {
-//   img2.style.display = "none";
-//   img3.style.display = "block";
-// });
-
-// let config = {
-//     type: Phaser.AUTO,
-//     width: 800,
-//     height: 600,
-//     scene: {
-//         preload: preload,
-//         create: create,
-//         update: update
-//     }
-// };
-
-// let game = new Phaser.Game(config);
-
-// function preload ()
-// {
-//     this.load.image('sky', '/media/img/1.png');
-// }
-// // assets/skies/space3.png
-
-// function create ()
-// {
-//     this.add.image(400, 300, 'sky');
-// }
-// function update ()
-// {
-
-// }
+escribir.innerHTML =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inad mollitia sapiente consectetur ipsa voluptate iste officiisvoluptatum consequuntur. Explicabo adipisci nobis facilis pariatur. Distinctio dolorum dolore minima placeat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente excepturi officia dolore voluptatum, ut, tenetur ipsam repellat eveniet, blanditiis voluptate id sequi? Veniam commodi laudantium aperiam repudiandae molestiae odio delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem quo, debitis itaque, minus laudantium maxime blanditiis recusandae beatae id iste tempora illum! Illum vitae harum officiis quod unde!";
