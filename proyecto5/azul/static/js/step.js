@@ -43,14 +43,16 @@ const showImage1 = () => {
   main1.style.display = "none";
   main2.style.display = "block";
   setTimeout(() => {
-        main2.style.display = "none";
-        main3.style.display = "block";
-      }, 4000);
-  
-      setTimeout(() => {
-        main3.style.display = "none";
-        main4.style.display = "block";
-      }, 7000);
+    main2.style.display = "none";
+    main3.style.display = "block";
+  }, 1000);
+  // 4000
+
+  setTimeout(() => {
+    main3.style.display = "none";
+    main4.style.display = "block";
+  }, 1000);
+  // 7000
 };
 const showImage2 = () => {
   main2.style.display = "none";
@@ -121,8 +123,16 @@ const showImage17 = () => {
 };
 // Reinicia Máquina main 5
 const showImage7 = () => {
-  main2.style.display = "flex";
   main4.style.display = "none";
+  main2.style.display = "flex";
+  setTimeout(() => {
+    main2.style.display = "none";
+    main3.style.display = "block";
+  }, 4000);
+  setTimeout(() => {
+    main3.style.display = "none";
+    main4.style.display = "block";
+  }, 7000);
   img11.style.display = "none";
   bandera2 = true;
 };
@@ -271,7 +281,37 @@ const showImage4 = () => {
     bandera = true;
   }
 };
+// Letra que escribe en el jigsaw
+let myString =
+  "Los archivos de tu ordenador han sido encriptados. Tus fotos, vídeos, documentos, etc.... Pero, ¡no te preocupes! No los he borrado, todavía.Usted tiene 24 horas para pagar 150 USD en Bitcoins para obtener la clave de descifrado. Cada hora los archivos serán borrados. Aumentando en cantidad cada vez. Después de 72 horas todos los que queden serán borrados. Si no tienes bitcoins busca en Google la web localbitcoins.Compra 150 dólares americanos en Bitcoins o 4 BTC. El sistema aceptará el envío a la dirección de Bitcoins especificada.A los dos minutos de recibir el pago su ordenador recibirá el descifrado. Intente algo raro y el ordenador tiene varias medidas de seguridad para borrar su información.Tan pronto como se reciba el pago los archivos cifrados volverán a la normalidad.Gracias";
+let myArray = myString.split("");
+let loopTimer;
+
+function frameLooper() {
+  if (myArray.length > 0) {
+    document.getElementById("letraSaw").innerHTML += myArray.shift();
+  } else {
+    clearTimeout(loopTimer);
+    return false;
+  }
+  loopTimer = setTimeout("frameLooper()", 80);
+}
+// Este es el ejecutable del jigsaw
 const showImage13 = () => {
+  let countdown = 60 * 60 * 1000; // 60 minutes
+  let timerId = setInterval(function () {
+    countdown -= 1000;
+    let min = Math.floor(countdown / (60 * 1000));
+    let sec = Math.floor((countdown - min * 60 * 1000) / 1000);
+    document.getElementById("timer").innerHTML = min + ":" + sec + "";
+    if (countdown <= 0) {
+      clearInterval(timerId);
+      alert("Time is up!");
+    }
+  }, 1000);
+
+  frameLooper();
+  //mostra el main4
   main4.style.display = "none";
   main5.style.display = "block";
 };
@@ -283,20 +323,3 @@ const showImage15 = () => {
   img10.style.display = "none";
   bandera = true;
 };
-
-let countdown = 60 * 60 * 1000; // 60 minutes
-let timerId = setInterval(function () {
-  countdown -= 1000;
-  let min = Math.floor(countdown / (60 * 1000));
-  let sec = Math.floor((countdown - min * 60 * 1000) / 1000);
-  document.getElementById("timer").innerHTML = min + ":" + sec + "";
-  if (countdown <= 0) {
-    clearInterval(timerId);
-    alert("Time is up!");
-  }
-}, 1000);
-
-let escribir = document.getElementById("letraSaw");
-
-escribir.innerHTML =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim inad mollitia sapiente consectetur ipsa voluptate iste officiisvoluptatum consequuntur. Explicabo adipisci nobis facilis pariatur. Distinctio dolorum dolore minima placeat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente excepturi officia dolore voluptatum, ut, tenetur ipsam repellat eveniet, blanditiis voluptate id sequi? Veniam commodi laudantium aperiam repudiandae molestiae odio delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati dolorem quo, debitis itaque, minus laudantium maxime blanditiis recusandae beatae id iste tempora illum! Illum vitae harum officiis quod unde!";
