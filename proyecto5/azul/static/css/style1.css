@@ -582,7 +582,7 @@ footer p {
 #video__pasos {
   background-color: black;
   width: 760px;
-  height: 690px;
+  height: 500px;
   border-radius: 20px;
 }
 
@@ -598,6 +598,8 @@ footer p {
   background-color: var(--color_text-primary);
   color: white;
 }
+
+
 
 .image__pasos button {
   height: 100px;
