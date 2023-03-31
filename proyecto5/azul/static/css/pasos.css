@@ -56,11 +56,34 @@
     background-color: aliceblue;
 }
 
+/*ESTILOS DIV PASO 1 METODOLOGIA*/
+
 #div__paso1 {
+    font-size: 40px;
+    height: 100%;
     width: 100%;
     background-color: red;
     display: none;
 }
+
+.pasos p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.pasos h4{
+    text-align: center;
+}
+
+#div__paso1 h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+
+/*ESTILOS DIV PASO 2 METODOLOGIA*/
 
 #div__paso2 {
     font-size: 40px;
@@ -70,6 +93,36 @@
     display: none;
 }
 
+#div__paso2 h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+
+
+#video__pasos2 {
+    background-color: black;
+    width: 760px;
+    height: 740px;
+    border-radius: 20px;
+}
+
+#video__pasos2 button {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 155px;
+    height: 40px;
+    display: block;
+    margin: 2px 2px;
+    margin-left: 35%;
+    background-color: var(--color_text-primary);
+    color: white;
+}
+
+/*ESTILOS DIV PASO 3 METODOLOGIA*/
+
 #div__paso3 {
     font-size: 40px;
     height: 500px;
@@ -77,6 +130,34 @@
     background-color: rgb(39, 101, 201);
     display: none;
 }
+
+#div__paso3 h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+#video__pasos3 {
+    background-color: black;
+    width: 760px;
+    height: 740px;
+    border-radius: 20px;
+}
+
+#video__pasos3 button {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 155px;
+    height: 40px;
+    display: block;
+    margin: 2px 2px;
+    margin-left: 35%;
+    background-color: var(--color_text-primary);
+    color: white;
+}
+
+/*ESTILOS DIV PASO 4 METODOLOGIA*/
 
 #div__paso4 {
     font-size: 40px;
@@ -86,6 +167,34 @@
     display: none;
 }
 
+#div__paso4 h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+#video__pasos4 {
+    background-color: black;
+    width: 760px;
+    height: 740px;
+    border-radius: 20px;
+}
+
+#video__pasos4 button {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 155px;
+    height: 40px;
+    display: block;
+    margin: 2px 2px;
+    margin-left: 35%;
+    background-color: var(--color_text-primary);
+    color: white;
+}
+
+/*ESTILOS DIV PASO 5 METODOLOGIA*/
+
 #div__paso5 {
     font-size: 40px;
     height: 500px;
@@ -94,10 +203,28 @@
     display: none;
 }
 
-.iframe iframe {
-    border-radius: 20px;
-    box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+#div__paso5 h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
 
-    margin-left: 500px;
-    margin-bottom: 200px;
+#video__pasos5 {
+    background-color: black;
+    width: 760px;
+    height: 740px;
+    border-radius: 20px;
+}
+
+#video__pasos5 button {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 155px;
+    height: 40px;
+    display: block;
+    margin: 2px 2px;
+    margin-left: 35%;
+    background-color: var(--color_text-primary);
+    color: white;
 }
