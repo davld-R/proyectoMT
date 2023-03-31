@@ -5,6 +5,12 @@ window.addEventListener("resize", function (event) {
     document.body.style.zoom = "150%";
   }
 });
+window.onload = function () {
+  // Comprobamos si la resolución es de 1920 x 1080
+  if (screen.width === 1920 && screen.height === 1080) {
+    document.body.style.zoom = "150%"; // Establecemos el zoom al 150%
+  }
+};
 
 const main1 = document.getElementById("main1");
 const main2 = document.getElementById("main2");
@@ -29,6 +35,7 @@ const notificaciones2 = document.getElementById("notificaciones2");
 const contenedor2Img10 = document.getElementById("contenedor2-img-10");
 const contenedor3Img10 = document.getElementById("contenedor3-img-10");
 const salirImg10 = document.getElementById("salir-img-10");
+const containerEncriptados = document.getElementById("containerEncriptados");
 let bandera = true;
 let bandera2 = true;
 let bandera3 = true;
@@ -38,6 +45,7 @@ let bandera6 = false;
 let bandera7 = true;
 let bandera8 = true;
 let bandera9 = true;
+let bandera10 = true;
 
 const showImage1 = () => {
   main1.style.display = "none";
@@ -322,4 +330,10 @@ const showImage14 = () => {
 const showImage15 = () => {
   img10.style.display = "none";
   bandera = true;
+};
+const showImage18 = () => {
+  containerEncriptados.style.display = "flex";
+};
+const showImage19 = () => {
+  containerEncriptados.style.display = "none";
 };

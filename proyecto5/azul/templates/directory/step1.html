@@ -299,7 +299,7 @@
               <p class="letraEncriptados">Se eliminará 1 archivo</p>
             </div>
             <div class="verEncriptados">
-              <button class="letraVerEncriptados">
+              <button class="letraVerEncriptados" onclick="showImage18()">
                 Ver Archivos encriptados
               </button>
             </div>
@@ -317,6 +317,51 @@
               </button>
             </div>
           </div>
+          <!--TODO: Contenedor de archivos encriptados -->
+          <div class="containerEncriptados" id="containerEncriptados">
+            <div class="containerTop">
+              <img class="iconoEncripted" src="/media/img/14.png" alt="">
+              <p class="textEncripted">EncryptedFiles</p>
+              <svg
+                class="salirEncripted"
+                onclick="showImage19()"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="red"
+                  d="m9 7l2 5l-2 5h2l1-2.5l1 2.5h2l-2-5l2-5h-2l-1 2.5L11 7H9M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+                />
+              </svg>
+            </div>
+            <div class="containerArchivos">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Deleted</th>
+                    <th>Path</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="cont-a"></div></td>
+                    <td>C:\Users\Unicesmag\Escritorio\Unicesmag.png</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>C:\Users\Unicesmag\Escritorio\Texto.txt</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>C:\Program Files (*86)\Microsoft.NET</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

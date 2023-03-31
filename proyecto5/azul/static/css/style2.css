@@ -664,3 +664,52 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+.containerEncriptados{
+  display: none;
+  /* display: flex */
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  width: 458px;
+  height: 204px;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #afc8e2;
+  border-radius: 7px;
+  box-shadow: 0 0 9px #2f00ff;
+}
+.containerTop{
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.iconoEncripted{
+  margin-left: 10px;
+  margin-right: 6px;
+  margin-top: 2px;
+  height: 25px;
+}
+.textEncripted{
+  margin-top: 1px;
+  font-size: 17px;
+}
+.salirEncripted{
+  margin-right: 5px;
+  position: absolute;
+  right: 0;
+  border: none;  
+  cursor: pointer;
+}
+.containerArchivos{
+  border-radius: 5px;
+  width: 441px;
+  height: 164px;
+  background-color: #ffffff;
+  margin-left: 8px;
+}
+.cont-a{
+  width: 60px;
+  height: 25px;
+  background-color: #3399ff;
+}
