@@ -535,7 +535,7 @@ footer p {
   align-items: center;
   justify-content: center;
   box-shadow: 5px 10px 10px gray;
-  background-color: aquamarine;
+  background-color: white;
 }
 
 .text__pasos {
@@ -575,7 +575,7 @@ footer p {
 
 .image__pasos {
   height: 100px;
-  background-color: green;
+  background-color: white;
 }
 
 #video__pasos {
