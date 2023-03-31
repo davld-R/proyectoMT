@@ -16,9 +16,9 @@
     margin-left: 10px;
     transition: 1600ms;
     box-shadow: 0.5rem 0.5rem 1rem rgb(78, 75, 80);
-} */
+}
 
-#botonera:hover button {
+*/ #botonera:hover button {
     border-radius: 10px;
     background-color: #9A00BF;
     color: white;
@@ -32,13 +32,13 @@
 /*ESTILOS DIV PASO A PASO METODOLOGIA*/
 
 .titulo__pasosM h1 {
-    font-size: 20px;
+    font-size: 60px;
     text-align: center;
     color: #AB29CA;
 }
 
 .titulo__pasosM p {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 50px;
@@ -56,6 +56,10 @@
     background-color: aliceblue;
 }
 
+.text__pasos h3 {
+    margin-top: 60px;
+}
+
 /*ESTILOS DIV PASO 1 METODOLOGIA*/
 
 #div__paso1 {
@@ -66,17 +70,17 @@
     display: none;
 }
 
-.pasos p{
+.pasos p {
     text-align: center;
     font-size: 25px;
     font-weight: 800;
 }
 
-.pasos h4{
+.pasos h4 {
     text-align: center;
 }
 
-#div__paso1 h1{
+#div__paso1 h1 {
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -93,7 +97,7 @@
     display: none;
 }
 
-#div__paso2 h1{
+#div__paso2 h1 {
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -129,7 +133,7 @@
     display: none;
 }
 
-#div__paso3 h1{
+#div__paso3 h1 {
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -165,7 +169,7 @@
     display: none;
 }
 
-#div__paso4 h1{
+#div__paso4 h1 {
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -201,7 +205,7 @@
     display: none;
 }
 
-#div__paso5 h1{
+#div__paso5 h1 {
     text-align: center;
     padding: 20px;
     font-weight: 600;
