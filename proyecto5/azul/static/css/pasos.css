@@ -2,7 +2,7 @@
 
 /*ESTILOS DE LA BOTONERA PASO A PASO*/
 
-#botonera {
+/* #botonera {
     background-color: white;
     height: 150px;
     width: 100%;
@@ -16,16 +16,16 @@
     margin-left: 10px;
     transition: 1600ms;
     box-shadow: 0.5rem 0.5rem 1rem rgb(78, 75, 80);
-}
+} */
 
-#botonera:hover button {
+/* #botonera:hover button {
     border-radius: 10px;
     background-color: #9A00BF;
     color: white;
     transition: 1600ms;
     box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
     transform: translateY(5px);
-}
+} */
 
 /*FIN BOTONERA*/
 
