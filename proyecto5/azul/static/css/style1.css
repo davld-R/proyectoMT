@@ -50,7 +50,7 @@
 }
 
 .text__aboutT h1 {
-  color: var(--color_text-primary);
+  
   padding: 10px;
   font-weight: 700;
   box-shadow: 5px 10px 10px gray;
