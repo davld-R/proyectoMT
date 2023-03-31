@@ -115,7 +115,7 @@
   padding: 10px 10px;
   text-align: center;
   font-weight: 400;
-  background: var(--main_color-primary);
+  background-color: blue;
   color: white;
   border-radius: 8px;
   border: 2px solid transparent;
@@ -125,9 +125,9 @@
 }
 
 .btn__text:hover {
-  background: transparent;
-  border: 2px solid var(--main_color-primary);
-  color: var(--color_text-primary);
+  background: blue;
+  border: 2px solid black;
+  color: transparent;
   box-shadow: var(--box_shadow-primary);
 }
 
