@@ -78,7 +78,7 @@
       <!--INICIO-->
       <!--Portada de inicio-->
 
-      <div class="container__aboutT div__offset">
+      <div class="container-fluid container__aboutT div__offset">
         <div class="aboutT">
           <div class="text__aboutT text-primary">
             <h1>METODOLOGÍA PARA HACER FRENTE A UN ATAQUE RANSOMWARE</h1>
@@ -86,11 +86,13 @@
               Página web dirigida a empresas con el fin de capacitar y dar
               solucion a infecciónes ransomare
             </p>
-            <a href="{% url 'method' %}" class="container-fluid btn__text-about btn__text btn-primary"
+            <a
+              href="{% url 'method' %}"
+              class="container-fluid btn__text-about btn__text btn-primary bg-primary"
               >Conoce Nuestra Metodología</a
             >
           </div>
-          <div class="image__aboutT">
+          <div class="container image__aboutT">
             <img src="/media/feed/ma.png" alt="" width="300px" height="200px" />
           </div>
         </div>
@@ -98,23 +100,27 @@
 
       <!--construccion Capacitacion banner-->
 
-      <div class="container__trust container__card-primary">
-        <div class="trust card__primary">
+      <div class="container-fluid container__trust container__card-primary">
+        <div class="container-fluid trust card__primary">
           <div class="text__trust text__card-primary">
             <p>CAPACITACIÓN DIRIGIDA A EMPRESAS</p>
-            <h1>Capacítate en temas como</h1>
+            <h1 class="text-primary">Capacítate en temas como</h1>
           </div>
-          <div class="container__trust container__box-card-primary">
+          <div
+            class="container container__trust container__box-card-primary"
+          >
             <div class="card__trust box__card-primary">
               <img
                 class="img-fluid"
                 src="/media/feed/busqueda.webp"
                 alt=""
-                width="100"
+                width="80"
                 height="100"
               />
               <h2>PHISHING</h2>
-              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+              <a
+                href="{% url 'train' %}"
+                class="btn__text-cover btn__text bg-primary"
                 >Consultar</a
               >
             </div>
@@ -123,11 +129,13 @@
                 class="img-fluid"
                 src="/media/feed/redes-sociales.webp"
                 alt=""
-                width="100"
+                width="80"
                 height="100"
               />
               <h2>FRAUDE</h2>
-              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+              <a
+                href="{% url 'train' %}"
+                class="btn__text-cover btn__text bg-primary"
                 >Consultar</a
               >
             </div>
@@ -136,11 +144,13 @@
                 class="img-fluid"
                 src="/media/feed/blindaje.webp "
                 alt=""
-                width="100"
+                width="80"
                 height="100"
               />
               <h2>RANSOMWARE</h2>
-              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+              <a
+                href="{% url 'train' %}"
+                class="btn__text-cover btn__text bg-primary"
                 >Consultar</a
               >
             </div>
@@ -149,11 +159,13 @@
                 class="img-fluid"
                 src="/media/feed/bote-de-basura (1).webp"
                 alt=""
-                width="100"
+                width="80"
                 height="100"
               />
               <h2>DUMPSTER</h2>
-              <a href="{% url 'train' %}" class="btn__text-cover btn__text"
+              <a
+                href="{% url 'train' %}"
+                class="btn__text-cover btn__text bg-primary"
                 >Consultar</a
               >
             </div>
@@ -163,12 +175,16 @@
 
       <!--construccion Metodologia banner-->
 
-      <div class="container__about div__offset">
+      <div class="container-fluid container__about div__offset">
         <div class="about">
-          <div class="text__about">
+          <div class="text__about text-primary">
             <h1>Conoce El Paso A Paso de Nuestra Metodología</h1>
             <p>Descubre de forma fácil el como resolver un ataque ransomware</p>
-            <a href="{% url 'step1' %}" class="btn__text-about btn__text">Ir</a>
+            <a
+              href="{% url 'step1' %}"
+              class="btn__text-about btn__text bg-primary"
+              >Ir</a
+            >
           </div>
           <div class="image__about">
             <img
@@ -184,43 +200,55 @@
 
       <!--construccion Herramienta banner-->
 
-      <div class="containerHerramienta">
+      <div class="container-fluid containerHerramienta">
         <div class="tituloh">
           <h1>Herramientas Contra Infecciónes Ransomware</h1>
         </div>
-        <div class="containerH">
-          <div class="card">
+        <div class="container containerH">
+          <div class="image-fluid card">
             <img src="/media/feed/R.webp" alt="" />
-            <h4>Herramienta contra RIUK</h4>
-            <a href="{% url 'encryption8'  %}">Leer Más-></a>
+            <h4 class="text-primary">Herramienta contra RIUK</h4>
+            <a href="{% url 'encryption8'  %}" class="text-primary"
+              >Leer Más-></a
+            >
           </div>
 
-          <div class="card">
+          <div class="image-fluid card">
             <img src="/media/feed/w.webp" alt="" />
-            <h4>Herramienta Contra WANNACRY</h4>
-            <a href="{% url 'encryption8'  %}">Leer más-></a>
+            <h4 class="text-primary">Herramienta Contra WANNACRY</h4>
+            <a href="{% url 'encryption8'  %}" class="text-primary"
+              >Leer más-></a
+            >
           </div>
 
-          <div class="card">
+          <div class="image-fluid card">
             <img src="/media/feed/B.webp" alt="" />
-            <h4>Herramienta Contra BAD RABBIT</h4>
-            <a href="{% url 'encryption8'  %}">Leer más-></a>
+            <h4 class="text-primary">Herramienta Contra BAD RABBIT</h4>
+            <a href="{% url 'encryption8'  %}" class="text-primary"
+              >Leer más-></a
+            >
           </div>
 
-          <div class="card">
+          <div class="image-fluid card">
             <img src="/media/feed/J.webp" alt="" />
-            <h4>Herramienta Contra JIGSAW</h4>
-            <a href="{% url 'encryption8'  %}">Leer más-></a>
+            <h4 class="text-primary">Herramienta Contra JIGSAW</h4>
+            <a href="{% url 'encryption8'  %}" class="text-primary"
+              >Leer más-></a
+            >
           </div>
 
-          <div class="card">
+          <div class="image-fluid card">
             <img src="/media/feed/P.webp" alt="" />
-            <h4>Herramienta Contra PETYA</h4>
-            <a href="{% url 'encryption8'  %}">Leer más-></a>
+            <h4 class="text-primary">Herramienta Contra PETYA</h4>
+            <a href="{% url 'encryption8'  %}" class="text-primary"
+              >Leer más-></a
+            >
           </div>
 
           <div class="btnH">
-            <a href="{% url 'encryption8' %}" class="btn__text-cover btn__text"
+            <a
+              href="{% url 'encryption8' %}"
+              class="btn__text-cover btn__text bg-primary"
               >Mas Herramientas --></a
             >
           </div>
@@ -229,62 +257,230 @@
 
       <!--SECCION DE VIDEOS-->
 
-      <div class="info">
+      <div class="containder-fluid info">
         <div class="tituloI">
           <h1>Información multimedia</h1>
         </div>
-
-        <div class="video1">
+        <div class="container-fluid video1">
           <dialog id="ms">
-            <video class="prueba1" width="100%" height="500px" controls>
-              <source src="video.mp4" type="video/mp4" />
-            </video>
+            <iframe
+              width="100%"
+              height="90%"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
             <button id="close" onclick="document.getElementById('ms').close()">
               Cerrar!
             </button>
           </dialog>
           <p>Saber mas sobre Ciberseguridad</p>
-          <button id="show" onclick="document.getElementById('ms').showModal()">
+          <button
+            class="bg-primary"
+            id="show"
+            onclick="document.getElementById('ms').showModal()"
+          >
             Mostrar
           </button>
         </div>
 
         <div class="video2">
-          <dialog id="ms">
-            <video class="video1" width="700" height="500" controls>
-              <source src="video.mp4" type="video/mp4" />
-            </video>
-            <button id="close" onclick="document.getElementById('ms').close()">
+          <dialog id="ms1">
+            <iframe
+              width="100%"
+              height="90%"
+              src="https://www.youtube.com/embed/_sVObRVfoms"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <button id="close" onclick="document.getElementById('ms1').close()">
               Cerrar!
             </button>
           </dialog>
           <p>Que es un ataque DDos??????? ......</p>
-          <button id="show" onclick="document.getElementById('ms').showModal()">
+          <button
+            class="bg-primary"
+            id="show"
+            onclick="document.getElementById('ms1').showModal()"
+          >
             Mostrar
           </button>
         </div>
 
         <div class="video3">
-          <dialog id="ms">
-            <video class="video1" width="700" height="500" controls>
-              <source src="https://www.youtube.com/embed/tOFzERkOg1s" type="" />
-            </video>
-            <button id="close" onclick="document.getElementById('ms').close()">
+          <dialog id="ms2">
+            <iframe
+              width="100%"
+              height="90%"
+              src="https://www.youtube.com/embed/wRicjp13sr4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <button id="close" onclick="document.getElementById('ms2').close()">
               Cerrar!
             </button>
           </dialog>
           <p>Historia y evolución del Ransomware</p>
-          <button id="show" onclick="document.getElementById('ms').showModal()">
+          <button
+            class="bg-primary"
+            id="show"
+            onclick="document.getElementById('ms2').showModal()"
+          >
             Mostrar
           </button>
         </div>
       </div>
 
       <!--SECCION FOOTER-->
-
-      <footer>
-        <p>Copyryght © 2023</p>
-      </footer>
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-white-50"
+        
+      >
+        <div class="row pt-5">
+          <div class="col-lg-3 col-md-6 mb-5">
+            <a href="" class="navbar-brand">
+              <h1 class="text-primary">
+                <span class="text-white">METODO</span>LOGÍA
+              </h1>
+            </a>
+            <p>
+              Metodología creada para capacitar a empresas para hacerle frente a
+              infecciónes ransomare
+            </p>
+            <h6
+              class="text-white text-uppercase mt-4 mb-3"
+              style="letter-spacing: 5px"
+            >
+              Siguenos
+            </h6>
+            <div class="d-flex justify-content-start">
+              <a class="btn btn-outline-primary btn-square mr-2" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-primary btn-square mr-2" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-primary btn-square mr-2" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a class="btn btn-outline-primary btn-square" href="#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 5px"
+            >
+              Nuestros Servicios
+            </h5>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Inicio</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Documentación</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Capacitacion</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Metodología</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Herramientas</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 5px"
+            >
+              links funcionales
+            </h5>
+            <div class="d-flex flex-column justify-content-start">
+              <a
+                class="text-white-50 mb-2"
+                href="https://id-ransomware.malwarehunterteam.com/"
+                ><i class="fa fa-angle-right mr-2"></i>ID Ransomware</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="https://latam.kaspersky.com/home-security?reseller=es-LA_bb2023_pro_ona_sem_bra_onl_b2c_goo_ppc-ad_______&utm_content=bb2023|generic&utm_id=bi_cmp-298177336_adg-1294125578123615_ad-80882956982290_kwd-80883071480946:loc-43_dev-c_ext-_prd-_sig-3ecd079b75db1311a69063bc2306550b&utm_source=google&utm_campaign=M%20-%20CO%20-%20LATAM%20-%20B2C%20-%20PS%20-%20Branded%20-%20SP%20-%20B-EXA-KW&msclkid=3ecd079b75db1311a69063bc2306550b&utm_source=bing&utm_medium=cpc&utm_campaign=M%20-%20CO%20-%20LATAM%20-%20B2C%20-%20PS%20-%20Branded%20-
+         %20SP%20-%20B-EXA-KW&utm_term=kaspersky&utm_content=kaspersky"
+                ><i class="fa fa-angle-right mr-2"></i>kaspersky</a
+              >
+              <a class="text-white-50 mb-2" href="https://www.emsisoft.com/en/"
+                ><i class="fa fa-angle-right mr-2"></i>emsisoft</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Packages</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Herramientas</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5">
+            <h5
+              class="text-white text-uppercase mb-4"
+              style="letter-spacing: 5px"
+            >
+              Contactanos
+            </h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Pasto, Colombia</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+57 311 345 6789</p>
+            <p><i class="fa fa-envelope mr-2"></i>ransomare@gmail.com</p>
+            <h6
+              class="text-white text-uppercase mt-4 mb-3"
+              style="letter-spacing: 5px"
+            >
+              Notificaciones
+            </h6>
+            <div class="w-100">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  style="padding: 25px"
+                  placeholder="Tu Email"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary px-3">únete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, 0.1) !important"
+      >
+        <div class="row">
+          <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">
+              Copyright &copy; <a href="#">Dominio</a>. Todos los derechos
+              reservados.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center text-md-right">
+            <p class="m-0 text-white-50">
+              Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
     </main>
 
     <!--*** Link del Javascript del Boostrap ***-->

@@ -61,12 +61,13 @@
 .text__aboutT p {
   font-size: var(--text_paragraph);
   margin-top: 50px;
-  color: var(--color_text-tertiary);
+  color: black;
+  font-weight: 600;
 }
 
 .text__aboutT a {
   width: 100%;
-  background-color: var(--color_text-primary);
+  background-color: blue;
   letter-spacing: 10px;
   font-size: 15px;
   font-weight: 500;
@@ -125,9 +126,9 @@
 }
 
 .btn__text:hover {
-  background: blue;
+  background-color: blue;
   border: 2px solid black;
-  color: transparent;
+  color: white;
   box-shadow: var(--box_shadow-primary);
 }
 
@@ -144,16 +145,13 @@
 
 .container__card-primary {
   padding-top: 50px;
-  margin: auto;
   text-align: center;
-  padding: 1px 40px;
-  margin-bottom: 1px;
-  border-radius: 2px;
+  padding: 1px;
+  height: 100%;
 }
 
 .card__primary {
   background-color: white;
-  max-width: 2000px;
   height: 500px;
 }
 
@@ -180,6 +178,7 @@
 .container__box-card-primary {
   margin-left: 50px;
   margin-right: 50px;
+  height: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -200,7 +199,6 @@
   padding: 20px 50px;
   border: 1px solid #e6e6e6;
   border-radius: 20px;
-  margin: 10px;
 }
 
 .box__card-primary h2 {
@@ -237,7 +235,7 @@
 }
 
 .text__about h1 {
-  color: var(--color_text-primary);
+  color: blue;
   font-weight: 500;
 }
 
@@ -344,7 +342,8 @@
 
 .btnH a {
   width: 100%;
-  background-color: var(--color_text-primary);
+  background-color: bg-primary;
+  color: white;
   letter-spacing: 10px;
   font-size: 15px;
   font-weight: 600;
@@ -357,7 +356,7 @@
 }
 
 .btnH a:hover {
-  color: black;
+  color: white;
   background-color: white;
   transition: all 700ms;
 }
@@ -370,7 +369,6 @@
   background-color: white;
   height: 600px;
   padding: 0 20px;
-  margin: 0 40px;
 }
 
 .tituloI h1 {
@@ -390,6 +388,20 @@
   border-radius: 20px;
 }
 
+#ms1 {
+  background-color: black;
+  width: 650px;
+  height: 590px;
+  border-radius: 20px;
+}
+
+#ms2 {
+  background-color: black;
+  width: 650px;
+  height: 590px;
+  border-radius: 20px;
+}
+
 #ms button {
   font-size: 20px;
   font-weight: 500;
@@ -402,8 +414,32 @@
   color: white;
 }
 
-#show {
+#ms1 button {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 155px;
+  display: block;
+  margin: 2px 2px;
+  margin-left: 35%;
   background-color: var(--color_text-primary);
+  color: white;
+}
+
+#ms2 button {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 155px;
+  display: block;
+  margin: 2px 2px;
+  margin-left: 35%;
+  background-color: var(--color_text-primary);
+  color: white;
+}
+
+#show {
+  color: white;
   letter-spacing: 10px;
   font-size: 15px;
   font-weight: 500;
@@ -414,6 +450,11 @@
   margin-bottom: 50px;
   box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
   transition: 500ms;
+}
+#show :hover{
+  background-color: bg-primary;
+  color: white;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
 }
 
 #vidtext1 {
@@ -480,6 +521,12 @@
   width: 80%;
   box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
   border-radius: 10px;
+}
+
+/*ESTILOS PARA NUEVA VENTANA DE VIDEO*/
+
+#vf1 {
+  display: none;
 }
 
 /*ESTILOS DEL FOOTER*/

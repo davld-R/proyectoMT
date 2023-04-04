@@ -5,13 +5,6 @@ const button2 = document.getElementById("div__paso2");
 const button3 = document.getElementById("div__paso3");
 const button4 = document.getElementById("div__paso4");
 const button5 = document.getElementById("div__paso5");
-const button6 = document.getElementById("div__paso6");
-const button7 = document.getElementById("div__paso7");
-const button8 = document.getElementById("div__paso8");
-const button9 = document.getElementById("div__paso9");
-const button10 = document.getElementById("div__paso10");
-const button11 = document.getElementById("div__paso11");
-const button12 = document.getElementById("div__paso12");
 
 const mostrarPaso1 = () => {
   button1.style.display = "block";
@@ -19,13 +12,6 @@ const mostrarPaso1 = () => {
   button3.style.display = "none";
   button4.style.display = "none";
   button5.style.display = "none";
-  button6.style.display = "none";
-  button7.style.display = "none";
-  button8.style.display = "none";
-  button9.style.display = "none";
-  button10.style.display = "none";
-  button11.style.display = "none";
-  button12.style.display = "none";
 };
 
 const mostrarPaso2 = () => {
@@ -34,13 +20,6 @@ const mostrarPaso2 = () => {
   button3.style.display = "none";
   button4.style.display = "none";
   button5.style.display = "none";
-  button6.style.display = "none";
-  button7.style.display = "none";
-  button8.style.display = "none";
-  button9.style.display = "none";
-  button10.style.display = "none";
-  button11.style.display = "none";
-  button12.style.display = "none";
 };
 
 const mostrarPaso3 = () => {
@@ -49,13 +28,6 @@ const mostrarPaso3 = () => {
   button2.style.display = "none";
   button4.style.display = "none";
   button5.style.display = "none";
-  button6.style.display = "none";
-  button7.style.display = "none";
-  button8.style.display = "none";
-  button9.style.display = "none";
-  button10.style.display = "none";
-  button11.style.display = "none";
-  button12.style.display = "none";
 };
 const mostrarPaso4 = () => {
   button4.style.display = "block";
@@ -63,13 +35,6 @@ const mostrarPaso4 = () => {
   button2.style.display = "none";
   button3.style.display = "none";
   button5.style.display = "none";
-  button6.style.display = "none";
-  button7.style.display = "none";
-  button8.style.display = "none";
-  button9.style.display = "none";
-  button10.style.display = "none";
-  button11.style.display = "none";
-  button12.style.display = "none";
 };
 const mostrarPaso5 = () => {
   button5.style.display = "block";
@@ -77,13 +42,6 @@ const mostrarPaso5 = () => {
   button2.style.display = "none";
   button3.style.display = "none";
   button4.style.display = "none";
-  button6.style.display = "none";
-  button7.style.display = "none";
-  button8.style.display = "none";
-  button9.style.display = "none";
-  button10.style.display = "none";
-  button11.style.display = "none";
-  button12.style.display = "none";
 };
 // const mostrarPaso6 = () => {
 //     button6.style.display = "block";
