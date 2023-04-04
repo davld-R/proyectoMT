@@ -7,6 +7,11 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.db.models import Q
 
+@login_required
+def capacitacion(request):
+    return render(request, 'training/capacitacion/ingeSocial.html')
+
+
 # TODO: Vista de los PDF
 @login_required
 def method(request):

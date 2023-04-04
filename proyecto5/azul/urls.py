@@ -30,6 +30,8 @@ urlpatterns = [
 
     path('feed/train/', views.train, name='train'),
 
+    path('feed/train/capacitacion/', views.capacitacion, name='capacitacion'),
+
     path('feed/step1/', views.step1, name='step1'),
 
     path('feed/cases/', views.cases, name='cases'),
