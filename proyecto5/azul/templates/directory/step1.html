@@ -530,8 +530,33 @@
     </div> -->
 
     <div class="container container__pasos">
+      <!--ventana paso 1-->
+
+      <div id="vp1" class="container-fluid">
+        <div class="col">
+          <iframe
+            width="100%"
+            height="600"
+            src="https://www.youtube.com/embed/JXDUKotmsWQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="col">
+          <button
+            id="btn_vp1"
+            class="btn btn-primary btn-md ms-5"
+            onclick="iframe2()"
+          >
+            Cerrar Video del Paso1
+          </button>
+        </div>
+      </div>
       <div class="pasos__card">
-        <div id="div__paso1" class="container bg-light shadow">
+        <div id="div__paso1" class="container bg-dark shadow">
           <h1>PASO 1 METODOLOGÍA</h1>
           <div class="pasos">
             <p>Cierre de Escena de Infección</p>
@@ -544,26 +569,39 @@
               <div class="text__pasos1 bg-light shadow">
                 <h3>Paso 1</h3>
               </div>
+
               <div class="image__pasos">
-                <dialog id="video__pasos">
-                  <video class="video1" width="100%" height="550px" controls>
-                    <source src="video.mp4" type="video/mp4" />
-                  </video>
-                  <button
-                    id="close"
-                    onclick="document.getElementById('video__pasos').close()"
-                  >
-                    Cerrar paso 1 !
-                  </button>
-                </dialog>
-                <button
-                  id="mostrar__pasos"
-                  onclick="document.getElementById('video__pasos').showModal()"
-                >
+                <button class="btn btn-primary btn-lg mx-2" onclick="iframe1()">
                   Mostrar video
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!--ventana paso 2-->
+
+        <div id="vp2" class="container-fluid">
+          <div class="col">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="col">
+            <button
+              id="btn_vp2"
+              class="btn btn-primary btn-md ms-5"
+              onclick="iframe4()"
+            >
+              Cerrar Video del Paso 2
+            </button>
           </div>
         </div>
 
@@ -580,21 +618,7 @@
                 <h3>Paso 2</h3>
               </div>
               <div class="image__pasos">
-                <dialog id="video__pasos2">
-                  <video class="video1" width="100%" height="500px" controls>
-                    <source src="video.mp4" type="video/mp4" />
-                  </video>
-                  <button
-                    id="close"
-                    onclick="document.getElementById('video__pasos2').close()"
-                  >
-                    Cerrar Paso 2
-                  </button>
-                </dialog>
-                <button
-                  id="mostrar__pasos"
-                  onclick="document.getElementById('video__pasos2').showModal()"
-                >
+                <button class="btn btn-primary btn-lg mx-2" onclick="iframe3()">
                   Mostrar video
                 </button>
               </div>
@@ -602,6 +626,31 @@
           </div>
         </div>
 
+        <!--ventana paso 3-->
+
+        <div id="vp3" class="container-fluid">
+          <div class="col">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="col">
+            <button
+              id="btn_vp3"
+              class="btn btn-primary btn-md ms-5"
+              onclick="iframe6()"
+            >
+              Cerrar Video del Paso 3
+            </button>
+          </div>
+        </div>
         <div id="div__paso3" class="container bg-light shadow">
           <h1>PASO 3 METODOLOGÍA</h1>
           <div class="pasos">
@@ -615,25 +664,37 @@
                 <h3>Paso 3</h3>
               </div>
               <div class="image__pasos">
-                <dialog id="video__pasos3">
-                  <video class="video1" width="100%" height="500px" controls>
-                    <source src="video.mp4" type="video/mp4" />
-                  </video>
-                  <button
-                    id="close"
-                    onclick="document.getElementById('video__pasos3').close()"
-                  >
-                    Cerrar Paso 3!
-                  </button>
-                </dialog>
-                <button
-                  id="mostrar__pasos"
-                  onclick="document.getElementById('video__pasos3').showModal()"
-                >
+                <button class="btn btn-primary btn-lg mx-2" onclick="iframe5()">
                   Mostrar video
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!--ventana paso 4-->
+
+        <div id="vp4" class="container-fluid">
+          <div class="col">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="col">
+            <button
+              id="btn_vp4"
+              class="btn btn-primary btn-md ms-5"
+              onclick="iframe8()"
+            >
+              Cerrar Video del Paso 4
+            </button>
           </div>
         </div>
 
@@ -651,25 +712,37 @@
                 <h3>Paso 4</h3>
               </div>
               <div class="image__pasos">
-                <dialog id="video__pasos4">
-                  <video class="video1" width="100%" height="500px" controls>
-                    <source src="video.mp4" type="video/mp4" />
-                  </video>
-                  <button
-                    id="close"
-                    onclick="document.getElementById('video__pasos4').close()"
-                  >
-                    Cerrar Paso 4!
-                  </button>
-                </dialog>
-                <button
-                  id="mostrar__pasos"
-                  onclick="document.getElementById('video__pasos4').showModal()"
-                >
+                <button class="btn btn-primary btn-lg mx-2" onclick="iframe7()">
                   Mostrar video
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!--ventana paso 5-->
+
+        <div id="vp5" class="container-fluid">
+          <div class="col">
+            <iframe
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="col">
+            <button
+              id="btn_vp5"
+              class="btn btn-primary btn-md ms-5"
+              onclick="iframe10()"
+            >
+              Cerrar Video del Paso 5
+            </button>
           </div>
         </div>
 
@@ -686,21 +759,7 @@
                 <h3>Paso 5</h3>
               </div>
               <div class="image__pasos">
-                <dialog id="video__pasos5">
-                  <video class="video1" width="100%" height="500px" controls>
-                    <source src="video.mp4" type="video/mp4" />
-                  </video>
-                  <button
-                    id="close"
-                    onclick="document.getElementById('video__pasos5').close()"
-                  >
-                    Cerrar Paso 5!
-                  </button>
-                </dialog>
-                <button
-                  id="mostrar__pasos"
-                  onclick="document.getElementById('video__pasos5').showModal()"
-                >
+                <button class="btn btn-primary btn-lg mx-2" onclick="iframe9()">
                   Mostrar video
                 </button>
               </div>

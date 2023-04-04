@@ -53,16 +53,16 @@
 .pasos__card {
     height: 100%;
     margin: 50px;
-    background-color: aliceblue;
+    background-color: transparent;
 }
 
 .text__pasos1 {
     width: 100%;
     height: 200px;
     margin-right: 5%;
-    background-color:white;
-    box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);  
-  }
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(48, 1, 66);
+}
 
 .text__pasos1 h3 {
     font-size: 60px;
@@ -236,4 +236,51 @@
     margin-left: 35%;
     background-color: var(--color_text-primary);
     color: white;
+}
+
+/*ESTILOS IFRAME*/
+
+/*IFRAME 1*/
+
+#vp1 {
+    display: none;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* IFRAME 2*/
+
+#vp2 {
+    display: none;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* IFRAME 3*/
+
+#vp3 {
+    display: none;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* IFRAME 4*/
+
+#vp4 {
+    display: none;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* IFRAME 5*/
+
+#vp5 {
+    display: none;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: black;
 }
