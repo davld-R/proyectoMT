@@ -11,7 +11,6 @@ from django.db.models import Q
 def capacitacion(request):
     return render(request, 'training/capacitacion/ingeSocial.html')
 
-
 # TODO: Vista de los PDF
 @login_required
 def method(request):
