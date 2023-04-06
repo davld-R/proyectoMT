@@ -12,6 +12,11 @@ const mostrarPaso1 = () => {
   button3.style.display = "none";
   button4.style.display = "none";
   button5.style.display = "none";
+  btn1.style.display = "none";
+  btn3.style.display = "none";
+  btn5.style.display = "none";
+  btn7.style.display = "none";
+  btn9.style.display = "none";
 };
 
 const mostrarPaso2 = () => {
@@ -20,6 +25,11 @@ const mostrarPaso2 = () => {
   button3.style.display = "none";
   button4.style.display = "none";
   button5.style.display = "none";
+  btn1.style.display = "none";
+  btn3.style.display = "none";
+  btn5.style.display = "none";
+  btn7.style.display = "none";
+  btn9.style.display = "none";
 };
 
 const mostrarPaso3 = () => {
@@ -28,6 +38,11 @@ const mostrarPaso3 = () => {
   button2.style.display = "none";
   button4.style.display = "none";
   button5.style.display = "none";
+  btn1.style.display = "none";
+  btn3.style.display = "none";
+  btn5.style.display = "none";
+  btn7.style.display = "none";
+  btn9.style.display = "none";
 };
 const mostrarPaso4 = () => {
   button4.style.display = "block";
@@ -35,6 +50,11 @@ const mostrarPaso4 = () => {
   button2.style.display = "none";
   button3.style.display = "none";
   button5.style.display = "none";
+  btn1.style.display = "none";
+  btn3.style.display = "none";
+  btn5.style.display = "none";
+  btn7.style.display = "none";
+  btn9.style.display = "none";
 };
 const mostrarPaso5 = () => {
   button5.style.display = "block";
@@ -42,6 +62,11 @@ const mostrarPaso5 = () => {
   button2.style.display = "none";
   button3.style.display = "none";
   button4.style.display = "none";
+  btn1.style.display = "none";
+  btn3.style.display = "none";
+  btn5.style.display = "none";
+  btn7.style.display = "none";
+  btn9.style.display = "none";
 };
 // const mostrarPaso6 = () => {
 //     button6.style.display = "block";
@@ -153,10 +178,6 @@ const btn2 = document.getElementById("vp1");
 const iframe1 = () => {
   btn1.style.display = "block";
   button1.style.display = "none";
-  button2.style.display = "none";
-  button3.style.display = "none";
-  button4.style.display = "none";
-  button5.style.display = "none";
 };
 
 const iframe2 = () => {
