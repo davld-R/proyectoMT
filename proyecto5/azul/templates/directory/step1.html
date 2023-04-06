@@ -374,7 +374,7 @@
     </div>
 
     <div class="container text-center">
-      <div class="row pb-5 bg-light shadow pt-5">
+      <div class="row pb-4 bg-light shadow pt-4">
         <div class="col">
           <button class="btn btn-primary btn-lg mx-2" onclick="mostrarPaso1()">
             paso 1 Metodología
@@ -403,82 +403,13 @@
       </div>
     </div>
 
-    <!-- <div class="container-fluid booking mt-10 pb-5">
-      <div class="row align-items-center">
-        <div class="col-md-12 ">
-          <div class="container pb-5 bg-light shadow pt-5">
-            <button class="btn btn-primary btn-lg mx-3" onclick="mostrarPaso1()">
-              paso 1 Metodología
-            </button>
-            <button class="btn btn-primary btn-lg mx-2" onclick="mostrarPaso2()">
-              paso 2 Metodología
-            </button>
-            <button class="btn btn-primary btn-lg mx-2" onclick="mostrarPaso3()">
-              paso 3 Metodología
-            </button>
-            <button class="btn btn-primary btn-lg mx-2" onclick="mostrarPaso4()">
-              paso 4 Metodología
-            </button>
-            <button class="btn btn-primary btn-lg mx-2"  onclick="mostrarPaso5()">
-              paso 5 Metodología
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div
-      id="botonera"
-      class="container-lg mt-2 btn-group d-md-block justify-content-md-center"
-    >
-      <button class="btn btn-primary btn-lg" onclick="mostrarPaso1()">
-        PASO 1 METODOLOGÍA
-      </button>
-      <button class="btn btn-primary btn-lg" onclick="mostrarPaso2()">
-        PASO 2 METODOLOGÍA
-      </button>
-      <button class="btn btn-primary btn-lg" onclick="mostrarPaso3()">
-        PASO 3 METODOLOGÍA
-      </button>
-      <button class="btn btn-primary btn-lg" onclick="mostrarPaso4()">
-        PASO 4 METODOLOGÍA
-      </button>
-      <button class="btn btn-primary btn-lg" onclick="mostrarPaso5()">
-        PASO 5 METODOLOGÍA
-      </button>
-    </div> -->
-
     <div class="container container__pasos">
       <!--ventana paso 1-->
-
-      <div id="vp1" class="container-fluid">
-        <div class="col">
-          <iframe
-            width="100%"
-            height="600"
-            src="https://www.youtube.com/embed/JXDUKotmsWQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-        <div class="col">
-          <button
-            id="btn_vp1"
-            class="btn btn-primary btn-md ms-5"
-            onclick="iframe2()"
-          >
-            Cerrar Video del Paso1
-          </button>
-        </div>
-      </div>
       <div class="pasos__card">
         <div id="div__paso1" class="container bg-light shadow">
           <h1>PASO 1 METODOLOGÍA</h1>
           <div class="pasos">
-            <p>Cierre de Escena de Infección</p>
+            <p>Cierre de escena de infección</p>
             <h4>
               El cierre de la escena de infección es fundamental para preservar
               todos los posibles pistas y para hacer inventario de todos los
@@ -488,9 +419,11 @@
               <div class="text__pasos1 bg-light shadow">
                 <h3>Paso 1</h3>
               </div>
-
               <div class="">
-                <button class="btn btn-primary btn-lg mx-2 shadow" onclick="iframe1()">
+                <button
+                  class="btn btn-primary btn-lg mx-2 shadow"
+                  onclick="iframe1()"
+                >
                   Mostrar video
                 </button>
               </div>
@@ -498,31 +431,30 @@
           </div>
         </div>
 
-        <!--ventana paso 2-->
-
-        <div id="vp2" class="container-fluid">
+        <div id="vp1" class="container-fluid shadow">
           <div class="col">
             <iframe
               width="100%"
-              height="600"
-              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              height="500px"
+              src="https://www.youtube.com/embed/puZZL3XCQOc"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-            >
-            </iframe>
+            ></iframe>
           </div>
           <div class="col">
             <button
-              id="btn_vp2"
+              id="btn_vp1"
               class="btn btn-primary btn-md ms-5"
-              onclick="iframe4()"
+              onclick="iframe2()"
             >
-              Cerrar Video del Paso 2
+              X
             </button>
           </div>
         </div>
+
+        <!--ventana paso 2-->
 
         <div id="div__paso2" class="container bg-light shadow">
           <h1>PASO 2 METODOLOGÍA</h1>
@@ -537,7 +469,66 @@
                 <h3>Paso 2</h3>
               </div>
               <div class="">
-                <button class="btn btn-primary btn-lg mx-2 shadow" onclick="iframe3()">
+                <button
+                  class="btn btn-primary btn-lg mx-2 shadow"
+                  onclick="iframe3()"
+                >
+                  Mostrar video
+                </button>
+              </div>
+            </div>
+            <div>
+              <h1>TITULO PARA TEXTO EXPLICACION</h1>
+              <p>HOLA ESTE ES UN TEXTO DE PRUEBA</p>
+              <p>dnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="vp2" class="container-fluid shadow">
+          <div class="col">
+            <iframe
+              style="margin-top: 20px"
+              width="100%"
+              height="500px"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="col">
+            <button
+              id="btn_vp2"
+              class="btn btn-primary btn-md ms-5"
+              onclick="iframe4()"
+            >
+              X
+            </button>
+          </div>
+        </div>
+
+        <!--ventana paso 3-->
+
+        <div id="div__paso3" class="container bg-light shadow">
+          <h1>PASO 3 METODOLOGÍA</h1>
+          <div class="pasos">
+            <p>Desconectar todas las conecciónes</p>
+            <h4>
+              Es vital desconectar el o los ordenadores afectados de toda
+              conección ya sea alámbrica o inalámbrica.
+            </h4>
+            <div class="step__pasos">
+              <div class="text__pasos1 bg-light shadow">
+                <h3>Paso 3</h3>
+              </div>
+              <div class="">
+                <button
+                  class="btn btn-primary btn-lg mx-2 shadow"
+                  onclick="iframe5()"
+                >
                   Mostrar video
                 </button>
               </div>
@@ -545,13 +536,12 @@
           </div>
         </div>
 
-        <!--ventana paso 3-->
-
         <div id="vp3" class="container-fluid">
           <div class="col">
             <iframe
+              style="margin-top: 20px"
               width="100%"
-              height="600"
+              height="500px"
               src="https://www.youtube.com/embed/JXDUKotmsWQ"
               title="YouTube video player"
               frameborder="0"
@@ -566,56 +556,12 @@
               class="btn btn-primary btn-md ms-5"
               onclick="iframe6()"
             >
-              Cerrar Video del Paso 3
+              X
             </button>
-          </div>
-        </div>
-        <div id="div__paso3" class="container bg-light shadow">
-          <h1>PASO 3 METODOLOGÍA</h1>
-          <div class="pasos">
-            <p>Desconectar todas las conecciónes</p>
-            <h4>
-              Es vital desconectar el o los ordenadores afectados de toda
-              conección ya sea alámvria o inalámbrica.
-            </h4>
-            <div class="step__pasos">
-              <div class="text__pasos1 bg-light shadow">
-                <h3>Paso 3</h3>
-              </div>
-              <div class="">
-                <button class="btn btn-primary btn-lg mx-2 shadow" onclick="iframe5()">
-                  Mostrar video
-                </button>
-              </div>
-            </div>
           </div>
         </div>
 
         <!--ventana paso 4-->
-
-        <div id="vp4" class="container-fluid">
-          <div class="col">
-            <iframe
-              width="100%"
-              height="600"
-              src="https://www.youtube.com/embed/JXDUKotmsWQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="col">
-            <button
-              id="btn_vp4"
-              class="btn btn-primary btn-md ms-5"
-              onclick="iframe8()"
-            >
-              Cerrar Video del Paso 4
-            </button>
-          </div>
-        </div>
 
         <div id="div__paso4" class="container bg-light shadow">
           <h1>PASO 4 METODOLOGÍA</h1>
@@ -631,7 +577,10 @@
                 <h3>Paso 4</h3>
               </div>
               <div class="">
-                <button class="btn btn-primary btn-lg mx-2 shadow" onclick="iframe7()">
+                <button
+                  class="btn btn-primary btn-lg mx-2 shadow"
+                  onclick="iframe7()"
+                >
                   Mostrar video
                 </button>
               </div>
@@ -639,13 +588,62 @@
           </div>
         </div>
 
-        <!--ventana paso 5-->
-
-        <div id="vp5" class="container-fluid">
+        <div id="vp4" class="container-fluid">
           <div class="col">
             <iframe
+              style="margin-top: 20px"
               width="100%"
-              height="600"
+              height="500px"
+              src="https://www.youtube.com/embed/JXDUKotmsWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="col">
+            <button
+              id="btn_vp4"
+              class="btn btn-primary btn-md ms-5"
+              onclick="iframe8()"
+            >
+              X
+            </button>
+          </div>
+        </div>
+
+        <!--ventana paso 5-->
+
+        <div id="div__paso5" class="container bg-light shadow">
+          <h1>PASO 5 METODOLOGÍA</h1>
+          <div class="pasos">
+            <p>Ransomware de cifrado y bloqueo</p>
+            <h4>
+              Los ransomwares mas usados son de cifrado ya que son los mas
+              efectivos a la hora de solicitar rescate a sus victimas.
+            </h4>
+            <div class="step__pasos">
+              <div class="text__pasos1 bg-light shadow">
+                <h3>Paso 5</h3>
+              </div>
+              <div class="">
+                <button
+                  class="btn btn-primary btn-lg mx-2 shadow"
+                  onclick="iframe9()"
+                >
+                  Mostrar video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="vp5" class="container-fluid shadow">
+          <div class="col">
+            <iframe
+              style="margin-top: 20px"
+              width="100%"
+              height="500px"
               src="https://www.youtube.com/embed/JXDUKotmsWQ"
               title="YouTube video player"
               frameborder="0"
@@ -660,39 +658,15 @@
               class="btn btn-primary btn-md ms-5"
               onclick="iframe10()"
             >
-              Cerrar Video del Paso 5
+              X
             </button>
-          </div>
-        </div>
-
-        <div id="div__paso5" class="container bg-light shadow">
-          <h1>PASO 5 METODOLOGÍA</h1>
-          <div class="pasos">
-            <p>Ransomware de cifrado y bloqueo</p>
-            <h4>
-              Los ransomwares mas usados son de cifrado ya que son los mas
-              efectivos a la hora de solitar rescate a sus victimas.
-            </h4>
-            <div class="step__pasos">
-              <div class="text__pasos1 bg-light shadow">
-                <h3>Paso 5</h3>
-              </div>
-              <div class="">
-                <button class="btn btn-primary btn-lg mx-2 shadow" onclick="iframe9()">
-                  Mostrar video
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-white-50"
-      style="margin-top: 90px"
-    >
+    <div class="container-fluid bg-dark text-white-50" style="margin-top: 90px">
       <div class="row pt-5">
         <div class="col-lg-3 col-md-6 mb-5">
           <a href="" class="navbar-brand">
