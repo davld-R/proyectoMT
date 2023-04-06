@@ -1,16 +1,16 @@
-// window.addEventListener("resize", function (event) {
-//   if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
-//     document.body.style.zoom = "100%";
-//   } else if (window.innerWidth <= 1920 && window.innerHeight <= 1080) {
-//     document.body.style.zoom = "150%";
-//   }
-// });
-// window.onload = function () {
-//   // Comprobamos si la resolución es de 1920 x 1080
-//   if (screen.width === 1920 && screen.height === 1080) {
-//     document.body.style.zoom = "150%"; // Establecemos el zoom al 150%
-//   }
-// };
+window.addEventListener("resize", function (event) {
+  if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
+    document.body.style.zoom = "100%";
+  } else if (window.innerWidth <= 1920 && window.innerHeight <= 1080) {
+    document.body.style.zoom = "150%";
+  }
+});
+window.onload = function () {
+  // Comprobamos si la resolución es de 1920 x 1080
+  if (screen.width === 1920 && screen.height === 1080) {
+    document.body.style.zoom = "150%"; // Establecemos el zoom al 150%
+  }
+};
 
 const main1 = document.getElementById("main1");
 const main2 = document.getElementById("main2");

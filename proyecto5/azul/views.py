@@ -7,9 +7,15 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.db.models import Q
 
+# TODO: Vista de la capacitación
 @login_required
 def capacitacion(request):
     return render(request, 'training/capacitacion/ingeSocial.html')
+
+# TODO: vista de la metodología en ejecución
+@login_required
+def ejecucionPC(request):
+    return render(request, 'training/ejecucion/ejecucionPC.html')
 
 # TODO: Vista de los PDF
 @login_required
