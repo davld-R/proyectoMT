@@ -76,7 +76,6 @@
   50% {top: 50px;}
   100% {top: 0px;}
 }
-
 .contenedorPCX{
   display: flex;
   flex-direction: row;
