@@ -1,10 +1,10 @@
-.contenedorIMG19{
+.contenedorIMG19 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.contenedorCPU{
+.contenedorCPU {
   display: block;
   position: relative;
   width: 400px;
@@ -13,18 +13,24 @@
   animation: desplazar 2s infinite;
 }
 @keyframes desplazar {
-  0% {left: 0px;}
-  50% {left: 15px;}
-  100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0px;
+  }
 }
-.contenedorCPUCambio{
+.contenedorCPUCambio {
   display: block;
   width: 400px;
   height: 400px;
   cursor: pointer;
   opacity: 0.9;
 }
-.contenedorOpciones{
+.contenedorOpciones {
   /* display: flex; */
   display: none;
   flex-direction: column;
@@ -33,24 +39,24 @@
   border-radius: 10px;
   background-color: #0d0c1a;
 }
-.letraUser{
+.letraUser {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
-.contenedorBotonIR{
+.contenedorBotonIR {
   width: 100px;
   height: 100px;
   margin-top: 8px;
   margin-left: 8px;
 }
-.contenedorBotonEye{
+.contenedorBotonEye {
   width: 100px;
   height: 100px;
   margin-top: 10px;
   margin-left: 8px;
   cursor: pointer;
 }
-.contenedorDifuminar{
+.contenedorDifuminar {
   display: none;
   position: absolute;
   top: 47%;
@@ -62,7 +68,7 @@
   width: 500px;
   height: 500px;
 }
-.difuminarPC{
+.difuminarPC {
   display: block;
   position: relative;
   width: 400px;
@@ -72,24 +78,30 @@
   animation: mover 2s infinite;
 }
 @keyframes mover {
-  0% {top: 0px;}
-  50% {top: 50px;}
-  100% {top: 0px;}
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0px;
+  }
 }
-.contenedorPCX{
+.contenedorPCX {
   display: flex;
   flex-direction: row;
   background-color: #a9b5f3;
   border: 2px solid black;
 }
-.botonCERRAR{
+.botonCERRAR {
   margin-left: 198px;
   border: 0;
   background-color: #a9b5f3;
   color: black;
   font-size: 30px;
 }
-.letraContenedorPC{
+.letraContenedorPC {
   margin-left: 230px;
   margin-top: 8px;
   font-size: 25px;

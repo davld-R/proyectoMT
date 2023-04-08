@@ -83,7 +83,6 @@
     <!--
       !:  Programación del Body de la parte iterativa
     -->
-
     <div class="container">
       <h1>Dirigase al boton para encender el PC</h1>
       <div class="contenedorIMG19">
@@ -96,7 +95,7 @@
         />
         <div class="contenedorOpciones" id="contenedorOpciones">
           <h4 class="text-center letraUser">{{ user.username }}</h4>
-          <a href="{% url 'ejecucionPC' %}"
+          <a id="contenedorBotonIR" href="{% url 'ejecucionPC' %}"
             ><img src="/media/img/20.png" alt="" class="contenedorBotonIR"
           /></a>
           <img

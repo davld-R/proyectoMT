@@ -1,15 +1,16 @@
+const audio = new Audio("/media/img/mouse.mp3");
 const contenedorOpciones = document.getElementById("contenedorOpciones");
 const difuminarPC = document.getElementById("difuminarPC");
-let semaforo = true;
 let semaforo1 = true;
-
+const contenedorDifuminar = document.getElementById("contenedorDifuminar");
 const contenedorCPU = document.getElementById("contenedorCPU");
 
 const mostrarCPU = () => {
+  audio.play();
   if (semaforo1 == true) {
     contenedorOpciones.style.display = "flex";
-    semaforo1 = false;  
-  } else if(semaforo1 == false) {
+    semaforo1 = false;
+  } else if (semaforo1 == false) {
     contenedorOpciones.style.display = "none";
     semaforo1 = true;
   }
@@ -24,18 +25,15 @@ contenedorCPU.onmouseout = function () {
   contenedorCPU.classList.add("contenedorCPU");
 };
 
-const contenedorDifuminar = document.getElementById("contenedorDifuminar");
-
 const mostrarEYE = () => {
-  if (semaforo == true) {
-    contenedorDifuminar.style.display = "block";
-    semaforo = false;
-  } else if (semaforo == false) {
-    contenedorDifuminar.style.display = "none";
-    semaforo = true;
-  }
+  audio.play();
+  contenedorDifuminar.style.display = "block";
 };
 const cerrarDifuminar = () => {
+  audio.play();
   contenedorDifuminar.style.display = "none";
-  semaforo = true;
+};
+
+document.getElementById("contenedorBotonIR").onclick = function () {
+  audio.play();
 };
