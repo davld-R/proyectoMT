@@ -165,7 +165,7 @@
         >
           <a href="" class="navbar-brand">
             <h1 class="m-0 text-primary mx-5">
-              <span class="text-dark">QUE ES LA </span> INGENIERÍA SOCIAL?
+              <span class="text-dark">QUE ES</span> INGENIERÍA SOCIAL?
             </h1>
           </a>
           <div
@@ -183,7 +183,80 @@
         <div class="bg-light shadow" style="padding: 30px">
           <div class="row align-items-center" style="min-height: 60px">
             <div class="col-md-10">
-              <div class="row mx-5">HOLA TEXTO PRUEBA</div>
+              <div class="row mx-5">
+                <div class="video3">
+                  <!--INICIO PRIMER DIALOG-->
+                  <dialog id="queES?" class="p-5">
+                    <h4 class="mt-2 text-center text-primary">
+                      <span class="text-dark m-1"
+                        >Cuando hablamos de ciberseguridad, la mayoría pensamos
+                        en defendernos de hackers que utilizan debilidades
+                        tecnológicas para atacar las redes de datos. Sin
+                        embargo, hay otra manera de colarse en las empresas y
+                        redes: se trata de aprovecharse de las debilidades
+                        humanas.
+                      </span>
+                      Esta táctica se conoce con el nombre de «ingeniería
+                      social» y consiste en tenderle una trampa a alguien para
+                      que divulgue información o conceda acceso a redes de
+                      datos. Por ejemplo,
+                    </h4>
+                    <h2 class="text-center">
+                      Este es el título de mi ventana modal
+                    </h2>
+                    <button
+                      id="close"
+                      onclick="document.getElementById('queES?').close()"
+                    >
+                      Cerrar
+                    </button>
+                    <button
+                      class="bg-primary"
+                      id="show"
+                      onclick="document.getElementById('mas').showModal()"
+                    >
+                      Continuar Leyendo
+                    </button>
+                  </dialog>
+                  <!--FIN PRIMER DIALOG-->
+
+                  <!--INICIO SEGUNDO DIALOG-->
+                  <dialog id="mas" class="p-5">
+                    <h4 class="text-center text-primary">
+                      <span class="text-dark">
+                        un intruso podría hacerse pasar por miembro del
+                        departamento de informática y solicitar a los usuarios
+                        que le faciliten datos como sus nombres de usuario y
+                        contraseñas.
+                      </span>
+                      Y sorprende la cantidad de personas que no se lo piensan
+                      dos veces a la hora de poner esa información en riesgo,
+                      sobre todo si parece que quien la solicita es alguien
+                      legítimo. Dicho en pocas palabras, la ingeniería social es
+                      el uso del engaño para manipular a personas de manera que
+                      permitan acceder a información y datos o los divulguen.
+                    </h4>
+
+                    <h2 class="text-center">
+                      Este es el título de mi ventana modal
+                    </h2>
+                    <button
+                      id="close"
+                      onclick="document.getElementById('mas').close()"
+                    >
+                      Volver
+                    </button>
+                  </dialog>
+                  <!--FIN SEGUNDO DIALOG-->
+                  <button
+                    class="bg-primary"
+                    id="show"
+                    onclick="document.getElementById('queES?').showModal()"
+                  >
+                    Mostrar
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -198,12 +271,11 @@
         style="z-index: 9"
       >
         <nav
-          class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
+          class="navbar navbar-expand-lg bg-light booking navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
         >
           <a href="" class="navbar-brand">
             <h1 class="m-0 text-primary mx-5">
-              <span class="text-dark">TIPOS DE ATAQUES DE </span> INGENIERÍA
-              SOCIAL
+              <span class="text-dark">TIPOS DE </span> ATAQUES
             </h1>
           </a>
           <div
@@ -240,8 +312,7 @@
         >
           <a href="" class="navbar-brand">
             <h1 class="m-0 text-primary mx-5">
-              <span class="text-dark">COMO EVITAR ATAQUES DE </span> INGENIERÍA
-              SOCIAL
+              <span class="text-dark">COMO EVITAR</span> ATAQUES
             </h1>
           </a>
           <div
