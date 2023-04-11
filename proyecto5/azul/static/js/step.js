@@ -1,14 +1,16 @@
 window.addEventListener("resize", function (event) {
   if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
-    document.body.style.zoom = "100%";
+    document.body.style.zoom = "90%";
   } else if (window.innerWidth <= 1920 && window.innerHeight <= 1080) {
-    document.body.style.zoom = "150%";
+    document.body.style.zoom = "130%";
   }
 });
 window.onload = function () {
   // Comprobamos si la resolución es de 1920 x 1080
   if (screen.width === 1920 && screen.height === 1080) {
-    document.body.style.zoom = "150%"; // Establecemos el zoom al 150%
+    document.body.style.zoom = "130%"; // Establecemos el zoom al 150%
+  } else if (screen.width === 1366 && screen.height === 768) {
+    document.body.style.zoom = "90%"; // Establecemos el zoom al 150%
   }
 };
 
@@ -36,6 +38,14 @@ const contenedor2Img10 = document.getElementById("contenedor2-img-10");
 const contenedor3Img10 = document.getElementById("contenedor3-img-10");
 const salirImg10 = document.getElementById("salir-img-10");
 const containerEncriptados = document.getElementById("containerEncriptados");
+const boton1 = document.getElementById("boton1");
+const boton2 = document.getElementById("boton2");
+const boton3 = document.getElementById("boton3");
+const boton4 = document.getElementById("boton4");
+const boton5 = document.getElementById("boton5");
+const boton6 = document.getElementById("boton6");
+const boton7 = document.getElementById("boton7");
+const contenedorEmsisoft  = document.getElementById("contenedorEmsisoft");
 let bandera = true;
 let bandera2 = true;
 let bandera3 = true;
@@ -337,3 +347,208 @@ const showImage18 = () => {
 const showImage19 = () => {
   containerEncriptados.style.display = "none";
 };
+// Esto muestra cuando se le da click a la herramienta de des
+const showImage20 = () => {
+  contenedorEmsisoft.style.display = "flex";
+};
+boton5.onmouseover = function () {
+  boton5.classList.remove("boton5");
+  boton5.classList.add("boton5Cambio");
+};
+boton5.onmouseout = function () {
+  boton5.classList.remove("boton5Cambio");
+  boton5.classList.add("boton5");
+};
+boton6.onmouseover = function () {
+  boton6.classList.remove("boton6");
+  boton6.classList.add("boton6Cambio");
+};
+boton6.onmouseout = function () {
+  boton6.classList.remove("boton6Cambio");
+  boton6.classList.add("boton6");
+};
+boton7.onmouseover = function () {
+  boton7.classList.remove("boton7");
+  boton7.classList.add("boton7Cambio");
+};
+boton7.onmouseout = function () {
+  boton7.classList.remove("boton7Cambio");
+  boton7.classList.add("boton7");
+};
+const contenedorBoton1 = document.getElementById("contenedorEmsisoft7");
+const contenedorBoton2 = document.getElementById("contenedorEmsisoft73");
+const contenedorBoton3 = document.getElementById("contenedorEmsisoft72");
+const contenedorBoton4 = document.getElementById("contenedorEmsisoft71");
+let bandera11 = true;
+
+const BotonDecryptor = () => {
+  boton5.style.display = "block";
+  boton6.style.display = "block";
+  boton7.style.display = "block";
+  boton1.style.backgroundColor = "#43484e";
+  boton2.style.backgroundColor = "#6c757d";
+  boton3.style.backgroundColor = "#6c757d";
+  boton4.style.backgroundColor = "#6c757d";
+  contenedorBoton1.style.display = "block";
+  contenedorBoton2.style.display = "none";
+  contenedorBoton3.style.display = "none";
+  contenedorBoton4.style.display = "none";
+};
+
+const BotonResults = () => {
+  boton5.style.display = "none";
+  boton6.style.display = "none";
+  boton7.style.display = "none";
+  boton1.style.backgroundColor = "#6c757d";
+  boton2.style.backgroundColor = "#43484e";
+  boton3.style.backgroundColor = "#6c757d";
+  boton4.style.backgroundColor = "#6c757d";
+  contenedorBoton1.style.display = "none";
+  contenedorBoton2.style.display = "block";
+  contenedorBoton3.style.display = "none";
+  contenedorBoton4.style.display = "none";
+};
+const BotonOptiones = () => {
+  boton5.style.display = "none";
+  boton6.style.display = "none";
+  boton7.style.display = "none";
+  boton1.style.backgroundColor = "#6c757d";
+  boton2.style.backgroundColor = "#6c757d";
+  boton3.style.backgroundColor = "#43484e";
+  boton4.style.backgroundColor = "#6c757d";
+  contenedorBoton1.style.display = "none";
+  contenedorBoton2.style.display = "none";
+  contenedorBoton3.style.display = "block";
+  contenedorBoton4.style.display = "none";
+};
+const BotonAbout = () => {
+  boton5.style.display = "none";
+  boton6.style.display = "none";
+  boton7.style.display = "none";
+  boton1.style.backgroundColor = "#6c757d";
+  boton2.style.backgroundColor = "#6c757d";
+  boton3.style.backgroundColor = "#6c757d";
+  boton4.style.backgroundColor = "#43484e";
+  contenedorBoton1.style.display = "none";
+  contenedorBoton2.style.display = "none";
+  contenedorBoton3.style.display = "none";
+  contenedorBoton4.style.display = "block";
+};
+
+const contenedorImagen = document.getElementById("contenedorImagen");
+const contenedorImagen2 = document.getElementById("contenedorImagen2");
+const contenedorImagen3 = document.getElementById("contenedorImagen3");
+const contenedorBuscar1 = document.getElementById("contenedorBuscar1");
+let semaforo1 = true;
+let semaforo2 = true;
+
+const botonAdd = () => {
+  contenedorBuscar1.style.display = "block";
+};
+
+const botonCancel = () => {
+  contenedorBuscar1.style.display = "none";
+  div.style = "display: none";
+  div2.style = "display: none";
+  div3.style = "display: none";
+};
+
+const botonFlecha = () => {
+  if (semaforo1 == true) {
+    contenedorImagen.style.display = "flex";
+    semaforo1 = false;
+  } else if (semaforo1 == false) {
+    contenedorImagen.style.display = "none";
+    contenedorImagen2.style.display = "none";
+    contenedorImagen3.style.display = "none";
+    semaforo1 = true;
+  }
+};
+
+const escribeDesktop = document.getElementById("escribeDesktop");
+const div = document.createElement("div");
+div.textContent = "C:/Desktop";
+const div2 = div.cloneNode();
+div2.textContent = "C:/Desktop/Cesmag.png.fun";
+const div3 = div.cloneNode();
+div3.textContent = "C:/Desktop/texto.txt.fun";
+const div4 = div.cloneNode();
+div4.textContent = "Starting ..."
+const div5 = div.cloneNode();
+div5.textContent = "File: C:/Desktop/UniCesmag.png.fun"
+const div6 = div.cloneNode();
+div6.textContent = "Decrypted: C:/Desktop/UniCesmag.png";
+const div7 = div.cloneNode();
+div7.textContent = "File: C:/Desktop/Texto.txt.fun";
+const div8 = div.cloneNode();
+div8.textContent = "File: C:/Desktop/desktop.ini";
+const div9 = div.cloneNode();
+div9.textContent = "Error: Length of the data to decrypt is invalid";
+const espaciado = div.cloneNode();
+espaciado.className = "espaciado";
+const espaciado2 = div.cloneNode();
+espaciado2.className = "espaciado";
+
+const botonDesktop = () => {
+  escribeDesktop.appendChild(div);
+};
+
+const botonDesktop2 = () => {
+  if (semaforo2 == true) {
+    contenedorImagen2.style.display = "flex";
+    contenedorImagen3.style.display = "flex";
+    semaforo2 = false;
+  } else if (semaforo2 == false) {
+    contenedorImagen2.style.display = "none";
+    contenedorImagen3.style.display = "none";
+    semaforo2 = true;
+  }
+};
+
+const botonCesmag = () => {
+  escribeDesktop.appendChild(div2);
+};
+
+const botonTexto = () => {
+  escribeDesktop.appendChild(div3);
+};
+
+const botonOK = () => {
+  contenedorBuscar1.style.display = "none";
+};
+
+const botonClear = () => {
+  div.style = "display: none";
+  div2.style = "display: none";
+  div3.style = "display: none";
+};
+
+const spanResults = document.getElementById("spanResults");
+
+const botonDecrypt = () => {
+  boton5.style.display = "none";
+  boton6.style.display = "none";
+  boton7.style.display = "none";
+  boton1.style.backgroundColor = "#6c757d";
+  boton2.style.backgroundColor = "#43484e";
+  boton3.style.backgroundColor = "#6c757d";
+  boton4.style.backgroundColor = "#6c757d";
+  contenedorBoton1.style.display = "none";
+  contenedorBoton2.style.display = "block";
+  contenedorBoton3.style.display = "none";
+  contenedorBoton4.style.display = "none";
+
+  const elements = [div4, div5, div6, espaciado, div7, espaciado2, div8, div9];
+  let i = 0;
+  const interval = setInterval(() => {
+    spanResults.appendChild(elements[i]);
+    i++;
+    if (i === elements.length) {
+      clearInterval(interval);
+    }
+  }, 1500);
+}
+
+const cerrarEmsisoft = () => {
+  contenedorEmsisoft.style.display = "none";
+}
