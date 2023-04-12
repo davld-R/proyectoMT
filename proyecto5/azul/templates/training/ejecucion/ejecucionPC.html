@@ -176,6 +176,7 @@
           <!--TODO: Escudo UniCesmag -->
           <img src="/media/img/13.png" alt="" class="cifradoEscudo" />
           <p class="cifradoEscudoTXT">UniCesmag.png.fun</p>
+          <span id="desencriptar"></span>
           <!--TODO: Texto txt -->
           <img src="/media/img/13.png" alt="" class="cifradoTexto" />
           <p class="cifradoTextoTXT">Texto.txt.fun</p>
@@ -229,7 +230,7 @@
             <div class="fecha2"><span id="fecha2"></span></div>
           </div>
           <!--TODO: Contenedor de Ransomware Jigsaw -->
-          <div class="containerSaw">
+          <div class="containerSaw" id="containerSaw">
             <div class="contenedorLetra">
               <p class="letraSaw" id="letraSaw"></p>
             </div>
@@ -312,7 +313,12 @@
                 class="contenedorEmsisoftImg"
               />
               <p class="palabra1">Emsisoft Decryptor for Jigsaw</p>
-              <button class="btn-danger contenedorBoton" onclick="cerrarEmsisoft()">X</button>
+              <button
+                class="btn-danger contenedorBoton"
+                onclick="cerrarEmsisoft()"
+              >
+                X
+              </button>
             </div>
             <div class="contenedorEmsisoft3">
               <p class="palabra2">

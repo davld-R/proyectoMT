@@ -45,7 +45,7 @@ const boton4 = document.getElementById("boton4");
 const boton5 = document.getElementById("boton5");
 const boton6 = document.getElementById("boton6");
 const boton7 = document.getElementById("boton7");
-const contenedorEmsisoft  = document.getElementById("contenedorEmsisoft");
+const contenedorEmsisoft = document.getElementById("contenedorEmsisoft");
 let bandera = true;
 let bandera2 = true;
 let bandera3 = true;
@@ -473,9 +473,9 @@ div2.textContent = "C:/Desktop/Cesmag.png.fun";
 const div3 = div.cloneNode();
 div3.textContent = "C:/Desktop/texto.txt.fun";
 const div4 = div.cloneNode();
-div4.textContent = "Starting ..."
+div4.textContent = "Starting ...";
 const div5 = div.cloneNode();
-div5.textContent = "File: C:/Desktop/UniCesmag.png.fun"
+div5.textContent = "File: C:/Desktop/UniCesmag.png.fun";
 const div6 = div.cloneNode();
 div6.textContent = "Decrypted: C:/Desktop/UniCesmag.png";
 const div7 = div.cloneNode();
@@ -515,40 +515,69 @@ const botonTexto = () => {
 
 const botonOK = () => {
   contenedorBuscar1.style.display = "none";
+  contenedorImagen.style.display = "none";
+  contenedorImagen2.style.display = "none";
+  contenedorImagen3.style.display = "none";
+  semaforo2 = true;
+  semaforo1 = true;
 };
 
 const botonClear = () => {
-  div.style = "display: none";
-  div2.style = "display: none";
-  div3.style = "display: none";
+  if (escribeDesktop.contains(div)) {
+    escribeDesktop.removeChild(div);
+  }
+  if (escribeDesktop.contains(div2)) {
+    escribeDesktop.removeChild(div2);
+  }
+  if (escribeDesktop.contains(div3)) {
+    escribeDesktop.removeChild(div3);
+  }
 };
 
 const spanResults = document.getElementById("spanResults");
+const desencriptar = document.getElementById("desencriptar");
+const containerSaw = document.getElementById("containerSaw");
+
+const img = document.createElement("img");
+img.src = "/media/img/unicesmag.png";
+img.className = "desencriptarUnicesmagFun";
+
+const div10 = div.cloneNode();
+div10.textContent = "UniCesmag.png"
+div10.className = "desencriptarUnicesmagPng";
+
+let semaforo3 = true;
 
 const botonDecrypt = () => {
-  boton5.style.display = "none";
-  boton6.style.display = "none";
-  boton7.style.display = "none";
-  boton1.style.backgroundColor = "#6c757d";
-  boton2.style.backgroundColor = "#43484e";
-  boton3.style.backgroundColor = "#6c757d";
-  boton4.style.backgroundColor = "#6c757d";
-  contenedorBoton1.style.display = "none";
-  contenedorBoton2.style.display = "block";
-  contenedorBoton3.style.display = "none";
-  contenedorBoton4.style.display = "none";
-
-  const elements = [div4, div5, div6, espaciado, div7, espaciado2, div8, div9];
-  let i = 0;
-  const interval = setInterval(() => {
-    spanResults.appendChild(elements[i]);
-    i++;
-    if (i === elements.length) {
-      clearInterval(interval);
-    }
-  }, 1500);
-}
-
+  if (semaforo3 == true){
+    boton5.style.display = "none";
+    boton6.style.display = "none";
+    boton7.style.display = "none";
+    boton1.style.backgroundColor = "#6c757d";
+    boton2.style.backgroundColor = "#43484e";
+    boton3.style.backgroundColor = "#6c757d";
+    boton4.style.backgroundColor = "#6c757d";
+    contenedorBoton1.style.display = "none";
+    contenedorBoton2.style.display = "block";
+    contenedorBoton3.style.display = "none";
+    contenedorBoton4.style.display = "none";
+  
+    const elements = [div4, div5, div6, espaciado, div7, espaciado2, div8, div9];
+    let i = 0;
+    const interval = setInterval(() => {
+      spanResults.appendChild(elements[i]);
+      i++;
+      if (i === elements.length) {
+        clearInterval(interval);
+        desencriptar.appendChild(img);
+        desencriptar.appendChild(div10);
+        containerSaw.style.display = "none";
+      }
+    }, 1500);
+    semaforo3 = false;
+  }
+};
 const cerrarEmsisoft = () => {
   contenedorEmsisoft.style.display = "none";
-}
+};
+
