@@ -34,6 +34,10 @@ urlpatterns = [
 
     path('feed/train/phishing/', views.phishing, name='phishing'),
 
+    path('feed/train/ransomware/', views.ransomware, name='ransomware'),
+
+    path('feed/train/dumsterdiving/', views.dumsterdiving, name='dumsterdiving'),
+
     path('feed/step1/ejecucionPC/', views.ejecucionPC, name='ejecucionPC'),
 
     path('feed/step1/', views.step1, name='step1'),

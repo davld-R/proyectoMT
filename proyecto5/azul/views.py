@@ -7,6 +7,16 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.db.models import Q
 
+# TODO: Vista de Dumsterdiving
+@login_required
+def dumsterdiving(request):
+    return render(request, 'training/capacitacion/dumsterdiving.html')
+
+# TODO: Vista de Capacitación Ransomware
+@login_required
+def ransomware(request):
+    return render(request, 'training/capacitacion/ransomware.html')
+
 # TODO: VIsta de Phishing
 @login_required
 def phishing(request):
