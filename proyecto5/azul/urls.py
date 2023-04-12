@@ -32,6 +32,8 @@ urlpatterns = [
 
     path('feed/train/capacitacion/', views.capacitacion, name='capacitacion'),
 
+    path('feed/train/phishing/', views.phishing, name='phishing'),
+
     path('feed/step1/ejecucionPC/', views.ejecucionPC, name='ejecucionPC'),
 
     path('feed/step1/', views.step1, name='step1'),

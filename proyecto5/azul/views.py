@@ -7,6 +7,11 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.db.models import Q
 
+# TODO: VIsta de Phishing
+@login_required
+def phishing(request):
+    return render(request, 'training/capacitacion/phishing.html')
+
 # TODO: Vista de la capacitación
 @login_required
 def capacitacion(request):
