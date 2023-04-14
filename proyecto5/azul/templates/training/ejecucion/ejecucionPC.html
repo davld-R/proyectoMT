@@ -71,8 +71,24 @@
             alt=""
             class="papelera"
             id="papelera"
+            onclick="showPapelera()"
           />
           <p class="papeleraTXT">Papelera de reciclaje</p>
+          <div class="contenedorPapelera" id="contenedorPapelera">
+            <div class="contenedorPapelera2">
+              <p class="contenedorPapelera3">Papelera de reciclaje</p>
+              <button class="contenedorPapelera4" onclick="ocultarPapelera()">
+                X
+              </button>
+            </div>
+            <div class="contenedorPapelera5">
+              <button class="BotonPapeleraNombre">Nombre</button>
+              <button class="BotonPapeleraUbicacion">Ubicación original</button>
+              <button class="BotonPapeleraFecha">Fecha eliminación</button>
+              <button class="BotonPapeleraTamaño">Tamaño</button>
+            </div>
+            <div class="contenedorPapelera6"></div>
+          </div>
           <!--TODO: Icono Escudo UniCesmag -->
           <img
             src="/media/img/unicesmag.png"
@@ -101,7 +117,17 @@
           />
           <div class="contenedor-texto" id="contenedor-texto">
             <button class="boton-texto" onclick="showImage11()">X</button>
-            <img src="/media/img/txt.png" alt="" class="texto2" id="texto2" />
+            <p class="blockNotas">Texto.txt: Bloc de notas</p>
+            <button class="botonGuardarTxt" onclick="saveText()">
+              Guardar
+            </button>
+            <div
+              id="escribeAqui"
+              contenteditable="true"
+              onclick="borrarTexto()"
+            >
+              Escribe aquí
+            </div>
           </div>
           <p class="txtTXT">Texto.txt</p>
           <!--TODO: Icono Ejecutable Jigsaw -->
@@ -112,6 +138,7 @@
             id="img-9"
             onclick="showImage4()"
           />
+          <p class="decryptJigsaw">decrypt_Jigsaw.exe</p>
           <!--TODO: Contenedor de Ejecutable jigsaw -->
           <div class="contenedor-img-10" id="contenedor-img-10">
             <img src="/media/img/10.png" alt="" class="img-10" id="img-10" />
@@ -171,12 +198,43 @@
         <div class="main5" id="main5">
           <!--** Contenedor de escritorio -->
           <!--TODO: Papelera -->
-          <img src="/media/img/papelera.svg" alt="" class="cifradoPapelera" />
+          <img
+            src="/media/img/papelera.svg"
+            alt=""
+            class="cifradoPapelera"
+            id="cifradoPapelera"
+          />
           <p class="cifradoPapeleraTXT">Papelera de reciclaje</p>
+          <div id="contenedorPapeleraCifrado">
+            <div class="contenedorPapelera2">
+              <p class="contenedorPapelera3">Papelera de reciclaje</p>
+              <button class="contenedorPapelera4" id="contenedorPapeleraX">
+                X
+              </button>
+            </div>
+            <div class="contenedorPapelera5">
+              <button class="BotonPapeleraNombre">Nombre</button>
+              <button class="BotonPapeleraUbicacion">Ubicación original</button>
+              <button class="BotonPapeleraFecha">Fecha eliminación</button>
+              <button class="BotonPapeleraTamaño">Tamaño</button>
+            </div>
+            <div class="contenedorPapelera6"></div>
+          </div>
           <!--TODO: Escudo UniCesmag -->
           <img src="/media/img/13.png" alt="" class="cifradoEscudo" />
           <p class="cifradoEscudoTXT">UniCesmag.png.fun</p>
           <span id="desencriptar"></span>
+          <div class="contenedosUnicesmagPng" id="contenedosUnicesmagPng">
+            <button class="botonUnicesmagPngSalir" onclick="ocultarUnicesmag()">
+              X
+            </button>
+            <img
+              src="/media/img/unicesmag.png"
+              alt=""
+              class="escudoUnicesmag"
+              id="escudo2"
+            />
+          </div>
           <!--TODO: Texto txt -->
           <img src="/media/img/13.png" alt="" class="cifradoTexto" />
           <p class="cifradoTextoTXT">Texto.txt.fun</p>
@@ -191,7 +249,7 @@
             alt=""
             onclick="showImage20()"
           />
-
+          <p class="cifradoDecryptJigsaw">decrypt_Jigsaw.exe</p>
           <!--** Contenedor de barra -->
           <div class="barra">
             <div class="menuInicio2" onclick="showImage17()"></div>
@@ -346,7 +404,12 @@
             <div class="contenedorBuscar1" id="contenedorBuscar1">
               <div class="contenedorBuscar2">
                 <p class="contenedorBuscarLetra1">Browse For Folder</p>
-                <button class="btn-danger contenedorBuscarCerrar">X</button>
+                <button
+                  class="btn-danger contenedorBuscarCerrar"
+                  onclick="botonCancel()"
+                >
+                  X
+                </button>
               </div>
               <div class="contenedorBuscar3">
                 <p class="contenedorBuscarLetra2">

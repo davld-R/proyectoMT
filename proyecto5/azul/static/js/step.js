@@ -1,3 +1,4 @@
+const audio = new Audio("/media/img/mouse.mp3");
 window.addEventListener("resize", function (event) {
   if (window.innerWidth <= 1366 && window.innerHeight <= 768) {
     document.body.style.zoom = "90%";
@@ -58,6 +59,7 @@ let bandera9 = true;
 let bandera10 = true;
 
 const showImage1 = () => {
+  audio.play();
   main1.style.display = "none";
   main2.style.display = "block";
   setTimeout(() => {
@@ -117,6 +119,7 @@ papelera.onmouseout = function () {
 };
 // Mostrar el menu de inicio de main4
 const showImage5 = () => {
+  audio.play();
   if (bandera2 == true) {
     img11.style.display = "block";
     c1Img11.classList.add("cont2-img-11");
@@ -131,6 +134,7 @@ const showImage5 = () => {
 };
 // Apaga Máquina main 4
 const showImage6 = () => {
+  audio.play();
   main1.style.display = "flex";
   main4.style.display = "none";
   img11.style.display = "none";
@@ -141,6 +145,7 @@ const showImage17 = () => {
 };
 // Reinicia Máquina main 5
 const showImage7 = () => {
+  audio.play();
   main4.style.display = "none";
   main2.style.display = "flex";
   setTimeout(() => {
@@ -172,6 +177,7 @@ texto.onmouseout = function () {
 };
 // Mostra el escudo del cesmag
 const showImage8 = () => {
+  audio.play();
   if (bandera3 == true) {
     contenedorEscudo2.style.display = "block";
     bandera3 = false;
@@ -186,6 +192,7 @@ const showImage8 = () => {
 };
 // oculta el escudo
 const showImage9 = () => {
+  audio.play();
   contenedorEscudo2.style.display = "none";
   barraEscudo.style.display = "none";
   bandera3 = true;
@@ -207,6 +214,7 @@ const barraCambioE = () => {
 };
 // Mostra el text del escritorio
 const showImage10 = () => {
+  audio.play();
   if (bandera4 == true) {
     contenedortexto.style.display = "block";
     bandera4 = false;
@@ -221,6 +229,7 @@ const showImage10 = () => {
 };
 // ocultar el text
 const showImage11 = () => {
+  audio.play();
   contenedortexto.style.display = "none";
   barraTexto.style.display = "none";
   bandera4 = true;
@@ -266,6 +275,7 @@ contenedorImg6.onmouseout = function () {
 };
 // Mostrar notificaciones
 const showImage12 = () => {
+  audio.play();
   if (bandera7 == true) {
     notificaciones.style.display = "block";
     bandera7 = false;
@@ -275,6 +285,7 @@ const showImage12 = () => {
   }
 };
 const showImage16 = () => {
+  audio.play();
   if (bandera8 == true) {
     notificaciones2.style.display = "block";
     bandera8 = false;
@@ -285,6 +296,7 @@ const showImage16 = () => {
 };
 // Mostar el ejecutable
 const showImage4 = () => {
+  audio.play();
   if (bandera == true) {
     img10.style.display = "block";
     contenedor2Img10.classList.add("contenedor2-img-10");
@@ -316,6 +328,7 @@ function frameLooper() {
 }
 // Este es el ejecutable del jigsaw
 const showImage13 = () => {
+  audio.play();
   let countdown = 60 * 60 * 1000; // 60 minutes
   let timerId = setInterval(function () {
     countdown -= 1000;
@@ -334,21 +347,26 @@ const showImage13 = () => {
   main5.style.display = "block";
 };
 const showImage14 = () => {
+  audio.play();
   img10.style.display = "none";
   bandera = true;
 };
 const showImage15 = () => {
+  audio.play();
   img10.style.display = "none";
   bandera = true;
 };
 const showImage18 = () => {
+  audio.play();
   containerEncriptados.style.display = "flex";
 };
 const showImage19 = () => {
+  audio.play();
   containerEncriptados.style.display = "none";
 };
 // Esto muestra cuando se le da click a la herramienta de des
 const showImage20 = () => {
+  audio.play();
   contenedorEmsisoft.style.display = "flex";
 };
 boton5.onmouseover = function () {
@@ -382,6 +400,7 @@ const contenedorBoton4 = document.getElementById("contenedorEmsisoft71");
 let bandera11 = true;
 
 const BotonDecryptor = () => {
+  audio.play();
   boton5.style.display = "block";
   boton6.style.display = "block";
   boton7.style.display = "block";
@@ -396,6 +415,7 @@ const BotonDecryptor = () => {
 };
 
 const BotonResults = () => {
+  audio.play();
   boton5.style.display = "none";
   boton6.style.display = "none";
   boton7.style.display = "none";
@@ -409,6 +429,7 @@ const BotonResults = () => {
   contenedorBoton4.style.display = "none";
 };
 const BotonOptiones = () => {
+  audio.play();
   boton5.style.display = "none";
   boton6.style.display = "none";
   boton7.style.display = "none";
@@ -422,6 +443,7 @@ const BotonOptiones = () => {
   contenedorBoton4.style.display = "none";
 };
 const BotonAbout = () => {
+  audio.play();
   boton5.style.display = "none";
   boton6.style.display = "none";
   boton7.style.display = "none";
@@ -443,10 +465,12 @@ let semaforo1 = true;
 let semaforo2 = true;
 
 const botonAdd = () => {
+  audio.play();
   contenedorBuscar1.style.display = "block";
 };
 
 const botonCancel = () => {
+  audio.play();
   contenedorBuscar1.style.display = "none";
   div.style = "display: none";
   div2.style = "display: none";
@@ -454,6 +478,7 @@ const botonCancel = () => {
 };
 
 const botonFlecha = () => {
+  audio.play();
   if (semaforo1 == true) {
     contenedorImagen.style.display = "flex";
     semaforo1 = false;
@@ -490,10 +515,12 @@ const espaciado2 = div.cloneNode();
 espaciado2.className = "espaciado";
 
 const botonDesktop = () => {
+  audio.play();
   escribeDesktop.appendChild(div);
 };
 
 const botonDesktop2 = () => {
+  audio.play();
   if (semaforo2 == true) {
     contenedorImagen2.style.display = "flex";
     contenedorImagen3.style.display = "flex";
@@ -506,14 +533,17 @@ const botonDesktop2 = () => {
 };
 
 const botonCesmag = () => {
+  audio.play();
   escribeDesktop.appendChild(div2);
 };
 
 const botonTexto = () => {
+  audio.play();
   escribeDesktop.appendChild(div3);
 };
 
 const botonOK = () => {
+  audio.play();
   contenedorBuscar1.style.display = "none";
   contenedorImagen.style.display = "none";
   contenedorImagen2.style.display = "none";
@@ -523,6 +553,7 @@ const botonOK = () => {
 };
 
 const botonClear = () => {
+  audio.play();
   if (escribeDesktop.contains(div)) {
     escribeDesktop.removeChild(div);
   }
@@ -538,18 +569,32 @@ const spanResults = document.getElementById("spanResults");
 const desencriptar = document.getElementById("desencriptar");
 const containerSaw = document.getElementById("containerSaw");
 
+const contenedosUnicesmagPng = document.getElementById(
+  "contenedosUnicesmagPng"
+);
+
 const img = document.createElement("img");
 img.src = "/media/img/unicesmag.png";
 img.className = "desencriptarUnicesmagFun";
+img.onclick = function () {
+  audio.play();
+  contenedosUnicesmagPng.style.display = "block";
+};
+
+const ocultarUnicesmag = () => {
+  audio.play();
+  contenedosUnicesmagPng.style.display = "none";
+};
 
 const div10 = div.cloneNode();
-div10.textContent = "UniCesmag.png"
+div10.textContent = "UniCesmag.png";
 div10.className = "desencriptarUnicesmagPng";
 
 let semaforo3 = true;
 
 const botonDecrypt = () => {
-  if (semaforo3 == true){
+  audio.play();
+  if (semaforo3 == true) {
     boton5.style.display = "none";
     boton6.style.display = "none";
     boton7.style.display = "none";
@@ -561,8 +606,17 @@ const botonDecrypt = () => {
     contenedorBoton2.style.display = "block";
     contenedorBoton3.style.display = "none";
     contenedorBoton4.style.display = "none";
-  
-    const elements = [div4, div5, div6, espaciado, div7, espaciado2, div8, div9];
+
+    const elements = [
+      div4,
+      div5,
+      div6,
+      espaciado,
+      div7,
+      espaciado2,
+      div8,
+      div9,
+    ];
     let i = 0;
     const interval = setInterval(() => {
       spanResults.appendChild(elements[i]);
@@ -572,12 +626,52 @@ const botonDecrypt = () => {
         desencriptar.appendChild(img);
         desencriptar.appendChild(div10);
         containerSaw.style.display = "none";
+        main5.style.backgroundColor = "#3a227d";
       }
     }, 1500);
     semaforo3 = false;
   }
 };
 const cerrarEmsisoft = () => {
+  audio.play();
   contenedorEmsisoft.style.display = "none";
 };
+// Borrar el texto de txt
+let verifica = true;
+function borrarTexto() {
+  if (verifica == true) {
+    document.getElementById("escribeAqui").textContent = "";
+    verifica = false;
+  } else if (verifica == false) {
+  }
+}
 
+const contenedorPapelera = document.getElementById("contenedorPapelera");
+
+const showPapelera = () => {
+  audio.play();
+  contenedorPapelera.style.display = "flex";
+};
+
+const ocultarPapelera = () => {
+  audio.play();
+  contenedorPapelera.style.display = "none";
+};
+
+const saveText = () => {
+  audio.play();
+};
+
+const ctPapeleraC = document.getElementById("contenedorPapeleraCifrado");
+const papeleraX = document.getElementById("contenedorPapeleraX");
+const cifradoPapelera = document.getElementById("cifradoPapelera");
+
+cifradoPapelera.onclick = function () {
+  audio.play();
+  ctPapeleraC.style.display = "block";
+};
+
+papeleraX.onclick = function () {
+  audio.play();
+  ctPapeleraC.style.display = "none";
+};

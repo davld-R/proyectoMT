@@ -50,6 +50,7 @@
   border: 0;
   font-size: 35px;
   border-radius: 5px;
+  padding-top: 0;
 }
 .contenedorSoporte {
   width: 0;
@@ -164,11 +165,13 @@
   position: relative;
 }
 .papelera {
+  cursor: pointer;
   position: absolute;
   top: 2%;
   margin-left: 35px;
 }
 .papelera-cambiado {
+  cursor: pointer;
   position: absolute;
   top: 2%;
   margin-left: 35px;
@@ -182,6 +185,90 @@
   margin-left: 18px;
   font-style: italic;
   font-size: 15px;
+}
+.contenedorPapelera {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  background-color: #000000;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 5px;
+}
+.contenedorPapelera2 {
+  display: flex;
+  flex-direction: row;
+}
+.contenedorPapelera3 {
+  margin-left: 150px;
+  color: white;
+  margin-top: 5px;
+}
+.contenedorPapelera4 {
+  position: fixed;
+  right: 0;
+  border: none;
+  background-color: #000000;
+  color: white;
+}
+.contenedorPapelera5 {
+  display: flex;
+  flex-direction: row;
+  width: 430px;
+  margin-left: 10px;
+  height: 35px;
+  background-color: rgb(0, 0, 0);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.BotonPapeleraNombre {
+  border: 1px solid grey;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 70px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.BotonPapeleraUbicacion {
+  border: 1px solid grey;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 150px;
+}
+.BotonPapeleraFecha {
+  border: 1px solid grey;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 150px;
+}
+.BotonPapeleraTamaño {
+  border: 1px solid grey;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.contenedorPapelera6 {
+  width: 430px;
+  height: 310px;
+  margin-top: 2px;
+  margin-left: 10px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 .escudo {
   position: absolute;
@@ -252,6 +339,15 @@
   font-style: italic;
   font-size: 15px;
 }
+.decryptJigsaw {
+  position: absolute;
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+  right: 0;
+  margin-top: 350px;
+  margin-right: 12px;
+}
 .contenedor-texto {
   display: none;
   width: 360px;
@@ -270,6 +366,37 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#escribeAqui {
+  color: rgb(0, 0, 0);
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 338px;
+  height: 280px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.botonGuardarTxt {
+  position: absolute;
+  margin-top: 30px;
+  font-size: 15px;
+  border: none;
+  margin-left: 10px;
+  background-color: #000000;
+  color: white;
+  font-family: monospace;
+}
+.blockNotas {
+  position: absolute;
+  color: white;
+  margin-left: 75px;
+  margin-top: 2.5px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+}
 .boton-texto {
   position: absolute;
   right: 0;
@@ -278,6 +405,7 @@
   background: black;
 }
 .img-9 {
+  cursor: pointer;
   position: absolute;
   top: 40%;
   margin-right: 20px;
@@ -288,6 +416,7 @@
   border-radius: 10px;
 }
 .img-9-cambiado {
+  cursor: pointer;
   position: absolute;
   top: 40%;
   margin-right: 20px;
@@ -314,6 +443,7 @@
   height: 27px;
 }
 .contenedor-img-6 {
+  cursor: pointer;
   position: absolute;
   background-color: rgb(0, 0, 0);
   width: 44px;
@@ -321,6 +451,7 @@
   border-bottom-left-radius: 7px;
 }
 .contenedor-img-6C {
+  cursor: pointer;
   position: absolute;
   background-color: rgb(51, 51, 51);
   width: 44px;
@@ -328,18 +459,20 @@
   border-bottom-left-radius: 7px;
 }
 .img-7 {
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 27%;
   width: 26px;
   height: 23px;
   margin-right: 9px;
+  cursor: pointer;
 }
 .notificaciones {
   display: none;
   position: absolute;
   width: 190px;
-  height: 580px;
+  height: 581px;
   background-color: rgb(0, 0, 0);
   right: 0;
   border-top-right-radius: 7px;
@@ -391,6 +524,7 @@
   top: 67.28%;
 }
 .cont2-img-11 {
+  cursor: pointer;
   width: 100px;
   height: 110px;
   position: absolute;
@@ -398,6 +532,7 @@
   left: 10%;
 }
 .cont3-img-11 {
+  cursor: pointer;
   width: 100px;
   height: 110px;
   position: absolute;
@@ -418,6 +553,7 @@
   transform: translate(-50%, -50%);
 }
 .contenedor2-img-10 {
+  cursor: pointer;
   position: absolute;
   margin-top: 25px;
   margin-left: 68px;
@@ -425,6 +561,7 @@
   height: 40px;
 }
 .contenedor3-img-10 {
+  cursor: pointer;
   position: absolute;
   margin-top: 25px;
   margin-left: 158px;
@@ -432,6 +569,7 @@
   height: 40px;
 }
 .salir-img-10 {
+  cursor: pointer;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -457,6 +595,7 @@
   margin-left: 60px;
 }
 .barra-escudo2 {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -483,6 +622,7 @@
   margin-left: 120px;
 }
 .barra-texto2 {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -513,12 +653,14 @@
   color: aliceblue;
 }
 .cifradoPapelera {
+  cursor: pointer;
   position: absolute;
   top: 2%;
   margin-left: 35px;
   height: 108px;
 }
 .cifradoPapeleraTXT {
+  cursor: pointer;
   position: absolute;
   top: 20%;
   color: white;
@@ -540,6 +682,15 @@
   font-style: italic;
   font-size: 15px;
 }
+.cifradoDecryptJigsaw {
+  position: absolute;
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+  right: 0;
+  margin-top: 132px;
+  margin-right: 14px;
+}
 .cifradoTexto {
   position: absolute;
   top: 48%;
@@ -558,10 +709,11 @@
   display: none;
   position: absolute;
   width: 190px;
-  height: 580px;
+  height: 581px;
   background-color: rgb(51, 51, 51);
   right: 0;
   border-top-right-radius: 7px;
+  z-index: 2;
 }
 .notificaciones2TXT {
   position: absolute;
@@ -589,6 +741,7 @@
   transform: translate(-50%, -50%);
   border-radius: 7px;
   border: 4px solid rgb(189, 224, 255);
+  z-index: 1;
 }
 .contenedorLetra {
   position: absolute;
@@ -704,14 +857,13 @@
   flex-direction: column;
   position: absolute;
   z-index: 5;
-  width: 458px;
+  width: 500px;
   height: 204px;
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #afc8e2;
   border-radius: 7px;
-  box-shadow: 0 0 9px #2f00ff;
 }
 .containerTop {
   height: 30px;
@@ -737,13 +889,14 @@
 }
 .containerArchivos {
   border-radius: 5px;
-  width: 441px;
+  width: 483px;
   height: 164px;
   background-color: #ffffff;
   margin-left: 8px;
 }
 .cont-a {
-  width: 60px;
+  margin-left: 11px;
+  width: 55px;
   height: 25px;
   background-color: #3399ff;
 }
@@ -753,6 +906,7 @@
   margin-right: 10px;
   right: 0;
   cursor: pointer;
+  z-index: 1;
 }
 .contenedorEmsisoft {
   position: absolute;
@@ -765,6 +919,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px;
+  z-index: 1;
 }
 .contenedorEmsisoft2 {
   display: flex;
@@ -1130,7 +1285,7 @@
   height: 78px;
   width: 175px;
 }
-.contenedorImagen{
+.contenedorImagen {
   display: none;
   flex-direction: row;
   margin-left: 13px;
@@ -1143,13 +1298,13 @@
   height: 8px;
   cursor: pointer;
 }
-.contenedorImagen2{
+.contenedorImagen2 {
   display: none;
   flex-direction: row;
   margin-left: 20px;
   height: 15px;
 }
-.contenedorImagen3{
+.contenedorImagen3 {
   display: none;
   flex-direction: row;
   margin-left: 20px;
@@ -1182,22 +1337,62 @@
   width: 48px;
   border: 1px solid #646464;
 }
-.espaciado{
+.espaciado {
   width: 100px;
   height: 10px;
 }
-.desencriptarUnicesmagFun{
+.desencriptarUnicesmagFun {
+  cursor: pointer;
   width: 110px;
   height: 110px;
   position: absolute;
   margin-left: 170px;
   margin-top: 153px;
 }
-.desencriptarUnicesmagPng{
+.desencriptarUnicesmagPng {
   color: white;
   position: absolute;
   margin-left: 170px;
   margin-top: 272px;
   font-size: 15px;
   font-style: italic;
+}
+.contenedosUnicesmagPng {
+  display: none;
+  position: absolute;
+  width: 360px;
+  height: 350px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ff00;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.botonUnicesmagPngSalir {
+  position: absolute;
+  right: 0;
+  border-radius: 2px;
+  color: white;
+  background: black;
+  border: none;
+}
+.escudoUnicesmag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contenedorPapeleraCifrado {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  background-color: #000000;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 5px;
 }
