@@ -59,21 +59,23 @@ let bandera9 = true;
 let bandera10 = true;
 
 const showImage1 = () => {
-  audio.play();
-  main1.style.display = "none";
+  // main1.style.display = "none";
   main2.style.display = "block";
   setTimeout(() => {
     main2.style.display = "none";
     main3.style.display = "block";
-  }, 1000);
+  }, 4000);
   // 4000
 
   setTimeout(() => {
     main3.style.display = "none";
     main4.style.display = "block";
-  }, 1000);
+  }, 7000);
   // 7000
 };
+
+showImage1();
+
 const showImage2 = () => {
   main2.style.display = "none";
   main3.style.display = "block";
@@ -135,10 +137,12 @@ const showImage5 = () => {
 // Apaga Máquina main 4
 const showImage6 = () => {
   audio.play();
-  main1.style.display = "flex";
-  main4.style.display = "none";
-  img11.style.display = "none";
-  bandera2 = true;
+  // main1.style.display = "flex";
+  // main4.style.display = "none";
+  // img11.style.display = "none";
+  // bandera2 = true;
+  // {% url 'step1' %}
+  // window.location.href = "{% url 'step1' %}";
 };
 const showImage17 = () => {
   alert("No apague la máquina");
