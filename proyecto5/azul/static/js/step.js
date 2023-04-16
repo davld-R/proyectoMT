@@ -134,16 +134,6 @@ const showImage5 = () => {
     bandera2 = true;
   }
 };
-// Apaga Máquina main 4
-const showImage6 = () => {
-  audio.play();
-  // main1.style.display = "flex";
-  // main4.style.display = "none";
-  // img11.style.display = "none";
-  // bandera2 = true;
-  // {% url 'step1' %}
-  // window.location.href = "{% url 'step1' %}";
-};
 const showImage17 = () => {
   alert("No apague la máquina");
 };
