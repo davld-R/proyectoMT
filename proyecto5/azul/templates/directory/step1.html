@@ -85,38 +85,21 @@
     -->
     <div class="container">
       <h1>Dirigase al boton para encender el PC</h1>
-      <div class="contenedorIMG19">
-        <img
-          src="/media/img/19.png"
-          alt=""
-          class="img-fluid contenedorCPU"
-          id="contenedorCPU"
-          onclick="mostrarCPU()"
-        />
-        <div class="contenedorOpciones" id="contenedorOpciones">
-          <h4 class="text-center letraUser">{{ user.username }}</h4>
-          <a id="contenedorBotonIR" href="{% url 'ejecucionPC' %}"
-            ><img src="/media/img/20.png" alt="" class="contenedorBotonIR"
-          /></a>
-          <img
-            src="/media/img/21.png"
-            alt=""
-            class="contenedorBotonEye"
-            id="contenedorBotonEye"
-            onclick="mostrarEYE()"
-          />
-        </div>
-        <div class="contenedorDifuminar" id="contenedorDifuminar">
-          <div class="contenedorPCX">
-            <p class="letraContenedorPC">PC</p>
-            <button class="botonCERRAR" onclick="cerrarDifuminar()">X</button>
+      <div class="box1">
+        <div class="box2">
+          <img src="/media/img/27.png" alt="" class="imgLibreria" />
+          <img src="/media/img/24.png" alt="" class="imgPC" />
+          <img src="/media/img/23.png" alt="" class="imgMesa" />
+          <img src="/media/img/25.png" alt="" id="imgMonitor" />
+          <img src="/media/img/26.webp" alt="" class="imgSuperficie" />
+          <div id="imgFondoPrincipal"></div>
+          <div id="imgFondo"></div>
+          <div class="contenedorOpciones" id="contenedorOpciones">
+            <h4 class="text-center letraUser">{{ user.username }}</h4>
+            <a id="contenedorBotonIR" href="{% url 'ejecucionPC' %}"
+              ><img src="/media/img/20.png" alt="" class="contenedorBotonIR"
+            /></a>
           </div>
-          <img
-            src="/media/img/19.png"
-            alt=""
-            class="difuminarPC"
-            id="difuminarPC"
-          />
         </div>
       </div>
     </div>

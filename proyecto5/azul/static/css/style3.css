@@ -1,45 +1,18 @@
-.contenedorIMG19 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.contenedorCPU {
-  display: block;
-  position: relative;
-  width: 400px;
-  height: 400px;
-  cursor: pointer;
-  animation: desplazar 2s infinite;
-}
-@keyframes desplazar {
-  0% {
-    left: 0px;
-  }
-  50% {
-    left: 15px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-.contenedorCPUCambio {
-  display: block;
-  width: 400px;
-  height: 400px;
-  cursor: pointer;
-  opacity: 0.9;
-}
 .contenedorOpciones {
   /* display: flex; */
   display: none;
+  position: absolute;
   flex-direction: column;
-  width: 115px;
-  height: 265px;
+  width: 200px;
+  height: 160px;
   border-radius: 10px;
   background-color: #0d0c1a;
+  margin-left: 320px;
+  margin-top: 80px;
+  z-index: 3;
 }
 .letraUser {
+  margin-top: 8px;
   color: white;
   font-size: 14px;
 }
@@ -47,64 +20,78 @@
   width: 100px;
   height: 100px;
   margin-top: 8px;
-  margin-left: 8px;
-}
-.contenedorBotonEye {
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
-  margin-left: 8px;
+  margin-left: 50px;
   cursor: pointer;
 }
-.contenedorDifuminar {
-  display: none;
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* background-color: #00072B; */
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
-  width: 500px;
-  height: 500px;
-}
-.difuminarPC {
-  display: block;
-  position: relative;
-  width: 400px;
-  height: 400px;
-  border-radius: 12px;
-  margin-left: 60px;
-  animation: mover 2s infinite;
-}
-@keyframes mover {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 50px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-.contenedorPCX {
+.box1 {
   display: flex;
-  flex-direction: row;
-  background-color: #a9b5f3;
-  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.botonCERRAR {
-  margin-left: 198px;
-  border: 0;
-  background-color: #a9b5f3;
-  color: black;
-  font-size: 30px;
+.box2 {
+  width: 700px;
+  height: 528px;
+  background: #1f1c2c;
+  background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
+  background: linear-gradient(to right, #928dab, #1f1c2c);
+  border-radius: 10px;
 }
-.letraContenedorPC {
-  margin-left: 230px;
-  margin-top: 8px;
-  font-size: 25px;
-  color: black;
-  font-weight: bold;
+.imgMesa {
+  position: absolute;
+  z-index: 1;
+  margin-left: 14px;
+  margin-top: 22px;
+}
+.imgPC {
+  position: absolute;
+  margin-left: 15px;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+}
+#imgMonitor {
+  position: absolute;
+  z-index: 2;
+  margin-left: 260px;
+  width: 320px;
+  height: 340px;
+}
+.imgSuperficie {
+  position: absolute;
+  width: 700px;
+  height: 190px;
+  background-color: #c47942;
+  margin-top: 338px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.imgLibreria {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-left: 400px;
+}
+#imgFondo {
+  display: none;
+  background: #005aa7;
+  background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
+  background: linear-gradient(to right, #fffde4, #005aa7);
+  cursor: pointer;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 72.5px;
+  width: 301px;
+  height: 180px;
+  z-index: 3;
+}
+#imgFondoPrincipal {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 72.5px;
+  width: 301px;
+  height: 180px;
+  z-index: 3;
 }
