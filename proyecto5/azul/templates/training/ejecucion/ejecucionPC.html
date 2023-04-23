@@ -64,6 +64,115 @@
         </div>
         <!--! Imagen 4 -->
         <div class="main4" id="main4">
+          <!-- Contenedor de toasks -->
+          <div class="contTarea5" id="contTarea5">
+            <div class="contTarea5Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#000000"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Apagar y encender</p>
+              <button class="tarea1Boton" id="tarea5Boton">x</button>
+            </div>
+          </div>
+          <div class="contTarea4" id="contTarea4">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#A7A9AC"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Papelera</p>
+              <button class="tarea1Boton" id="tarea1Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Esta es la papelera de windows</p>
+          </div>
+          <div class="contTarea1" id="contTarea1">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#007aff"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Unicesmag.png</p>
+              <button class="tarea1Boton" id="tarea2Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Esto es una imagen</p>
+          </div>
+          <div class="contTarea2" id="contTarea2">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#FF7F2A"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Texto.txt</p>
+              <button class="tarea1Boton" id="tarea3Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Esto es un documento en blanco</p>
+          </div>
+          <div class="contTarea3" id="contTarea3">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#5BA189"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Ejecutable del Ransomware Jigsaw</p>
+              <button class="tarea1Boton" id="tarea4Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Dale click para empezar</p>
+          </div>
+          <!-- video 1 -->
+          <div id="contenedorVideo2">
+            <iframe
+              id="miVideo2"
+              width="500"
+              height="500"
+              src=""
+              title='"Cuerdas", Cortometraje completo'
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <button id="cerrardiv">cerrar</button>
           <!--** contenedor de escritorio -->
           <!--TODO: Icono Papelera -->
           <img
@@ -149,7 +258,11 @@
           <!--TODO: Contenedor de Apagar / Reiniciar  -->
           <div class="contenedor-img-11" id="contenedor-img-11">
             <img src="/media/img/11.png" alt="" class="" id="img-11" />
-            <div class="" id="cont2-img-11" onclick="window.location.href=`{% url 'step1' %}`"></div>
+            <div
+              class=""
+              id="cont2-img-11"
+              onclick="window.location.href=`{% url 'step1' %}`"
+            ></div>
             <div class="" id="cont3-img-11" onclick="showImage7()"></div>
           </div>
           <!--TODO: Contenedor de Notificaciones -->
@@ -196,6 +309,145 @@
         </div>
         <!--! imagen 5  -->
         <div class="main5" id="main5">
+          <!-- video 2 -->
+          <div id="contenedorVideo1">
+            <iframe
+              id="miVideo1"
+              width="500"
+              height="500"
+              src=""
+              title='"Paso 2", Cortometraje completo'
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <button id="cerrarVideo1">cerrar</button>
+          </div>
+          <!-- Video 3 -->
+          <div id="contenedorVideo3">
+            <iframe
+              id="miVideo3"
+              width="500"
+              height="500"
+              src=""
+              title='"Paso 2", Cortometraje completo'
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <button id="cerrarVideo3">cerrar</button>
+          </div>
+          <!-- Toask -->
+          <div class="contTarea10" id="contTarea10">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#0385C6"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Boton de windows</p>
+              <button class="tarea1Boton" id="tarea10Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Dale click para seguir</p>
+          </div>
+          <svg
+            id="contTareaFlecha10"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M9.3 20.275L4.7 15.7q-.15-.15-.213-.325T4.425 15q0-.2.063-.375T4.7 14.3l4.625-4.625q.275-.275.7-.287t.7.287q.3.275.3.7t-.3.725l-2.9 2.9H17V5q0-.425.288-.713T18 4q.425 0 .713.288T19 5v10q0 .425-.288.713T18 16H7.825l2.9 2.875q.275.275.288.688t-.288.712q-.3.3-.712.3t-.713-.3Z"
+            />
+          </svg>
+          <div class="contTarea8" id="contTarea8">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#A7A9AC"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Papelera</p>
+              <button class="tarea1Boton" id="tarea8Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Esta es la papelera de windows</p>
+          </div>
+          <div class="contTarea6" id="contTarea6">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#0385C6"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Herramienta de desencriptado</p>
+              <button class="tarea1Boton" id="tarea6Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">Dale click para seguir</p>
+          </div>
+          <svg id="contTareaFlecha6" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="white" d="M5 20V8h11.175L12.6 4.4L14 3l6 6l-6 6l-1.4-1.425L16.175 10H7v10H5Z"/></svg>
+          <div class="contTarea7" id="contTarea7">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#F14950"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">UniCesmag.png.fun</p>
+              <button class="tarea1Boton" id="tarea7Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">
+              Se observa la imagen como le cambio la extensión
+            </p>
+          </div>
+          <div class="contTarea9" id="contTarea9">
+            <div class="contTarea1Arriba">
+              <svg
+                class="tarea1Box"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#F14950"
+                  d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"
+                />
+              </svg>
+              <p class="tarea1Parrafo">Texto.txt.fun</p>
+              <button class="tarea1Boton" id="tarea9Boton">x</button>
+            </div>
+            <p class="tarea1Parrafo2">
+              Se observa al documento como le cambio la extensión
+            </p>
+          </div>
           <!--** Contenedor de escritorio -->
           <!--TODO: Papelera -->
           <img
@@ -246,10 +498,11 @@
           <img
             src="/media/img/15.png"
             class="img15"
+            id="img15"
             alt=""
             onclick="showImage20()"
           />
-          <p class="cifradoDecryptJigsaw">decrypt_Jigsaw.exe</p>
+          <p id="cifradoDecryptJigsaw" class="cifradoDecryptJigsaw">decrypt_Jigsaw.exe</p>
           <!--** Contenedor de barra -->
           <div class="barra">
             <div class="menuInicio2" onclick="showImage17()"></div>

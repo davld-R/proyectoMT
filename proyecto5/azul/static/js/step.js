@@ -64,13 +64,13 @@ const showImage1 = () => {
   setTimeout(() => {
     main2.style.display = "none";
     main3.style.display = "block";
-  }, 4000);
+  }, 1000);
   // 4000
 
   setTimeout(() => {
     main3.style.display = "none";
     main4.style.display = "block";
-  }, 7000);
+  }, 1000);
   // 7000
 };
 
@@ -133,9 +133,6 @@ const showImage5 = () => {
     c2Img11.classList.remove("cont3-img-11");
     bandera2 = true;
   }
-};
-const showImage17 = () => {
-  alert("No apague la máquina");
 };
 // Reinicia Máquina main 5
 const showImage7 = () => {
@@ -288,9 +285,102 @@ const showImage16 = () => {
     bandera8 = true;
   }
 };
-// Mostar el ejecutable
+const contTarea10 = document.getElementById("contTarea10");
+const contTareaFlecha10 = document.getElementById("contTareaFlecha10");
+const contTarea6 = document.getElementById("contTarea6");
+const contTareaFlecha6 = document.getElementById("contTareaFlecha6");
+const img15 = document.getElementById("img15");
+const cifradoDecryptJigsaw = document.getElementById("cifradoDecryptJigsaw");
+const contTarea7 = document.getElementById("contTarea7");
+const contTarea9 = document.getElementById("contTarea9");
+const contenedorVideo1 = document.getElementById("contenedorVideo1");
+const miVideo1 = document.getElementById("miVideo1");
+const cerrarVideo1 = document.getElementById("cerrarVideo1");
+const contenedorVideo = document.getElementById("contenedorVideo2");
+const miVideo2 = document.getElementById("miVideo2");
+const cerrarButton = document.getElementById("cerrardiv");
+const contenedorVideo3 = document.getElementById("contenedorVideo3");
+const miVideo3 = document.getElementById("miVideo3");
+const cerrarVideo3 = document.getElementById("cerrarVideo3");
+
+let arrayVideos = [
+  "https://www.youtube.com/embed/cBFrohg8FOE?autoplay=1",
+  "https://www.youtube.com/embed/60uu97eaXFQ?autoplay=1",
+  "https://www.youtube.com/embed/wWd0T_P4KG4?autoplay=1"
+];
+
+function cerrarVideos(miVideo, contVideo, cerrarVideo) {
+  miVideo.src = "";
+  contVideo.style.display = "none";
+  cerrarVideo.style.display = "none";
+}
+
+function reproducirVideos(miVideo, urlVideo, contVideo, cerrarVideo) {
+  miVideo.src = urlVideo;
+  contVideo.style.display = "block";
+  setTimeout(() => {
+    cerrarVideo.style.display = "block";
+  }, 1000);
+}
+
+function cerrarTareas (tarea, flecha) {
+  tarea.style.display = "none"
+  flecha.style.display = "none"
+}
+function mostrarTareas (tarea, flecha) {
+  tarea.style.display = "flex"
+  flecha.style.display = "flex"
+}
+
+cerrarButton.onclick = function () {
+  audio.play();
+  cerrarVideos(miVideo2, contenedorVideo, cerrarButton);
+}
+cerrarVideo1.onclick = function () {
+  audio.play();
+  cerrarVideos(miVideo1, contenedorVideo1, cerrarVideo1);
+  mostrarTareas(contTarea10, contTareaFlecha10);
+}
+cerrarVideo3.onclick = function () {
+  audio.play();
+  cerrarVideos(miVideo3, contenedorVideo3, cerrarVideo3);
+  cerrarTareas(contTarea10, contTareaFlecha10);
+  mostrarTareas(contTarea6, contTareaFlecha6);
+  mostrarTareas(img15, cifradoDecryptJigsaw);
+}
+document.getElementById("tarea10Boton").onclick = function () {
+  audio.play();
+  cerrarTareas(contTarea10, contTareaFlecha10);
+}
+document.getElementById("tarea6Boton") .onclick = function () {
+  audio.play();
+  cerrarTareas(contTarea6, contTareaFlecha6);
+}
+document.getElementById("tarea7Boton").onclick = function () {
+  audio.play();
+  contTarea7.style.display = "none";
+}
+document.getElementById("tarea9Boton").onclick = function () {
+  audio.play();
+  contTarea9.style.display = "none";
+}
+document.getElementById("tarea8Boton").onclick = function () {
+  audio.play();
+  document.getElementById("contTarea8").style.display = "none";
+}
+
+const showImage17 = () => {
+  audio.play();
+  reproducirVideos(miVideo3, arrayVideos[2], contenedorVideo3, cerrarVideo3);
+};
+
+let semaforo4 = true;
 const showImage4 = () => {
   audio.play();
+  if (semaforo4 == true) {
+    reproducirVideos(miVideo2, arrayVideos[0], contenedorVideo, cerrarButton);
+    semaforo4 = false;
+  }
   if (bandera == true) {
     img10.style.display = "block";
     contenedor2Img10.classList.add("contenedor2-img-10");
@@ -305,6 +395,7 @@ const showImage4 = () => {
     bandera = true;
   }
 };
+
 // Letra que escribe en el jigsaw
 let myString =
   "Los archivos de tu ordenador han sido encriptados. Tus fotos, vídeos, documentos, etc.... Pero, ¡no te preocupes! No los he borrado, todavía.Usted tiene 24 horas para pagar 150 USD en Bitcoins para obtener la clave de descifrado. Cada hora los archivos serán borrados. Aumentando en cantidad cada vez. Después de 72 horas todos los que queden serán borrados. Si no tienes bitcoins busca en Google la web localbitcoins.Compra 150 dólares americanos en Bitcoins o 4 BTC. El sistema aceptará el envío a la dirección de Bitcoins especificada.A los dos minutos de recibir el pago su ordenador recibirá el descifrado. Intente algo raro y el ordenador tiene varias medidas de seguridad para borrar su información.Tan pronto como se reciba el pago los archivos cifrados volverán a la normalidad.Gracias";
@@ -321,8 +412,10 @@ function frameLooper() {
   loopTimer = setTimeout("frameLooper()", 80);
 }
 // Este es el ejecutable del jigsaw
+
 const showImage13 = () => {
   audio.play();
+  reproducirVideos(miVideo1, arrayVideos[1], contenedorVideo1, cerrarVideo1);
   let countdown = 60 * 60 * 1000; // 60 minutes
   let timerId = setInterval(function () {
     countdown -= 1000;
@@ -621,6 +714,8 @@ const botonDecrypt = () => {
         desencriptar.appendChild(div10);
         containerSaw.style.display = "none";
         main5.style.backgroundColor = "#3a227d";
+        cerrarTareas(contTarea6, contTareaFlecha6);
+        cerrarTareas(contTarea7, contTarea9);
       }
     }, 1500);
     semaforo3 = false;
@@ -668,4 +763,34 @@ cifradoPapelera.onclick = function () {
 papeleraX.onclick = function () {
   audio.play();
   ctPapeleraC.style.display = "none";
+};
+
+document.getElementById("tarea1Boton").onclick = function () {
+  audio.play();
+  const cerrarToast1 = document.getElementById("contTarea4");
+  cerrarToast1.style.display = "none";
+};
+
+document.getElementById("tarea2Boton").onclick = function () {
+  audio.play();
+  const cerrarToast2 = document.getElementById("contTarea1");
+  cerrarToast2.style.display = "none";
+};
+
+document.getElementById("tarea3Boton").onclick = function () {
+  audio.play();
+  const cerrarToast3 = document.getElementById("contTarea2");
+  cerrarToast3.style.display = "none";
+};
+
+document.getElementById("tarea4Boton").onclick = function () {
+  audio.play();
+  const cerrarToast4 = document.getElementById("contTarea3");
+  cerrarToast4.style.display = "none";
+};
+
+document.getElementById("tarea5Boton").onclick = function () {
+  audio.play();
+  const cerrarToast5 = document.getElementById("contTarea5");
+  cerrarToast5.style.display = "none";
 };
