@@ -5,7 +5,31 @@ from .forms import CasesForm, MetodologiaForm, EncuestaForm
 from .models import *
 from django.contrib import messages
 from django.contrib.auth.models import User
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import AuthenticationForm
 from django.db.models import Q
+
+def principal(request):
+    if request.user.is_authenticated:
+        return redirect('feed') #redirige al usuario a la página correspondiente si ya ha iniciado sesión
+    if request.method == 'GET':
+        return render(request, 'azul/principal.html', {
+            'form': AuthenticationForm
+    })
+    else:
+        user = authenticate(
+            request, username=request.POST['username'], password=request.POST['password']
+        )
+        if user is None:
+            return render(request, 'azul/principal.html', {
+                'form': AuthenticationForm,
+                'error': 'username or password is incorrect'
+        })
+        else:
+            login(request, user)
+            return redirect('feed')
+
+
 
 # TODO: Vista de Dumsterdiving
 @login_required
@@ -18,7 +42,7 @@ def ransomware(request):
     return render(request, 'training/capacitacion/ransomware.html')
 
 # TODO: VIsta de Phishing
-@login_required
+
 def phishing(request):
     return render(request, 'training/capacitacion/phishing.html')
 
@@ -33,7 +57,7 @@ def ejecucionPC(request):
     return render(request, 'training/ejecucion/ejecucionPC.html')
 
 # TODO: Vista de los PDF
-@login_required
+@login_required(login_url='feed')
 def method(request):
     return render(request, 'training/method.html')
 
@@ -53,7 +77,8 @@ def encryption8(request):
     return render(request, 'encrypted/encryption8.html')
 
 # TODO: Vista de Inicio
-@login_required
+
+@login_required(login_url='principal')
 def feed(request):
     messages.success(request, '¡Bienvenido de nuevo!')
     return render(request, 'azul/feed.html')
